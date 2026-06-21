@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "yung"
+	group: "46B6CCD5C76E14AC"
+	icon: "minecraft:brick_stairs"
+	id: "6B86F4B750525272"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"YUNGダンジョンModの影響で､各地にいろんなダンジョンが出現するようになっています｡"
+			"また､ネザー要塞､海底神殿､ピラミッド､エンド要塞なども豪華になっています｡"
+			"もちろんお宝も一杯あるので､バックパックに空きを作って出かけましょう!"
+		]
+		id: "06FCE32EC598DF01"
+		tasks: [{
+			id: "0FB270BB9B48DB33"
+			title: "YUNGダンジョン"
+			type: "checkmark"
+		}]
+		x: -1.0d
+		y: 0.0d
+	}]
+	title: "YUNGダンジョン"
+}

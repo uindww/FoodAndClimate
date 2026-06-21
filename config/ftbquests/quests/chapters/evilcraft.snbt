@@ -1,0 +1,160 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "evilcraft"
+	group: "53DD377EFA78FCB6"
+	icon: "evilcraft:condensed_blood"
+	id: "5C9A05A514312FCD"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"EvilCraftを始めるにはダークジェムが必要です。"
+				"鉄以上のツルハシで掘りましょう｡"
+			]
+			id: "35CE5DFF59F68509"
+			rewards: [{
+				id: "2673F6D413EAB5C8"
+				item: "evilcraft:origins_of_darkness"
+				type: "item"
+			}]
+			subtitle: "はじまりはダークジェム"
+			tasks: [{
+				consume_items: false
+				id: "7E7B187F352C78AE"
+				item: "evilcraft:dark_gem"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"いくつかの材料からBlood Extractorを作れます｡"
+				"これを持っている状態でMobにダメージを与えると血液を入手できます。"
+				"血液はEvilCraftにおいて重要なリソースです。"
+			]
+			id: "77658DB8FFF06035"
+			rewards: [{
+				id: "73B932D12BD997D6"
+				item: "evilcraft:bucket_blood"
+				type: "item"
+			}]
+			subtitle: "血液を集める"
+			tasks: [{
+				id: "14B55A6076E3C752"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:blood_extractor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"血液をバケツでワールド上に放置すると､一定時間で凝固した血液になります｡"
+				"それを火打石と打ち金で着火して破壊すると､欠片が得られます｡"
+				"また､シルクタッチで回収した場合は精錬すると欠片9個が得られます｡"
+			]
+			id: "6577FB2B4E198B20"
+			rewards: [{
+				id: "4FB6BE7AFDA6F0E9"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:dark_tank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "血液を素材に"
+			tasks: [{
+				id: "48B762C1C6EBEAA0"
+				item: "evilcraft:hardened_blood_shard"
+				type: "item"
+			}]
+			title: "凝固した血液のかけら"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"地面に十字状の5マスの穴を掘り､バケツ5杯分の血液を流し込み､真ん中にダークジェムを入れると強化ダークジェムができます｡"
+				"EvilCraftの専用アイテムのクラフトに必要になります｡"
+			]
+			id: "3E0EF6F95D3635EB"
+			rewards: [{
+				count: 4
+				id: "46A93CCC5DBEA398"
+				item: "evilcraft:condensed_blood"
+				type: "item"
+			}]
+			subtitle: "ダークジェムの強化"
+			tasks: [{
+				id: "6B807A3AD180D1BB"
+				item: "evilcraft:dark_power_gem"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: ["中央に強化ダークジェムを置き､それを凝固した血の欠片8個で囲むと血液注入コアが完成します｡"]
+			id: "515C0D30D03B890A"
+			rewards: [{
+				count: 4
+				id: "085B49D32F361183"
+				item: "evilcraft:condensed_blood"
+				type: "item"
+			}]
+			subtitle: "中間素材"
+			tasks: [{
+				id: "5ADDAD44D538E6A7"
+				item: "evilcraft:blood_infusion_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"血液注入コアを丸石8個で囲むと血液注入器ができます｡"
+				"血液抽出機や血のバケツを持って右クリックすると血液が貯まり､色々なものをクラフトできるようになります｡"
+			]
+			id: "343299A9808E2CB7"
+			rewards: [{
+				count: 4
+				id: "5AD39D8349D25576"
+				item: "evilcraft:condensed_blood"
+				type: "item"
+			}]
+			subtitle: "EvilCraftの加工台"
+			tasks: [{
+				id: "435A51F241E0E6F8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "evilcraft:blood_infuser"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+	]
+	title: "EvilCraftを学ぼう!"
+}

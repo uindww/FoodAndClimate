@@ -1,0 +1,172 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hexerei"
+	group: "53DD377EFA78FCB6"
+	icon: {
+		Count: 1b
+		id: "hexerei:mahogany_broom"
+		tag: { }
+	}
+	id: "6A682C4F0C16229F"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"本と革をクラフトすることでHexereiの解説書が作れます｡"
+				"このクエストの報酬でもあります｡"
+			]
+			id: "42FE272A3BA9610D"
+			rewards: [{
+				id: "6CBAE2EC8B005EDD"
+				item: {
+					Count: 1b
+					id: "hexerei:book_of_shadows"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "解説書をどうぞ"
+			tasks: [{
+				id: "5ED0C2371C70A10A"
+				title: "準備中"
+				type: "checkmark"
+			}]
+			title: "Hexereiを始めよう!"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"糸と棒と木材のハーフブロックで乾燥ラックが作れます｡"
+				"ハーブの乾燥に使うとともに､腐った肉を干しておけば､時間経過で皮になります｡"
+			]
+			id: "5536FCF466D03E58"
+			rewards: [{
+				count: 3
+				id: "5042FCCDC3D97DC8"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			subtitle: "色んなものを乾燥させる"
+			tasks: [{
+				id: "767278BA7BAC066C"
+				item: "hexerei:herb_drying_rack"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"バニラの大釜に松明と鉄インゴットを組み合わせると｢混合の大鍋｣を作れます｡"
+				"下に焚き火などの熱源を置くとこれにより様々な調合が行えるようになります｡"
+				"入れる液体によっても作れるものが変わるので色々試してみてください｡"
+			]
+			id: "73D56B8A4ACE5AC7"
+			rewards: [{
+				count: 4
+				id: "6A585C399D603062"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "混合の大釜"
+			tasks: [{
+				id: "598F042CEFAE2B89"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"ほうきの材料が揃ったら､混合の大鍋に投げ込んでほうきをつくりましょう｡"
+				"この時注意が必要なのは､デフォルトでは｢下降｣と｢ほうきから降りる"
+				"｣が両方左Shiftになっていることです。"
+				"落下を防ぐためにも別々のキーに割り当てましょう。"
+			]
+			id: "1382378A93D410C5"
+			rewards: [{
+				count: 4
+				id: "55D809D1138501B5"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "空を自由に飛びたいな"
+			tasks: [{
+				id: "166FE2D063F3D7DE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:mahogany_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "hexerei:willow_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "hexerei:witch_hazel_broom"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "任意のほうき"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"溶岩を大鍋に入れ､素材を入れることで｢血の紋章｣を作ることができます｡"
+				"このアイテムを使えばほうきを作るための必須アイテムを作れます｡"
+			]
+			id: "62E0760213099062"
+			rewards: [{
+				count: 2
+				id: "0722BFE527854EEC"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			subtitle: "痛みを受ける覚悟"
+			tasks: [{
+				id: "4D0B24B68D7EC62F"
+				item: "hexerei:blood_sigil"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"「血の紋章」を設置した混合の大鍋の中でジャンプを繰り返すと､ダメージを受けて大鍋に血が貯まります｡"
+				"それをガラス瓶でクリックすると｢血液瓶｣が手に入ります｡"
+			]
+			id: "6584A41EBE0AE67F"
+			rewards: [{
+				id: "5D9C8F7CDE3363B0"
+				item: "hexerei:mandrake_flower"
+				type: "item"
+			}]
+			subtitle: "お前らの血は何色だ?"
+			tasks: [{
+				id: "132AD64E0B38420E"
+				item: "hexerei:blood_bottle"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+	]
+	title: "Hexereiを学ぼう!"
+}

@@ -1,0 +1,117 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "10CAABB67A402733"
+	group: "795DD4BC46CA0E26"
+	icon: "minecraft:campfire"
+	id: "10CAABB67A402733"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"HeatAndClimateを導入すると、左下に温度と湿度と通気が表示されます。"
+				"温度が極端に高い場所、低い場所ではダメージを受けてしまいます。"
+				"「稼働している」かまども熱を発生します。"
+				""
+				"一部の服装は暑さ寒さに耐性があるので使ってみるのもいいでしょう｡"
+			]
+			id: "58ECE708128A02D6"
+			rewards: [
+				{
+					id: "73ADCE9D789B1CFC"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					id: "3346E74CD306DEBD"
+					item: {
+						Count: 1b
+						id: "dcs_climate:main/hat_linen"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "暑さ寒さで彼岸まで"
+			tasks: [{
+				advancement: "dcs_climate:main/damage"
+				criterion: ""
+				icon: "minecraft:campfire"
+				id: "02EA912120876ACA"
+				type: "advancement"
+			}]
+			title: "やけど注意!"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"HeatAndClimateの料理の結構多くは「気候精錬」による調理が必要になります。"
+				"任意の魚と棒を組み合わせて｢生の魚串｣を作り､スニーククリックで暑い場所に置いてみましょう｡"
+				"しばらくすると美味しく焼けます!"
+			]
+			id: "601A57B1E94EB8AA"
+			rewards: [{
+				count: 3
+				id: "00B0BAFBAC0B3F62"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			subtitle: "気候で料理しよう!"
+			tasks: [{
+				id: "489985869FE88EEA"
+				item: "dcs_climate:food/stick_fish_cooked"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"季節やバイオームにより暑さ寒さの影響は変化しますが､"
+				"屋根のある場所では暑さ寒さが僅かに緩和されます｡(中間に近くなります)"
+				"天候の影響を抑えたいなら屋根を作りましょう｡"
+			]
+			id: "109780391F70EB82"
+			rewards: [{
+				id: "1EA90CAE089BD11D"
+				item: "dcs_climate:food/stick_fish_raw"
+				type: "item"
+			}]
+			subtitle: "寄らば大樹の陰"
+			tasks: [{
+				id: "1F4CD8B9F5CD8DAF"
+				title: "気候から身を守る方法"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ある種のブロックは温度･湿度パラメータを持ち､辺りの環境に影響を与えます｡"
+				"調理器具や作物などは適切な温度･湿度でないと稼働しないことがあるので､上手く調整していきましょう｡"
+				"ちなみに松明もわずかに熱源です｡"
+			]
+			id: "774FEF6768D41A16"
+			rewards: [{
+				id: "7434072947757DDC"
+				item: "dcs_climate:food/drink_pomelo"
+				type: "item"
+			}]
+			subtitle: "色んなブロックで温度調節"
+			tasks: [{
+				id: "02D24A5DCD429B8E"
+				item: "minecraft:snow_block"
+				type: "item"
+			}]
+			title: "ブロックが与える気温への影響"
+			x: 2.0d
+			y: -0.5d
+		}
+	]
+	title: "気候と気候精錬"
+}

@@ -1,0 +1,443 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "53DD377EFA78FCB6"
+	icon: "create:cogwheel"
+	id: "721EC04745E352BE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Createの基礎になる安山岩合金を作ろう!"
+				"｢安山岩｣2個+｢鉄塊or亜鉛塊｣2個で作れるよ!"
+				"Createが進むともっと効率よく作れるけど､まずはこれを手作りするところから!"
+			]
+			id: "7381C9BA6404A18A"
+			rewards: [{
+				count: 5
+				id: "497B939A3C833AA5"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "Createの基礎合金"
+			tasks: [{
+				consume_items: false
+				id: "328A6AD5CF1D6D45"
+				item: "create:andesite_alloy"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"安山岩合金を縦に2つでシャフトができるよ!"
+				"動力の伝達に使うよ!"
+				"シャフトと木材をクラフトすることで歯車もクラフトできるよ!"
+			]
+			id: "0F1FCF419E0375AB"
+			rewards: [
+				{
+					count: 3
+					id: "665F4422CE333BAE"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0E31B99B07B481CB"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			subtitle: "動力伝達"
+			tasks: [{
+				consume_items: false
+				id: "65B7A487A6B0A227"
+				item: "create:shaft"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "シャフト"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"シャフトを真ん中に置いて､周り8マスを木材で囲むと水車が作れる!"
+				"水車に｢水流｣(水源はダメ)を当てると回転力が産まれるよ!"
+				"ちなみに水車は垂直にも水平にも置けるよ!"
+			]
+			id: "6DA4C58769DA54DE"
+			rewards: [{
+				id: "75C4FB000D06CE79"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			subtitle: "最初の動力"
+			tasks: [{
+				consume_items: false
+				id: "7EA0C0E4C576BC35"
+				item: "create:water_wheel"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"｢樹皮をはいだ原木｣に｢安山岩合金｣を右クリックすると｢安山岩ケーシング｣ができて､Createの機械の基礎になる。"
+				"水車を水流で回転させると回転力が生まれる。"
+				"大きな歯車と小さな歯車を噛みあわせて回転させると回転のスピードが変わる。"
+				"石臼にある種のアイテム（丸石とか小麦とか）を投げ込んで回転させるとアイテムが変化する。"
+				"色々試してみよう！"
+			]
+			id: "455D2504A2B87E22"
+			rewards: [{
+				id: "30CB6AD5872B1D71"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			subtitle: "報酬はメカニカルプレス。鉄9個分!"
+			tasks: [
+				{
+					advancement: "create:andesite_casing"
+					criterion: ""
+					icon: "create:andesite_casing"
+					id: "57D118075C396E1D"
+					type: "advancement"
+				}
+				{
+					advancement: "create:water_wheel"
+					criterion: ""
+					icon: "create:water_wheel"
+					id: "1A1E4ACD5839B992"
+					type: "advancement"
+				}
+				{
+					advancement: "create:shifting_gears"
+					criterion: ""
+					icon: "create:large_cogwheel"
+					id: "09F0F025CAAA5E00"
+					type: "advancement"
+				}
+				{
+					advancement: "create:millstone"
+					criterion: ""
+					icon: "create:millstone"
+					id: "2709B81FCA759791"
+					type: "advancement"
+				}
+			]
+			title: "Createの実績を達成しよう!"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"シャフトと安山岩ケーシングと石(丸石はダメ)で石臼が作れるよ｡"
+				"石臼に回転力を横から加えてやれば石臼が回り出して､"
+				"中に投げ入れたアイテムを加工してくれるよ!"
+			]
+			id: "712B3E53521A73CA"
+			rewards: [{
+				count: 9
+				id: "2E8292F6D1058339"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
+			subtitle: "最初のアイテム加工"
+			tasks: [{
+				id: "25D174B96AF6F3B2"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"破砕ホイールを2つ作るのはCreateの大きな目標です。"
+				"色んなアイテムを破砕して効率の良いアイテム生産ができます｡"
+				"鉱石の破砕により経験値の塊も得ることができます｡"
+				"破砕ホイールは通常のクラフト台で作ることが出来ず､"
+				"そのために多くの手順が必要になりますが､その価値はあります｡"
+				""
+				"是非目標にしてみてください!"
+			]
+			id: "19A59B5AD6D282DA"
+			rewards: [{
+				count: 10
+				id: "72E08C9051DA6BA9"
+				item: "create:experience_nugget"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "4453442CCDF0C9F1"
+				item: "create:crushing_wheel"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "大目標:破砕ホイールx2"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"銅板と銅インゴットから｢液体パイプ｣を作れます｡"
+				"パイプと歯車をクラフトしてできる｢メカニカルポンプ｣を使えば液体の輸送が可能です｡"
+				"無限水源からの水供給などに便利です!"
+			]
+			id: "338A7700F718B457"
+			rewards: [{
+				id: "21DFBA8D14168C97"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			subtitle: "液体の運搬"
+			tasks: [{
+				id: "368B82082D01A08D"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"Createが実装されている場合、"
+				"スライムボールは「生地」と「黄緑色の染料」からクラフトできます。"
+				"Createではスライムボールを要求されるレシピがありますが、"
+				"スライムを探す必要は必ずしもありません。"
+			]
+			id: "5D7D5404F902AC2A"
+			rewards: [
+				{
+					id: "37E6A2405A7FF17B"
+					item: "minecraft:lime_dye"
+					type: "item"
+				}
+				{
+					id: "26CFB9A7CB7C4145"
+					item: "create:dough"
+					type: "item"
+				}
+			]
+			subtitle: "スライムは作れる?"
+			tasks: [{
+				id: "041B6BA5D88BF9F8"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"回転力を接続したメカニカルプレスの下にインゴットなどを投げ込むと､"
+				"メカニカルプレスが降りてきてそれを圧縮します｡"
+				"これによって作れる鉄板や銅板は色々なCreate機械の材料になります｡"
+				"水車の初期速度では処理がゆっくりですが、ギアシフトで回転を加速すれば処理も高速化します。"
+			]
+			id: "3910FC6F81A4AD43"
+			rewards: [
+				{
+					count: 2
+					id: "7B9C960DEAB0DFA0"
+					item: "create:iron_sheet"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4C15BCA6581D5D48"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+			]
+			subtitle: "圧縮圧縮ゥ!"
+			tasks: [{
+				advancement: "create:mechanical_press"
+				criterion: ""
+				icon: "create:mechanical_press"
+				id: "25AFE1A177171062"
+				type: "advancement"
+			}]
+			title: "メカニカルプレスで加工しよう!"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"ケース入りファンに回転力を供給すると風を発生します｡"
+				"この時発生する風が｢水｣｢火･焚き火｣｢溶岩｣｢青い炎･魂の焚き火｣を通過すると､それぞれの種類に応じてアイテムを変化させる効果があります｡"
+				"小麦粉を水で洗浄すると生地になったり､生の食材を火を通した温風で加熱すると焼きあがったり､鉱石類を溶岩を通した熱風で加熱すると精錬されたりします｡"
+				"処理には多少時間がかかりますが､燃料も水の供給も要らないので大変便利です｡"
+			]
+			id: "65C273A21496536F"
+			rewards: [{
+				count: 5
+				id: "4708F7CB78212C17"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "パーティクル処理"
+			tasks: [{
+				id: "653E1CC9B4E04A3F"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"メカニカルミキサーは色々なものを混ぜてくれます｡"
+				"メカニカルミキサーの下に鉢を置いて､中にアイテムを入れ､メカニカルミキサーに\"高速回転を\"供給するとアイテムを加工してくれます｡"
+				"安山岩合金の作成効率も､｢鉄塊･亜鉛塊1つ｣と｢安山岩1つ｣から｢安山岩合金｣を作れるようになります｡"
+				"さらに､一部不定形レシピの加工も可能になったり､できることがかなり増えます｡"
+				"ただし､一部の｢加熱が必要｣レシピはこれだけでは作れません……｡"
+			]
+			icon: "create:mechanical_mixer"
+			id: "1E023B492DBF7863"
+			rewards: [{
+				count: 5
+				id: "506C9A0021CEFDC5"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "色々混ぜてみよう"
+			tasks: [
+				{
+					id: "232D7B32D72A5BEE"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "71C4998B8A41C3EF"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"鉄板4つとネザーラックで｢空のブレイズバーナー｣を作り､"
+				"｢空のブレイズバーナー｣で｢ブレイズ｣か｢ブレイズスポナー｣を右クリックすると､ブレイズを捕まえてCreate専用の熱源にすることが可能です｡"
+				"ブレイズバーナーはメカニカルミキサーの下の鉢のさらに下に置いて使います｡ブレイズバーナーで加熱する際には､燃料をブレイズバーナーに右クリックする必要があります｡"
+			]
+			id: "078D8E014FBB4FB8"
+			rewards: [
+				{
+					count: 3
+					id: "461D97BA4039205A"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "225E8C250B55CCA8"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Createの加熱に必須なアイテム"
+			tasks: [{
+				id: "53BF58A1F37CEA17"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"金板3枚と歯車と棒からレンチを作れます｡"
+				"レンチでCreateのからくりをクリックすると回転し、スニーククリックすると即座に回収して手元インベントリに入ります。"
+				"レンチは消耗しません。便利なのでぜひ作りましょう。"
+			]
+			id: "482D58B7C3B052FE"
+			rewards: [{
+				count: 2
+				id: "765CCC8DE78ABAEA"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "機械いじりの友"
+			tasks: [{
+				consume_items: false
+				id: "6D849AAF8F82CE5D"
+				item: "create:wrench"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"安山岩合金と乾燥した昆布の組み合わせで安山岩ファンネルを作れます｡"
+				"チェストなどとアイテムを1個づつ出し入れすることができます｡"
+				"アイテムを出す先に既にアイテムがあるときはアイテムを出しません｡"
+				"BotaniaのエンドフレイムやArsNouveauの獄炎のソースリンクに木炭などを供給するのにも使えます｡"
+			]
+			id: "5818F5B01903B129"
+			rewards: [{
+				count: 8
+				id: "12ED811AB8787F66"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "アイテムを1個づつ出し入れする"
+			tasks: [{
+				id: "509487F8BF56CC3D"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"真鍮を使ったアイテムを利用することで､条件を指定してアイテムを仕分けすることが可能になります｡"
+				"この時大抵｢電子管｣というアイテムも同時に要求されます｡"
+				"処理前のアイテムは通さず､処理が終わったアイテムだけ通すことが可能になり､自動化の大きな助けになります｡"
+			]
+			id: "1B06D4667494A653"
+			rewards: [{
+				id: "46A9CF7DD3963259"
+				item: "create:filter"
+				type: "item"
+			}]
+			subtitle: "真の自動化のために"
+			tasks: [
+				{
+					id: "632E7234BADC5255"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "3828680DBE86DD09"
+					item: "create:electron_tube"
+					type: "item"
+				}
+			]
+			title: "真鍮による仕分け"
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	title: "Createを学ぼう!"
+}

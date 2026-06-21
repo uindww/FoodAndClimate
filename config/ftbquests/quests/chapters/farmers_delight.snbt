@@ -1,0 +1,194 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farmers_delight"
+	group: "53DD377EFA78FCB6"
+	icon: "farmersdelight:cooking_pot"
+	id: "641A9477E2D2DB16"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"火打石と棒で火打石のナイフを作れます｡"
+				"色々な加工に使え､また草を刈れば藁がドロップすることがあり､"
+				"動物を倒した時に追加のドロップがあったり､ナイフで倒したときしかドロップしないアイテムもあります｡"
+				"ナイフは火打石のほかにも色々な素材で作れます｡"
+			]
+			id: "49635D74195134BF"
+			rewards: [{
+				id: "3DF0D5598941A600"
+				item: "farmersdelight:cooked_bacon"
+				type: "item"
+			}]
+			subtitle: "狩りと採集"
+			tasks: [{
+				id: "70DAEA9899ACEE06"
+				item: {
+					Count: 1b
+					id: "farmersdelight:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"木材4つと棒2個からまな板を作れます｡"
+				"まな板の上に加工する材料を置き､ナイフなど適切な道具で右クリックすると加工できます｡"
+				"材料によって適切な道具は違います｡"
+				"加工する材料と加工する道具をメインハンドとオフハンドにそれぞれ持つと快適に加工ができます｡"
+			]
+			id: "508B3C107DF19460"
+			rewards: [{
+				id: "09C4CC07333CB1DF"
+				item: "minecraft:beef"
+				type: "item"
+			}]
+			subtitle: "かなりまな板だよコレ!"
+			tasks: [{
+				id: "3EEC1736F9BC4163"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"水バケツとレンガと鉄と木のシャベルで鍋を作れます｡"
+				"ちなみにこの環境では鋼豆腐でも別の種類の鍋を作れます｡"
+				"鍋はなんらかの熱源ブロックの上に置かれている必要があります｡"
+				"焚き火､マグマブロック､コンロなどがそれに当たります｡"
+			]
+			id: "2AD281B48A4DE2A9"
+			rewards: [{
+				id: "2E03B4C1EE7AA801"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			subtitle: "やはり料理には欠かせない"
+			tasks: [{
+				consume_items: false
+				id: "30C10AA8AFA867FB"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "farmersdelight:cooking_pot"
+							}
+							{
+								Count: 1b
+								id: "tofudelight:tofu_metal_cooking_pot"
+							}
+							{
+								Count: 1b
+								id: "twilightdelight:fiery_cooking_pot"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "いずれかの鍋"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"Farmer'sDelightの米は深さ1マスの水に植えます。"
+				"成長して育った稲はまな板でナイフで切れば藁と米になります。"
+				"単体クラフトだと藁は取れず、米だけ取れます。"
+			]
+			id: "3E88F6D02FB5BF8F"
+			rewards: [{
+				id: "06452EF062C0B1F3"
+				item: "farmersdelight:rice_panicle"
+				type: "item"
+			}]
+			subtitle: "水田に米を植えよう"
+			tasks: [{
+				id: "4BE928AC63C22176"
+				item: "farmersdelight:rice"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"生地(何の種類でも)をまな板の上でナイフで切るとパスタができます｡"
+				"そのままでは美味しくありませんがいろんな料理に使えます｡"
+				"なおHeatAndClimateのパスタとは別扱いになります。"
+			]
+			id: "5FBCC9A7E056AACD"
+			rewards: [{
+				id: "6DD30438582CA3CB"
+				item: "farmersdelight:pasta_with_meatballs"
+				type: "item"
+			}]
+			subtitle: "パスタ食った?"
+			tasks: [{
+				id: "1903AC3249832F4A"
+				item: "farmersdelight:raw_pasta"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"｢有機コンポスト｣を土や骨粉などから作ることができます｡レシピは何種類かあります｡"
+				"｢有機コンポスト｣を設置してある程度の時間がたつと､｢肥沃な土｣に変化します｡"
+				"周りに水､キノコ､別の肥沃な土があると変化スピードが速くなります｡"
+				"｢肥沃な土｣ブロックの上ではキノコが育ちますし､耕地にすると作物の成長速度が速くなります｡"
+				"ただし､HeatAndClimateの作物など一部のModの作物は肥沃な耕地に植えられないのでご注意。"
+			]
+			id: "7070DD4C72410498"
+			rewards: [{
+				id: "41D8083E634345E7"
+				item: "farmersdelight:organic_compost"
+				type: "item"
+			}]
+			subtitle: "成長を促進する土壌"
+			tasks: [{
+				id: "28D324A7024AE11C"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"竹とキャンバスから上部が開いているチェスト､｢かご｣が作れます｡"
+				"キャンバスの材料の藁はナイフで草を切ることなどで入手できます｡"
+				"かごの上に落ちたアイテムは自然に収納されます｡ぜひ使ってみてください｡"
+			]
+			id: "3190543E3C3CB794"
+			rewards: [{
+				id: "56642CDA7C19390F"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
+			}]
+			subtitle: "上部が開いているチェスト"
+			tasks: [{
+				id: "2EFCF848B83A1C55"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+	]
+	title: "Farmer's Delightを学ぼう!"
+}

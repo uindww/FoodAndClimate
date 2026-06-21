@@ -1,0 +1,201 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mod"
+	group: "53DD377EFA78FCB6"
+	icon: "urushi:red_urushi_wooden_cabinetry"
+	id: "320E757A8F00F49B"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"木材のハーフブロック8個で箪笥のハーフブロック､箪笥のハーフブロックを縦に2個で箪笥､箪笥2個で大容量の箪笥ができます｡"
+				"大容量の箪笥は1ブロックでチェスト4個分の容量があります!"
+				"染色も可能なのでアイテム整理に役立てましょう!"
+			]
+			id: "7CDCD1BEA942165B"
+			rewards: [{
+				id: "12DC2B5B41D82383"
+				item: "urushi:doubled_wooden_cabinetry"
+				type: "item"
+			}]
+			subtitle: "沢山入るよ!"
+			tasks: [{
+				id: "365050BB436C55D7"
+				item: "urushi:doubled_wooden_cabinetry"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"マダケは森林バイオームに自生するほか､バニラの竹からの単体クラフトでも作れます｡"
+				"成長が早く､竹炭に出来たり板材に出来たりと便利な素材です｡"
+			]
+			id: "73F903FB227540FC"
+			rewards: [{
+				count: 2
+				id: "698C6C0E62FA7329"
+				item: "urushi:japanese_timber_bamboo"
+				type: "item"
+			}]
+			subtitle: "もう1つの竹"
+			tasks: [{
+				id: "13224B75ECCDB462"
+				item: "urushi:japanese_timber_bamboo"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"土かまどに松明か火打石で着火した後､上に窯を置き､"
+				"千歯こきで脱穀した玄米を入れると一定時間後にご飯が炊けます!"
+				"ご飯はスニーククリックでワールドに配置することもできます｡"
+			]
+			icon: "urushi:rice_cauldron"
+			id: "640A2223D928139C"
+			rewards: [{
+				count: 5
+				id: "3EAC0ED4C878CB9C"
+				item: "urushi:raw_rice"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6A4D9A602340EA28"
+					item: "urushi:dirt_furnace"
+					type: "item"
+				}
+				{
+					id: "108F2FECDC4C2DE1"
+					item: "urushi:rice_cauldron"
+					type: "item"
+				}
+				{
+					id: "7CC40D751A750EF1"
+					item: "urushi:rice"
+					type: "item"
+				}
+			]
+			title: "釜でご飯を炊こう!"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"マダケ単体から2個できる。"
+				"液体をスタックして持ち運べるので便利｡"
+				"……ただこの環境では水入り瓶や瓶入り牛乳もスタックできるのだけど｡"
+			]
+			id: "6E0D18060B438066"
+			rewards: [{
+				id: "233B903A479E7758"
+				item: "urushi:japanese_timber_bamboo"
+				type: "item"
+			}]
+			subtitle: "水の入れ物"
+			tasks: [{
+				id: "7382EDB055B86A43"
+				item: "urushi:bamboo_cup"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"漆の原木に対して火打石や何かのツールで右クリックすると傷をつけられる｡"
+				"しばらくすると樹液が流れ始めるので､そこにボウルを使うと生漆を手に入れられる｡"
+				"赤色の染料､黒色の染料の単体クラフトで少量の染料が得られ､それと生漆をクラフトすることで｢漆｣を手に入れることができるのだ｡"
+			]
+			id: "5A0EEE06D86EAD68"
+			rewards: [
+				{
+					id: "2E33C89C551D058D"
+					item: "urushi:tiny_red_dye"
+					type: "item"
+				}
+				{
+					id: "4254C0A3097CFFF2"
+					item: "urushi:tiny_black_dye"
+					type: "item"
+				}
+			]
+			subtitle: "漆Modの漆"
+			tasks: [{
+				id: "60DB1F4BCD7EE439"
+				item: "urushi:raw_urushi_ball"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"マダケを精錬すると竹炭になります｡"
+				"竹炭に精錬するときにかかる時間と燃料はわずかであり､マダケの成長もとても早いので燃料として凄く優秀です｡"
+			]
+			id: "535EBB2732C7D29C"
+			rewards: [{
+				id: "43191C07E169B033"
+				item: "urushi:bamboo_charcoal_block"
+				type: "item"
+			}]
+			subtitle: "効率のいい燃料"
+			tasks: [{
+				id: "74FA74ACE06F641C"
+				item: "urushi:bamboo_charcoal"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"マダケ3つでアイテムを5つ飾れる竹かごを作れます｡"
+				"ただし､アイテム5種類ではなく5つだけです｡"
+				"収納としての性能は期待しないでください｡"
+			]
+			id: "7C963BB0ED568CDB"
+			rewards: [{
+				id: "01EEA61077901774"
+				item: "urushi:salmon_roe_sushi"
+				type: "item"
+			}]
+			subtitle: "5つアイテムを飾れます"
+			tasks: [{
+				id: "4170E988E1E060BB"
+				item: "urushi:bamboo_basket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"この食べ物は名前が明白に定まっておらず､常に変化し続けています｡"
+				"あなたが心に思う名前になった時に食べてもいいですし､気にせずに食べてもいいです｡"
+			]
+			id: "15DF3A825C56C241"
+			rewards: [{
+				count: 2
+				id: "3861E7793E5381E3"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			subtitle: "名前を言ってはいけないあれ"
+			tasks: [{
+				id: "445538CD2BFB4975"
+				item: "urushi:baked_mochocho"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "漆Modを学ぼう!"
+}

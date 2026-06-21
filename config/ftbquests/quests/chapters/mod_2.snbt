@@ -1,0 +1,332 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mod_2"
+	group: "34C881884558E147"
+	icon: "minecraft:compass"
+	id: "60668D477FBB1874"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"作業台と棒で持ち運べる作業台を作れます｡"
+				"Curios欄に装備していればショートカットキーで即座に3x3クラフトインベントリを開けます｡"
+				"作業台の他にも棒を付けて持ち運べるものがいくつかあるので探してみてね!"
+			]
+			id: "2300E647BEB23F10"
+			rewards: [{
+				id: "7FC8AEABF04D7FE2"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "持ち運べる作業台"
+			tasks: [{
+				id: "1CA44F794AB5CC0F"
+				item: "crafting_on_a_stick:crafting_table"
+				type: "item"
+			}]
+			title: "作業台つきの棒"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"コンパスの周りに原木と苗木を4つづつ配置することで｢自然のコンパス｣を作れます｡"
+				"このコンパスは現在地から指定したバイオームまでの距離と方向を教えてくれます｡"
+				"特定バイオームに生える作物が欲しい時などにお使いください!"
+			]
+			id: "1CDBC950FFF66395"
+			rewards: [{
+				id: "7C5837288A152739"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "バイオームを探そう"
+			tasks: [{
+				id: "6A54B7C25B3A705A"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"同じ色の羊毛を3個横に並べることで寝袋を作れます｡"
+				"ベッドと同様に夜を明かすことができますが､リスポーン地点を変更する効果はありません｡"
+				"なお､レシピ競合が発生しているので､寝袋を作成する際は寝袋の方を指定してください｡"
+			]
+			id: "6DB07A46489E0ACF"
+			rewards: [{
+				id: "4EF790B5B602E98A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "リスポーン変更しないベッド"
+			tasks: [{
+				id: "5C07BBBC0918FE03"
+				item: "comforts:sleeping_bag_white"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"革4つ､糸4つ､チェストからリュックサックを作ることができます｡"
+				"持ち運べるチェストであり､さらにCuriosインベントリに装備もできます｡ショートカットキーで開けます｡"
+				"バックパックをさらに大きくしたい場合はインゴットで囲めば容量を増やせます｡"
+				"追加機能もつけられるのでご活用ください｡"
+			]
+			id: "7E9C00D04C89C585"
+			rewards: [{
+				id: "3FF322125E5143F8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "荷物の持ち運び"
+			tasks: [{
+				id: "66646EB22AE5F21D"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"巨大な範囲で湧きつぶしをする松明です｡"
+				"コストも相応以上に重たいですが｡"
+			]
+			id: "32E09A9EEC73ED66"
+			rewards: [{
+				id: "2C8E204833BE4E87"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "ハイパー湧きつぶし"
+			tasks: [{
+				id: "4E7459AFD948C042"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"DisplayDelightというModの効果で､一部のFarmer'sDelightの料理をスニークしながらクリックすることでワールドにブロックとして配置できます｡"
+				"また､さらに一部の料理はFoodPlateに盛り付けることが可能になっています｡"
+				"料理を沢山飾りましょう!"
+			]
+			id: "26D96ABDC2DC650D"
+			rewards: [{
+				id: "1F31C6EC670759EC"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "食べ物を飾ろう!"
+			tasks: [{
+				id: "11C9256B8118FBDA"
+				item: "displaydelight:food_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"StructureCompassは構造物を探すコンパスです。"
+				"指定した構造物がどの方向、どの距離にあるかを表示してくれます。"
+			]
+			id: "5E0E834A90AFE6D3"
+			rewards: [{
+				id: "283EE96DDB81E767"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "構造物を探そう"
+			tasks: [{
+				id: "147E7BAEB71F3B96"
+				item: "structurecompass:structure_compass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"かさばるコインは財布に入れましょう｡"
+				"革2枚と銅インゴット1つで一番初歩の財布が作れます｡"
+				"インゴットを追加することで機能が増えていきます｡"
+				"Curiosインベントリに装備もできるのでアイテム欄が空きます｡"
+			]
+			id: "1FF5D8D855803700"
+			rewards: [{
+				id: "2FD729C90658715C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "Curiosスロットに装備できる"
+			tasks: [{
+				consume_items: false
+				icon: {
+					Count: 1b
+					id: "lightmanscurrency:wallet_copper"
+					tag: { }
+				}
+				id: "3A249F7E2142F43F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "lightmanscurrency:wallet_copper"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "lightmanscurrency:wallet_iron"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "lightmanscurrency:wallet_gold"
+								tag: {
+									AutoConvert: 1b
+								}
+							}
+							{
+								Count: 1b
+								id: "lightmanscurrency:wallet_emerald"
+								tag: {
+									AutoConvert: 1b
+								}
+							}
+							{
+								Count: 1b
+								id: "lightmanscurrency:wallet_diamond"
+								tag: {
+									AutoConvert: 1b
+								}
+							}
+							{
+								Count: 1b
+								id: "lightmanscurrency:wallet_netherite"
+								tag: {
+									AutoConvert: 1b
+								}
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のWallet"
+				type: "item"
+			}]
+			title: "お財布"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"PipezというModのアイテムでアイテム､液体､電力などを効率よく輸送できます｡"
+				"見た目のロマンのCreateか､機能的なスマートさのPipezか､お好きな方を選んでください｡"
+			]
+			icon: "pipez:item_pipe"
+			id: "1181F2574AB0254F"
+			rewards: [{
+				id: "1078BF73E71FC42D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "アイテムの簡単輸送"
+			tasks: [
+				{
+					id: "635587D899F0D784"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "0958F6E41E152C3B"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"フルーツバスケットはチェスト同様の容量を持ち､"
+				"さらに収納している中身が外から見えます｡"
+				"表示される並び順についてはいまいち法則性が分からないところがありますが､食べ物をたくさん並べたい時にはご活用ください｡"
+			]
+			id: "16C91DA544C5A5BF"
+			rewards: [{
+				id: "0747D239B5A30382"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "料理を飾れるお皿"
+			tasks: [{
+				id: "49DAB349A0938CF2"
+				item: "cookingforblockheads:fruit_basket"
+				type: "item"
+			}]
+			title: "フルーツバスケット"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"小麦5個でニワトリの巣を作れます｡"
+				"ニワトリはここに優先的に卵を産むようになります｡"
+			]
+			id: "35105A5654273501"
+			rewards: [{
+				id: "46FF75242AD09DFC"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "卵の指定席"
+			tasks: [{
+				id: "09041A6146284AF5"
+				item: "incubation:hay_nest"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"宝の地図を使った際､その地点までの距離が表示されるようになりました｡"
+				"あとこのクエストで1コインもらえます｡"
+			]
+			id: "2C48E66E0AD0EB15"
+			rewards: [{
+				id: "5042C4B96059A84C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "距離がわかります"
+			tasks: [{
+				id: "22051B494600BC6E"
+				item: "minecraft:filled_map"
+				type: "item"
+			}]
+			title: "宝の地図"
+			x: -3.0d
+			y: 1.0d
+		}
+	]
+	title: "小さな便利系Mod"
+}

@@ -1,0 +1,242 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "37C0870B35ACDA18"
+	group: "53DD377EFA78FCB6"
+	icon: "touhou_little_maid:maid_spawn_egg"
+	id: "37C0870B35ACDA18"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"最初から持っている｢魂の宿紙｣を使うとメイドさんを呼び出すことができるよ!"
+				"呼び出した後の｢魂の宿紙｣を使うとメイドさんを元に戻せるよ!"
+			]
+			icon: "touhou_little_maid:smart_slab_has_maid"
+			id: "18CDB04AD608695C"
+			rewards: [{
+				id: "72072DA3E7CF829C"
+				item: "touhou_little_maid:kappa_compass"
+				type: "item"
+			}]
+			subtitle: "メイドさんを呼び出してみよう!"
+			tasks: [{
+				id: "7F9ECBE9AB22D682"
+				item: "touhou_little_maid:smart_slab_empty"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"東方リトルメイドの専用アイテムのクラフトには､祭壇を作る必要があります｡"
+				"祭壇の作り方は｢よくわかる幻想郷｣に書いてあります｡"
+				"指示通りにブロックを積み上げ､最後に｢祭壇の外側から､赤羊毛の下の段の真ん中左側を｣お祓い棒でクリックしましょう｡"
+			]
+			icon: "touhou_little_maid:shrine"
+			id: "71E3A251D5718B00"
+			rewards: [{
+				count: 5
+				id: "6860E1D28F94388B"
+				item: "touhou_little_maid:power_point"
+				type: "item"
+			}]
+			subtitle: "東方アイテムのクラフトのために"
+			tasks: [{
+				advancement: "touhou_little_maid:base/build_altar"
+				criterion: ""
+				id: "48B80C7F9E7E0647"
+				type: "advancement"
+			}]
+			title: "幻想郷への鍵"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"作った祭壇の上にアイテムを置き､P点を支払うことで東方リトルメイドの色々なアイテムを作れます。"
+				"バックパックがあると沢山アイテムを持ち運べるのでおすすめです。"
+				"羊毛の色に指定があるので気を付けましょう。"
+			]
+			id: "1073BF8AABBE2775"
+			rewards: [{
+				id: "5E65E9F63EB73167"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "メイドさんの持ち物を増やそう"
+			tasks: [{
+				id: "4BA770ECE1E70476"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "touhou_little_maid:maid_backpack_small"
+							}
+							{
+								Count: 1b
+								id: "touhou_little_maid:maid_backpack_middle"
+							}
+							{
+								Count: 1b
+								id: "touhou_little_maid:maid_backpack_big"
+							}
+							{
+								Count: 1b
+								id: "touhou_little_maid:crafting_table_backpack"
+							}
+							{
+								Count: 1b
+								id: "touhou_little_maid:ender_chest_backpack"
+							}
+							{
+								Count: 1b
+								id: "touhou_little_maid:furnace_backpack"
+							}
+							{
+								Count: 1b
+								id: "touhou_little_maid:tank_backpack"
+							}
+						]
+					}
+				}
+				title: "メイドのバックパック"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"メイドさんの作業範囲を河童コンパスで指定できます｡"
+				"別ディメンジョンに持って行く際はご使用ください｡"
+			]
+			id: "6941B67315763403"
+			rewards: [{
+				id: "2115AF6A5A7EF29C"
+				item: {
+					Count: 1b
+					id: "touhou_little_maid:hakurei_gohei"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "メイドさんの作業範囲指定"
+			tasks: [{
+				id: "3334F036E6C31664"
+				item: "touhou_little_maid:kappa_compass"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"このカメラでメイドさんを写真にとることで､メイドさんを写真の形で収納することができます｡"
+				"沢山のメイドさんを管理したい場合にお使いください｡"
+			]
+			id: "2692D7EDEBD01FB4"
+			rewards: [{
+				count: 4
+				id: "58B40B9F24265F4A"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			subtitle: "メイドさんを写真に"
+			tasks: [{
+				id: "0E2CAA6C3D7F0CE7"
+				item: {
+					Count: 1b
+					id: "touhou_little_maid:camera"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"紺珠の薬をメイドさんの宝玉インベントリに装備させることによって､メイドさんがやられるのを何回か防ぐことが出来ます｡"
+				"大事なメイドさんには持たせておきましょう｡"
+			]
+			id: "18CFB48E3D5C7484"
+			rewards: [{
+				id: "120C920706BC9BFD"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "メイドさん用不死のトーテム"
+			tasks: [{
+				id: "0B3D630B158C97B2"
+				item: {
+					Count: 1b
+					id: "touhou_little_maid:ultramarine_orb_elixir"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"メイドさんを右クリックして､メイドさんの表示の右上隅のアイコンをクリックすると､メイドさんのスキンを変えられます｡"
+				"初期スキンはランダムですが､これでお好みのキャラクターに変更できます｡"
+			]
+			id: "45D893BB88EAFCA9"
+			rewards: [{
+				count: 8
+				id: "537AA409A388D59D"
+				item: "minecraft:red_wool"
+				type: "item"
+			}]
+			subtitle: "模様直し"
+			tasks: [{
+				advancement: "touhou_little_maid:base/change_maid_model"
+				criterion: ""
+				id: "22D17DAA0510BD54"
+				type: "advancement"
+			}]
+			title: "メイドさんのキャラ変更"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"メイドさんをベッドで休ませたり､ゲームで遊んだりするとメイドさんの好感度が上がります｡"
+				"また､メインハンドやオフハンドに料理を持たせるとメイドさんは食事をして好感度が上がります｡"
+				"ただしメイドさんがやられてしまうと好感度は下がります｡"
+				"メイドさんの好感度が上がるとメイドさんは強くなります｡メイドさんとは仲良くしましょう｡"
+			]
+			icon: "touhou_little_maid:favorability_tool_add"
+			id: "69BB7DB36BD550BD"
+			rewards: [{
+				count: 10
+				id: "21CA6C58A0618CD0"
+				item: "minecraft:sugar"
+				type: "item"
+			}]
+			subtitle: "愛はメイドを救う"
+			tasks: [{
+				id: "43DBCAF68CC0F9CD"
+				title: "メイドさんの好感度"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+	]
+	title: "東方リトルメイドを学ぼう!"
+}

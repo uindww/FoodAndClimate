@@ -1,0 +1,464 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "26E80F42743E50BC"
+	group: "34C881884558E147"
+	icon: "minecraft:writable_book"
+	id: "26E80F42743E50BC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"リアル時間で毎日ログインするたびにLightmanCurrencyの鉄コインが10個もらえます｡"
+				"ログイン後､1分経過した時点で /DailyRewards claim とコマンドを入力するか､ワールドに入り直した時点で鉄コイン10個を受け取ることができます｡"
+				"コインの入手方法はそれ以外は無効にしているので､コインの入手方法は一部のクエストとログインボーナスだけになっているはずです｡"
+			]
+			icon: "lightmanscurrency:coin_iron"
+			id: "21694AC09FAB99AF"
+			rewards: [{
+				id: "5C793C89272AE622"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "ログインだけでももらいに来てね!"
+			tasks: [{
+				id: "7E69512BAD83630C"
+				title: "ログインボーナス"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"村やダンジョンなどに自然生成される金・銀枠のチェスト・樽は破壊しないでください。"
+				"このチェストにはそれぞれのプレイヤー個別のアイテムが入っています。"
+				"壊してしまうと他の人がアイテムを入手できなくなってしまいます。（また、入っていたアイテムも消失します）"
+				"逆に言えば､自分の分のアイテムを全部とっても後の人に迷惑をかけません｡"
+			]
+			icon: "lootr:lootr_chest"
+			id: "4EE32AD511FA1A0E"
+			rewards: [{
+				id: "3E748A6F7926530B"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "LootRのお宝チェストは壊さないで!"
+			tasks: [{
+				id: "560E5B404D559F88"
+				title: "お宝チェストについて"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"インベントリを開くと､クラフト欄の右下に｢^｣｢^｣の2個のボタンがあります｡"
+				"これはアイテム一括収納ボタンで､"
+				"左のボタンが｢近くの空いているチェストにアイテムを入れる､ただし同じアイテムがあったら同じアイテムは同じチェストに入れる｣で､"
+				"右のボタンは｢近くのチェストに同じアイテムがあったら同じアイテムは同じチェストに入れる｣ものです｡"
+				"活用してみてください｡"
+			]
+			icon: "minecraft:chest"
+			id: "485A3A55F953C9F8"
+			rewards: [{
+				id: "100C69CBB962D842"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "テラリアベースのアイテム整理"
+			tasks: [{
+				id: "2E163593CCF8D8FD"
+				title: "アイテム自動整頓機能"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"このModPackでは農業を楽にするModが2つ入っています。"
+				"1つは右クリックで農作物を株を残したまま収穫出来るMod。"
+				"もう1つは畑の上でジャンプしても畑がダメにならないModです。"
+				"楽しく農業しましょう!"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:golden_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3E3CC00103C25A94"
+			rewards: [{
+				id: "0479B214C0B43507"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "楽しく農業しよう"
+			tasks: [{
+				id: "25EE9432C5BE2484"
+				title: "農業を楽にするMod"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"インベントリのキャラクターの右下の｢コスメティック｣をクリックすることで､防御力に影響しない見た目だけの装備をつけられます｡"
+				"また､装備を非表示にすることもできます｡"
+				"HeatAndClimateには色んな服があるので､防御を気にせずファッションを楽しんでみましょう!"
+			]
+			icon: {
+				Count: 1b
+				id: "dcs_climate:main/dress_maid"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0CAC5586A070A8AE"
+			rewards: [{
+				id: "2EAC21CD51EC2D3F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "見た目だけの装備"
+			tasks: [{
+				id: "29C71B0776BF9F9B"
+				title: "おしゃれしてみよう!"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"一部のブロックや動物などのブロックを持ち運ぶことができます｡"
+				"その際､両手が空いている必要があります｡"
+				"キーコンフィグは指定してください｡初期状態は左Shiftだったはずです｡"
+				"何かを持っている間は移動力が下がります｡"
+				"ただし、設定によりスポナーは持ち運べません。"
+			]
+			icon: "minecraft:lead"
+			id: "00DF7515E55F7C0C"
+			rewards: [{
+				id: "3BC030627CEA0F1E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "リードなくても大丈夫"
+			tasks: [{
+				id: "3D91EE920A6BE1DE"
+				title: "動物を持ち運ぼう"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"このModPackではクリーパーは地形破壊する爆発ではなく、紙吹雪をまき散らします｡なので地形破壊の心配はありません｡"
+				"ただし､プレイヤーへのダメージはONにしてあるので汚ねぇ花火にならないようお気を付けください。"
+			]
+			icon: "minecraft:creeper_head"
+			id: "06983553B47CEDBF"
+			rewards: [{
+				id: "437301A50CCC4B5D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "綺麗な花火か汚ねぇ花火か"
+			tasks: [{
+				id: "327969DC8F4038A6"
+				type: "checkmark"
+			}]
+			title: "地形破壊禁止"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"このModpackでは､スタックできるアイテムのスタック上限は64になっています｡"
+				"また､ポーションやエンチャント本もスタック可能になっています｡"
+			]
+			icon: { Count: 64b, id: "minecraft:egg" }
+			id: "647F3C2EA046B2AA"
+			rewards: [{
+				id: "25DC08CB5986DA1B"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "364A6EF6C42878E8"
+				type: "checkmark"
+			}]
+			title: "スタック上限64"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"アイテムの使い方作り方が分からない時はインベントリを開き､アイテムにカーソルを合わせてキーを押しましょう｡"
+				"U(Use)キーでそのアイテムからクラフトできるアイテムの一覧が､"
+				"R(Recipe)キーでそのアイテムのクラフト方法が分かります｡"
+			]
+			icon: "minecraft:crafting_table"
+			id: "3F4A6D63589624A5"
+			rewards: [{
+				id: "40FF2A0C0BB8323F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "レシピMod"
+			tasks: [{
+				id: "0EAC9E23F217CA4E"
+				title: "JustEnoughItem"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"死んでしまったとき､アイテムをばらまく代わりにお墓が生成されます｡"
+				"お墓はこの設定では他の人に破壊されません｡"
+				"お墓を破壊するか､お墓の上でスニークするとその時のアイテムを回収できます｡"
+			]
+			icon: "gravestone:gravestone"
+			id: "0CE95664601B7F0A"
+			rewards: [{
+				id: "3D355B24B74477D2"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "全ロス防止"
+			tasks: [{
+				id: "36F45F47FF996334"
+				title: "お墓Mod"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"インベントリ内､およびチェスト内を一括整頓できるModを導入しました。"
+				"デフォルトはマウスホイールクリックです。"
+				"インベントリ内とチェスト内をソートできます。"
+			]
+			icon: "minecraft:birch_sign"
+			id: "4C10644F5ABC08E2"
+			rewards: [{
+				id: "3041C2DFCC9CCE86"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "チェストの中身も一括整頓"
+			tasks: [{
+				id: "1223E8A27AE1A299"
+				title: "インベントリソート"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"AlwaysEatというModを導入しました｡"
+				"満腹の状態でも食事をすることができます｡"
+				"食事の種類数を稼ぎたい時にお使いください｡"
+			]
+			icon: { Count: 8b, id: "minecraft:apple" }
+			id: "520A03211960E0B8"
+			rewards: [{
+				id: "477F78AB125541BA"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "満腹は食事をやめる理由にはならない"
+			tasks: [{
+				id: "39C18E4600A687BD"
+				title: "AlwaysEat"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: [
+				"マルチプレイで全員が寝るのは大変なため､半数以上が寝れば夜が明けるようになっています｡"
+				"全員が寝るとすぐに夜が明けます｡"
+			]
+			icon: "minecraft:red_bed"
+			id: "38145539C082CB4B"
+			rewards: [{
+				id: "392BA3EE9D71490C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "半数が寝れば夜が明けます"
+			tasks: [{
+				id: "72D2F5F188DF9FF7"
+				title: "睡眠導入"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Re:DecoというModで多くの家具が追加されています｡"
+				"また､HeatAndClimateにも多くの家具が追加されており､"
+				"さらに漆Modにも家具があります｡"
+				"建築の際はいろいろ探してみてください｡"
+			]
+			icon: "redeco:acacia_chair"
+			id: "31419614CF1D5616"
+			rewards: [{
+				id: "5024C249FAF6E377"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "絶対に壊れない椅子です"
+			tasks: [{
+				id: "15A08007F74342C4"
+				title: "家具追加しました"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Farmer'sDelightで牛乳入り瓶がよく要求されますが､"
+				"ガラス瓶をウシに使うことで牛乳入り瓶を得られるModを入れました｡"
+				"別のModでスタック可能にもなっているので､状態異常対策にも是非どうぞ｡"
+			]
+			icon: "farmersdelight:milk_bottle"
+			id: "6414B794C07EA089"
+			rewards: [{
+				id: "37DD170B25C2CBF1"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "料理のおともに"
+			tasks: [{
+				id: "122794CD0CEE8A3E"
+				title: "ガラス瓶でも牛乳が汲めます"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"このModpackでは、独自のデータパックにより、豆腐クラフトReloadedの塩とHeatAndClimateの塩を単体クラフトで相互に変換できます。"
+				"また､醤油と味噌についても同様の変換を実装しました｡"
+				"どちらかのものが指定される場合にご活用ください。"
+			]
+			icon: "dcs_climate:main/dust_salt"
+			id: "54A2897F96EE7E15"
+			rewards: [{
+				id: "25CB19B2C7F3007D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "ど･ち･ら･の･塩?"
+			tasks: [{
+				id: "429B3EE94883057E"
+				type: "checkmark"
+			}]
+			title: "塩味噌醤油の互換性"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"アイテムインベントリの右下にゴミ箱があります｡"
+				"ゴミ箱に入れたアイテムは､さらにその上にアイテムを重ねると消滅します｡"
+				"不要アイテムの処理にお使いください｡"
+			]
+			icon: "minecraft:composter"
+			id: "18F1F17B7543BAEE"
+			rewards: [{
+				id: "0BC5917D51EDF57E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "不要アイテムの処理"
+			tasks: [{
+				id: "183759071B78A6D3"
+				title: "ゴミ箱機能"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"日本語(もしくは設定している言語)と英語の両方のアイテム名を表示するModを導入しました｡"
+				"JEIでも英語名での検索も可能です｡"
+			]
+			icon: "minecraft:writable_book"
+			id: "20F5C89498689911"
+			rewards: [{
+				id: "1F7271EDF412DCCF"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "JapaneseAndEnglish"
+			tasks: [{
+				id: "17CB611167207112"
+				title: "日本語英語併記"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"バニラの仕様で､スポナーブロックに対してスポーンエッグを使用するとスポナーの中身を変更できる仕様があります｡"
+				"このModPackではスポーンエッグが入手可能なため､スポーンエッグをスポナーブロックに対して使用不可能にする処置を行いました｡"
+				"予めご了承ください。"
+			]
+			icon: "structure_gel:dynamic_spawner"
+			id: "1D07FA7BAAAF777E"
+			rewards: [{
+				id: "0DCFA5818A5D5F04"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "スポナーエッグがあるための仕様"
+			tasks: [{
+				id: "3694CC74FD8485E9"
+				title: "スポナー改変禁止"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: ["自分の攻撃が草に当たっても貫通するModを導入しました｡"]
+			icon: "minecraft:grass"
+			id: "71E5865960CE0487"
+			rewards: [{
+				id: "04A928E5BA26CDF8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "草薙の剣"
+			tasks: [{
+				id: "6821BF703D7E5531"
+				title: "草むらに邪魔されない"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+	]
+	title: "読むだけお得情報!"
+}

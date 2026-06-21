@@ -1,0 +1,26 @@
+{
+	id: "2B6C8D858C37AE26"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "twilightforest:phantom_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "twilightforest:phantom_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "ファントム装備"
+}

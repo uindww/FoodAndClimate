@@ -1,0 +1,158 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "16E3A3C684B3451D"
+	group: "795DD4BC46CA0E26"
+	icon: "dcs_climate:main/seeding_pot"
+	id: "16E3A3C684B3451D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"耕地ブロックに骨粉などの肥料をやると､｢施肥された耕地ブロック｣になります｡"
+				"｢施肥された耕地ブロック｣にHeatAndClimateのWILD作物を植えると､育った時に変異して同じ種の別の作物に進化します｡（すでに変異した後の作物は変異しません）"
+				"生えている草に対してクワを使う事でも、施肥された耕地ブロックを作れます。序盤の資源不足の時にはこの手も有効でしょう。"
+				""
+				"レア度が高い作物が必ずしも優れているわけではなく、WILD種にしかできないこともあります。"
+				"特に「変異を行える」というのはWILD種の大きな強みなので、種全部を変異させるのはおすすめしません。"
+			]
+			id: "4C3A61EDC93209C3"
+			rewards: [{
+				count: 5
+				id: "73F1CB0D1E724673"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "dcs_climate:main/fertilizer"
+				criterion: ""
+				icon: "dcs_climate:food/fertile"
+				id: "62BFA88692FF3282"
+				title: "耕地に肥料をやる"
+				type: "advancement"
+			}]
+			title: "耕地に肥料をやる"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"土を真ん中に､周りにボート型に紙を5つ並べると､｢育苗ポット｣ができます｡"
+				"HeatAndClimateの農作物と育苗ポットをクラフトすると、農作物を種にできます。"
+				"沢山植えたい時に便利です。育苗ポットは使ってもなくなりません。"
+			]
+			id: "7D07DB4B43DCF168"
+			rewards: [{
+				count: 5
+				id: "41098DB94635E17E"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70FF8825CC99EE94"
+				item: "dcs_climate:main/seeding_pot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"HeatAndClimateの野菜類（畑に植えるもの）は一年を通して収穫できますが、木になるタイプの果物は特定の季節でないと収穫できないものが多いです。"
+				"幸い旬の季節にはほぼ取り放題とも言える速度で収穫できるので、一年分貯めておきましょう。(季節はゲーム内60日で、各四季に前期後期があります)"
+			]
+			id: "4311145BF30A613E"
+			rewards: [{
+				id: "5111ACB80413FCC7"
+				item: "dcs_climate:food/drink_soda_peach"
+				type: "item"
+			}]
+			subtitle: "果物には旬がある"
+			tasks: [{
+				advancement: "dcs_climate:main/tree_crops"
+				criterion: ""
+				icon: {
+					Count: 1b
+					id: "dcs_climate:food/crop_citrus_wild"
+					tag: {
+						dcs.taste: -1
+					}
+				}
+				id: "2D0C021D8712E434"
+				title: "旬の果物を収穫する"
+				type: "advancement"
+			}]
+			title: "旬の果物"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"HeatAndClimateの作物の種がどうしても見つからない時の手段として、「種袋」があります。"
+				"色のエキスと種3つから作れて、色に応じた作物のWILD種の中からランダムで1個種が手に入ります。"
+				"このクエストの報酬でもあるので必要に応じて使ってみてください。"
+			]
+			id: "2C4035CB0AA6F2AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F66CE27ED724BA7"
+				table_id: 6657538831694986129L
+				type: "choice"
+			}]
+			subtitle: "どうしても種が見つからない時に"
+			tasks: [{
+				id: "22EB6100C9D3FF14"
+				title: "種袋"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"ただのバニラの草(回収にはハサミが必要です)をクラフトすることで｢干し草｣を得られます｡"
+				"結構色々なものの材料になるので入手してみましょう｡"
+			]
+			id: "53C9BDD0145E7840"
+			rewards: [{
+				id: "1A82A30AE76CBE9A"
+				item: "minecraft:grass"
+				type: "item"
+			}]
+			subtitle: "草だって大事な資源"
+			tasks: [{
+				id: "7698623EB8263753"
+				item: "dcs_climate:food/animalfeed_hay"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"干し草と木材からフィードボックス､つまり餌箱を作れます｡"
+				"ここに餌を入れていれば動物が勝手にそれを食べて増えてくれるのです｡"
+				"干し草も牛などの餌になります｡"
+				""
+				"ただし､動物をあんまり過密状態で飼うと､相互に当たり判定が大量発生して負荷の原因になるので牧場は広く取り､適度に間引きましょう｡"
+			]
+			id: "1848A57B4D87D50A"
+			rewards: [{
+				count: 8
+				id: "245895B0021B9C52"
+				item: "dcs_climate:food/animalfeed_hay"
+				type: "item"
+			}]
+			subtitle: "家畜用自動餌やり機"
+			tasks: [{
+				id: "11C7FDBEBC21FB65"
+				item: "dcs_climate:food/meal_feeder"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+	]
+	title: "農業と作物"
+}

@@ -1,0 +1,299 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "arsnouveau"
+	group: "53DD377EFA78FCB6"
+	icon: "ars_nouveau:novice_spell_book"
+	id: "6A409E1E73098D9D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"鉄の剣･斧･ツルハシ･シャベル､それと本でArsNouveauの最初の魔導書を作れるよ！"
+				"ちょっと大変だけど使いかけでもいいからね！"
+				"それだけの価値はあるよ！"
+			]
+			id: "59AC3E82E3C29C80"
+			rewards: [{
+				count: 5
+				id: "26E6746CD7E5BD4D"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1D7288C127022224"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F4D7E1534090603"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4062AD80FA8EC14A"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "334CD85470CF98C2"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A1DEDB1297FEF48"
+					item: "minecraft:book"
+					type: "item"
+				}
+			]
+			title: "魔導書に必要なアイテムを集めよう!"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"材料を揃えたら最初のスペルブックを作ろう！"
+				"最初はブロックを壊す「破壊」とダメージを与える「攻撃」の効果、"
+				"当たったものに効果を与える「飛翔」、触ったものに効果を与える「タッチ」、自分に効果を与える「セルフ」の形態が使えるよ！"
+				"一番便利なのは「飛翔」->「破壊」かな。遠くのブロックも破壊できるよ！"
+			]
+			id: "2819636560D65823"
+			rewards: [{
+				id: "24C5096635AEC4FD"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			tasks: [{
+				id: "557E121F2B2C5DA4"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"スペルブックを持ってスクライブテーブルを右クリックするとグリフの一覧が表示されるよ｡"
+				"最初のスペルブックではティア1のグリフだけ使える｡"
+				"覚えたいグリフをクリックして､指定されたアイテムをテーブルに投げ込めばグリフがアイテムとして手に入る｡"
+				"近くのチェストからもアイテムを自動回収してくれるよ｡"
+				"このとき経験値が規定レベル分要求されるから気を付けてね｡"
+			]
+			id: "22C6520051CF4164"
+			rewards: [{
+				count: 2
+				id: "0E8671764B53BD31"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				icon: "ars_nouveau:glyph_light"
+				id: "3677F7A123D7F516"
+				item: {
+					Count: 1b
+					id: "itemfilters:item_group"
+					tag: {
+						value: "ars_glyphs"
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のグリフ"
+				type: "item"
+			}]
+			title: "新しいグリフを手に入れよう!"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"ヴィルデンキマイラの撃破はArsNouveauの大きな目標です。"
+				"なかなか強力な敵ですが､手に入るアイテムを使えば魔法書をティア3にできるなど大きな恩恵が得られます｡"
+				""
+				"ArsNouveauの大目標として是非目指してみてください!"
+			]
+			id: "7AAC0656F1629325"
+			rewards: [{
+				count: 10
+				id: "55CEDEEC8FCC09A7"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FD41B6C47C0F705"
+				item: "ars_nouveau:wilden_tribute"
+				type: "item"
+			}]
+			title: "大目標:ウィルデンキマイラを倒そう!"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			description: [
+				"一部の魔法のグリフを作るのには｢注入チャンバー｣から作られる魔法のエッセンスが必要になります｡"
+				"注入チャンバー単体にラピスラズリかアメジストを入れると､時間経過でソースジェムに変化します｡"
+				"この時近くに｢ソース｣があると､変化速度が上昇します｡"
+			]
+			id: "7085C3524E12B554"
+			rewards: [{
+				count: 5
+				id: "18A07AD43F761778"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			subtitle: "魔法の元を作るため"
+			tasks: [{
+				id: "583C62480ACC91ED"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"｢注入チャンバー｣などに追加のレシピを加えたい場合､｢儀式の台座｣を作る必要があります｡"
+				"｢注入チャンバー｣に隣接する8マス(斜めも可)に｢儀式の台座｣を3つ置き､その上に要求されるアイテムを置いて､注入チャンバーにソースジェムを入れることによって魔法のエッセンスを作ることができます｡"
+				"注入チャンバーによる加工の時は､台座に置かれたアイテムは消費しません｡"
+			]
+			id: "26E5210767765170"
+			rewards: [{
+				id: "0478BBA8663BE4A6"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			subtitle: "レシピを追加する"
+			tasks: [{
+				id: "26812E98BA53CA7C"
+				item: "ars_nouveau:arcane_pedestal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ソース瓶があると､魔法のソースを蓄えることができるようになります｡"
+				"ソース瓶に貯まった魔法のソースは､何かの装置が近くでソースを使うときに自動的に消費されます｡"
+				"ソースを発生させるには｢ソースリンク｣という装置が必要で､ソースリンクにはいくつか種類があり､それぞれ特定の条件下でソースを発生させ､近くにあるソース瓶に蓄えます｡"
+			]
+			id: "55B605383E5D5FE5"
+			rewards: [{
+				id: "6769F0214CC0F74C"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			subtitle: "魔法のソースを蓄える"
+			tasks: [{
+				id: "01248594F62B7427"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"｢エンチャント装置｣を使うことでアイテムを変化させることができます｡"
+				"｢エンチャント装置｣は｢儀式コア｣の上に置く必要があります｡"
+				"また､3マス以内の場所に｢儀式の台座｣を置き､必要なアイテムをその上に置く必要があります｡"
+				"｢エンチャント装置｣による加工を行う場合､儀式の台座の上のアイテムは消費されます｡"
+			]
+			id: "744F30B7508114E7"
+			rewards: [{
+				count: 2
+				id: "66F338E1BF6BBB81"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			subtitle: "魔法のアイテムを作ろう"
+			tasks: [
+				{
+					id: "26DADA59E07EBF23"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "3DBF7BBF8F2968AE"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			title: "エンチャント装置"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"エンチャント装置で､4つのソースジェムから種にエンチャントすることで､メイジブルームの種を得ることができます｡"
+				"メイジブルームの種が育つとメイジブルームを収穫できます｡(この時種は増えません)"
+				"メイジブルームからは魔法の繊維がクラフトでき､いろいろな事に使えます｡"
+			]
+			id: "5E1AAB5AF87E4F1F"
+			rewards: [{
+				count: 4
+				id: "204DB6406B62E495"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			subtitle: "魔法の花からできる繊維"
+			tasks: [{
+				id: "3B51B8A12972F743"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ArsNouveauのグリフは組み合わせることができ、組み合わせによって真価を発揮します。"
+				"例えば「一定時間で消えるブロックの生成」は単体ではあまり意味がないようにも思えますが、生成する場所が「足元」であれば空中で着地ができます。"
+				"「アイテム回収」も本来拾いに行けばいいだけですが、「飛翔」「破壊/攻撃」に組み合わせると、破壊したブロックやMobドロップを回収できます。"
+				"グリフを多数組み合わせると消費マナも増えますが、うまく組み合わせると消費以上の効果があります!"
+			]
+			id: "7857E6D89C3C30FE"
+			rewards: [{
+				id: "1179E5FD481DD182"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			subtitle: "組み合わせは無限大(有限)"
+			tasks: [{
+				id: "62202C3AF17D10DB"
+				title: "グリフの組み合わせ"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+	]
+	title: "ArsNouveauを学ぼう!"
+}

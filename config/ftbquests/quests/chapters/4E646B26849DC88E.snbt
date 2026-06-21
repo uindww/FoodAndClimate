@@ -1,0 +1,219 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4E646B26849DC88E"
+	group: "46B6CCD5C76E14AC"
+	icon: "minecraft:zombie_head"
+	id: "4E646B26849DC88E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"ゾンビが発生しているので10体駆除をお願いします｡"
+				"報酬は鉄装備か鉄インゴットです｡"
+			]
+			icon: "minecraft:zombie_head"
+			id: "1971C4554129E2DE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C9026D5F8B18B23"
+				table_id: 4662537483848587608L
+				type: "choice"
+			}]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "2DDD4545355539E9"
+				type: "kill"
+				value: 10L
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ゾンビが発生しているので30体駆除をお願いします｡"
+				"報酬は鉄装備か鉄インゴットです｡"
+			]
+			icon: "minecraft:zombie_head"
+			id: "689203ECA8E6F2D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "344A86FE705A24BD"
+				table_id: 4662537483848587608L
+				type: "choice"
+			}]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "79D4181E08FB2D2F"
+				type: "kill"
+				value: 30L
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"スケルトンが発生しているので10体駆除をお願いします｡"
+				"報酬は鉄装備か鉄インゴットです｡"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "525E53605DEBFAAB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3766BF70227F2DEB"
+				table_id: 4662537483848587608L
+				type: "choice"
+			}]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "470E709C115F6CD7"
+				type: "kill"
+				value: 10L
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"スケルトンが発生しているので30体駆除をお願いします｡"
+				"報酬は鉄装備か鉄インゴットです｡"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "4CB111747836626C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65E3CE86105AF008"
+				table_id: 4662537483848587608L
+				type: "choice"
+			}]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "3BADBBCFE09FDC08"
+				type: "kill"
+				value: 30L
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"ネザー要塞に湧くウィザースケルトンを20体倒してください｡"
+				"報酬は鉄装備かインゴットに加え､ウィザースケルトンの頭蓋骨もつきます｡"
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "157EDB09EDA70973"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64B01849004C7D72"
+					table_id: 4662537483848587608L
+					type: "loot"
+				}
+				{
+					id: "3855CC1EC2165EF2"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "1AEC2008AC969C68"
+				type: "kill"
+				value: 20L
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ネザー要塞に湧くウィザースケルトンを50体倒してください｡"
+				"報酬は鉄装備かインゴットに加え､ウィザースケルトンの頭蓋骨もつきます｡"
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "064886503974BDC1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D2DA3C5E7D7797F"
+					table_id: 4662537483848587608L
+					type: "loot"
+				}
+				{
+					id: "0794DBD70B3F92C9"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "23F6C4C9EED0674F"
+				type: "kill"
+				value: 50L
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"蜘蛛を10匹倒してきてください｡"
+				"報酬は蜘蛛の巣と糸です｡蜘蛛の巣は糸にしてもかまいませんが､クラフトに蜘蛛の巣が要求される場合もあるのでよく考えてお使いください｡"
+			]
+			id: "354EA4998C139A3B"
+			rewards: [
+				{
+					count: 8
+					id: "383FE369D96068D6"
+					item: "minecraft:cobweb"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6D3B11A544B46FCF"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "022D31BA63B7DB0C"
+				type: "kill"
+				value: 10L
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"蜘蛛を30匹倒してきてください｡"
+				"報酬は蜘蛛の巣と糸です｡蜘蛛の巣は糸にしてもかまいませんが､クラフトに蜘蛛の巣が要求される場合もあるのでよく考えてお使いください｡"
+			]
+			id: "76A27B3F8DBB09EB"
+			rewards: [
+				{
+					count: 8
+					id: "5F046DF1735E0019"
+					item: "minecraft:cobweb"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5C473431DADEC76C"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "minecraft:spider"
+				icon: "minecraft:spider_eye"
+				id: "16AA1F21A01BD82C"
+				type: "kill"
+				value: 30L
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+	]
+	title: "集会所クエスト"
+}

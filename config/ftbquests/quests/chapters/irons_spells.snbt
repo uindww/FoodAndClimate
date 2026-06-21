@@ -1,0 +1,339 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "irons_spells"
+	group: "53DD377EFA78FCB6"
+	icon: "irons_spellbooks:common_ink"
+	id: "555BA615E962DCBA"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"IronSpellのスクロールは入手が限定的なうえに､そのまま使うと1度きりでなくなってしまいます｡"
+				"ただし､魔法書を作って銘刻台で記入することで､クールダウンとマナの許す限り何度でも使えるようになります｡"
+				"スクロールは貴重品なので魔法書に記入してから使いましょう｡"
+				"記入したスクロールは銘刻台を使えば後で取り出すこともできます｡"
+			]
+			id: "7B9D0091CCC96719"
+			rewards: [{
+				id: "5F80EE77C1611F2D"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			subtitle: "IronSpellの魔法書を作ろう"
+			tasks: [{
+				id: "47737AE39AC2F20C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "irons_spellbooks:copper_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 5
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:iron_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 6
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:rotten_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 8
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:gold_spell_book"
+								tag: {
+									ISB_Spells: {
+										data: [ ]
+										maxSpells: 8
+										mustEquip: 1b
+										spellWheel: 1b
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "いずれかの魔法書"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ダンジョンなどで魔法のインクを手に入れることもあると思います｡"
+				"インクと紙と素材を｢スクロールフォージ｣を使って組み合わせると､魔法のスクロールを製作することができます｡"
+				"作る魔法のスクロールは素材を選ぶことで指定の範囲から選べますが､インクのレアリティが足りないと作れない魔法もあります｡"
+			]
+			id: "44986964DBD67B2D"
+			rewards: [{
+				id: "25C53A47F904B42F"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "45F4942E261D73F8"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "irons_spellbooks:common_ink"
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:uncommon_ink"
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:rare_ink"
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:epic_ink"
+							}
+							{
+								Count: 1b
+								id: "irons_spellbooks:legendary_ink"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のインク"
+				type: "item"
+			}]
+			title: "魔法のインクの使い方"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ホグリンを倒すとホグリンの皮がドロップすることがあります｡"
+				"上位の呪文書の材料になるので集めておきましょう｡"
+			]
+			id: "529EA5A6157CE7D8"
+			rewards: [{
+				id: "0134B9557AD9376F"
+				item: "irons_spellbooks:uncommon_ink"
+				type: "item"
+			}]
+			subtitle: "魔法書の大事な素材"
+			tasks: [{
+				id: "05352C61BBA92119"
+				item: "irons_spellbooks:hogskin"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"金インゴットとアメジストの欠片をクラフトして作れるアイテムです｡"
+				"インクと組み合わせて神聖属性の魔法を作るときに使えます｡"
+			]
+			id: "45A42D486E0F02F1"
+			rewards: [{
+				id: "1114841D860A754B"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "33E0CB82689015C7"
+				item: "irons_spellbooks:divine_pearl"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"寒冷地域のスケルトン､ストレイを倒すことで得られるアイテムです｡"
+				"インクと組み合わせて冷気属性の魔法を作るときに使えます｡"
+			]
+			id: "37AAABE1BC587314"
+			rewards: [{
+				id: "38D1DB93CA035062"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "401395E01DF1B71B"
+				item: "irons_spellbooks:frozen_bone"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"ジャガイモを収穫した時にたまに取れます｡"
+				"食べると毒になることがありますが､インクと組み合わせて毒属性の魔法を作るときに使えます｡"
+			]
+			id: "154770C049FB398E"
+			rewards: [{
+				id: "53DD355ADBE87041"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "03282DE2B54A172E"
+				item: "minecraft:poisonous_potato"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"帯電クリーパーに対してガラス瓶を使うと入手できます｡……正気か?"
+				"インクと組み合わせて電撃属性の魔法を作るときに使えます｡"
+			]
+			id: "6AF0A9FE97F6C3F9"
+			rewards: [{
+				id: "7BCF292C30F2BDF4"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "5047665F85E0C0D2"
+				item: "irons_spellbooks:lightning_bottle"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"村人との交易通貨です｡"
+				"インクと組み合わせて召喚属性の魔法を作るときに使えます｡"
+			]
+			id: "30CF97C105A22344"
+			rewards: [{
+				id: "779948BCC5D9AB5D"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "3D618EEAF8CB2E05"
+				item: "minecraft:emerald"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"大釜の中に入ってダメージを受けることで血が出て、ガラス瓶ですくうことで得られます。"
+				"インクと組み合わせて血属性の魔法を作るときに使えます｡"
+			]
+			id: "4B7E6C24441E2572"
+			rewards: [{
+				id: "3A63E55B2CD10B94"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1CB14FA850A5913C"
+				item: "irons_spellbooks:blood_vial"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"エンダーマンを倒すことによって得られます｡"
+				"インクと組み合わせてエンダー属性の魔法を作るときに使えます｡"
+			]
+			id: "2FD6E8B8712411F1"
+			rewards: [{
+				id: "102C647EFD7D4697"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "74AE83C062D993F8"
+				item: "minecraft:ender_pearl"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"ブレイズを倒すことで得られます。"
+				"インクと組み合わせて火炎属性の魔法を作るときに使えます｡"
+			]
+			id: "581ED22BA6FC6599"
+			rewards: [{
+				id: "018C76381FAFEAF6"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "4B41048B381B2D91"
+				item: "minecraft:blaze_rod"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "Iron's Spellsを学ぼう!"
+}

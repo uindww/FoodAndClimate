@@ -1,0 +1,231 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "botania"
+	group: "53DD377EFA78FCB6"
+	icon: "botania:pure_daisy"
+	id: "5384741D416E49E9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"野生に生えているカラフルな神秘の花を入手するのがボタニアの始まりです｡"
+				"神秘の花は花びらにクラフトでき､さらにクラフトすると染料になります｡"
+				"神秘の花は16色あります｡"
+				"花入り小袋に入れるとかさばらなくて便利です｡花入れ小袋を持っていると､拾った神秘の花は自動的に花入り小袋に入ります｡"
+			]
+			id: "6FA143C768E49E98"
+			rewards: [{
+				id: "6A1110EE67105AB6"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+			subtitle: "Botaniaの第一歩"
+			tasks: [{
+				advancement: "botania:main/flower_pickup"
+				criterion: ""
+				icon: "botania:white_mystical_flower"
+				id: "510674F163AEAFEA"
+				type: "advancement"
+			}]
+			title: "始まりの空"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"丸石6個と花びらから花びらの調合所を作れます｡"
+				"花びらの調合所に水を注ぎ､指定の組み合わせの花びらを入れ､最後に種を入れると魔法の花が完成します｡"
+			]
+			id: "582618688B900849"
+			rewards: [
+				{
+					count: 2
+					id: "5600206CE6E62E50"
+					item: "botania:white_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "634863909AFFEC0B"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "528A083875680503"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			subtitle: "花びらから花を咲かせる"
+			tasks: [{
+				id: "6F0FB00D992804D2"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"ボタニアで最初に作るべき魔法の花がピュアディジーです｡"
+				"ピュアデイジーの横(斜めも含みます)8マスに置かれた｢原木｣｢石｣(焼き石です､丸石は不可)は､一定時間がたつと｢リビングウッド｣｢リビングロック｣になります｡"
+				"この2つの素材はBotaniaを進めるうえで欠かせません。"
+			]
+			id: "0741C802CF9CD4F4"
+			rewards: [{
+				count: 8
+				id: "764685D79303186C"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			subtitle: "ねえ､あなたは何色になりたい?"
+			tasks: [{
+				id: "28B807F774146A27"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"ボタニアのマナを扱うには様々なアイテムが必要です｡"
+				"マナを生産する魔法の花｡"
+				"魔法の花からマナを集めるマナスプレッダー｡"
+				"マナを指示した方向に集める森の杖｡"
+				"そしてマナを貯める場所であるマナプール｡"
+				"魔法の花とマナスプレッダーを森の杖でリンクさせ､"
+				"マナスプレッダーを森の杖でマナプールに向け､"
+				"魔法の花を起動させることによって､マナプールにマナが貯まります｡"
+				"マナプールにマナが貯まった状態で､特定のアイテムを投げ込むとマナを消費してアイテムが変化します｡"
+			]
+			icon: "botania:mana_pool"
+			id: "40F7222D68A75DBE"
+			rewards: [{
+				id: "53970F1CCE380B1F"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "Botaniaは工業Mod"
+			tasks: [
+				{
+					id: "23317F423BD7ADE5"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "7FFA9C7975C25E20"
+					item: {
+						Count: 1b
+						id: "botania:twig_wand"
+						tag: {
+							color1: 0
+							color2: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "381D5F812E186E73"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					advancement: "botania:main/generating_flower"
+					criterion: ""
+					icon: "botania:endoflame"
+					id: "0B22C798BDC06A70"
+					type: "advancement"
+				}
+			]
+			title: "マナの取り扱い"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"Botaniaの大目標は、ガイアガーディアンの撃破です。"
+				"そもそも召喚にいたるまでの過程がかなり長く、大目標の中でも難易度がかなり高いです。"
+				"Botaniaを極めるなら、ぜひ挑戦してみてください。"
+				""
+				"なお、このガイアの神霊を消費すると、さらに強いガイアガーディアンとの戦闘も可能です。"
+			]
+			id: "29ABF09621ECA328"
+			rewards: [{
+				count: 10
+				id: "4FC3DEFEAC746998"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2246C646DED3970E"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			title: "大目標:ガイアガーディアンの撃破"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"大目標の上の大目標です｡"
+				"ガイアガーディアンを撃破して入手したガイアの神霊を使う事で､さらに強い真ガイアガーディアンと戦う事が出来ます｡"
+				""
+				"倒すとランダムなアイテムを入手可能な特別なアイテムが手に入ります｡"
+			]
+			id: "280B71242A412D77"
+			rewards: [{
+				id: "2D7FAD56BD462E23"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			tasks: [{
+				id: "026EB1C255740A84"
+				item: "botania:dice"
+				type: "item"
+			}]
+			title: "大目標の上の大目標:真ガイアガーディアンの撃破"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"マナが貯まったマナプールに鉄インゴットを投げ入れると､マナスチールインゴットができます｡"
+				"このマナスチールインゴットでは色々な装備が作れるうえに､マナスチールの道具はマナで耐久値が回復します｡"
+				"また､装備以外にも色々な使い方があります｡"
+			]
+			id: "2B3E83C7F57512FA"
+			rewards: [{
+				id: "2F15F30B16C2423F"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			subtitle: "マナを吸収したインゴット"
+			tasks: [{
+				id: "3849E81D5C7544C0"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "4864BD93FBD8ACB3"
+			rewards: [{
+				count: 3
+				id: "1D8168B92DEBCADB"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E82AA621A98168B"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	title: "Botaniaを学ぼう!"
+}

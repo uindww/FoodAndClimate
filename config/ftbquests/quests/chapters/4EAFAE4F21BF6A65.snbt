@@ -1,0 +1,175 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4EAFAE4F21BF6A65"
+	group: "795DD4BC46CA0E26"
+	icon: "dcs_climate:machine/cooking_pot_normal"
+	id: "4EAFAE4F21BF6A65"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"高度な料理には料理鍋が欠かせません｡"
+				"料理鍋は鋼で作れます｡料理鍋には加熱が必要です｡"
+				"また､料理鍋は｢液体が何も入ってない時｣｢水が入っている時｣｢油が入っている時｣で作れるレシピが変わるので気を付けましょう｡"
+			]
+			id: "7AB3E540FC77B21F"
+			rewards: [{
+				count: 2
+				id: "6C1E58BE7F030020"
+				item: "dcs_climate:main/ingot_steel"
+				type: "item"
+			}]
+			subtitle: "高度な料理に欠かせないもの"
+			tasks: [{
+				consume_items: false
+				id: "5A1B155813B9E5C0"
+				item: "dcs_climate:machine/cooking_pot_normal"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"多くの飲み物を作るのにはティーポットが欠かせません｡"
+				"ティーポットも鋼で作れます｡"
+				"ティーポットが｢加熱されているか｣｢冷却されているか｣によって作れるレシピが変わるので注意しましょう｡"
+				"また､ティーポットで飲み物を作る際にはほとんどの場合水の供給が必要ですが､一部例外があるので注意しましょう｡"
+			]
+			id: "052C72B7249C90AD"
+			rewards: [{
+				count: 2
+				id: "42B2FBE24A2925CB"
+				item: "dcs_climate:main/ingot_steel"
+				type: "item"
+			}]
+			subtitle: "お飲み物はいかが?"
+			tasks: [{
+				id: "5A09F112E182581B"
+				item: "dcs_climate:machine/tea_pot_normal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"植物油は一部の作物を石英の乳鉢とクラフトすることで得られます｡"
+				"なお､植物油が調理鍋の中に残っていると､揚げ物以外のレシピが作れなくなるのには注意が必要です｡"
+			]
+			id: "46D8BB09709EB467"
+			rewards: [{
+				count: 4
+				id: "7EB8E6E41362598D"
+				item: "dcs_climate:food/pack_plant_oil"
+				type: "item"
+			}]
+			subtitle: "みんな大好き揚げ物"
+			tasks: [{
+				consume_items: false
+				id: "44D1F12D7BA18A6C"
+				item: "dcs_climate:food/pack_plant_oil"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"壺でアイテムを熟成させるには､適度な温度と適度な湿度が必要です｡"
+				"松明などのちょっとした熱が丁度良いでしょう｡"
+				"壺は出力インベントリが2つありますが､2つとも埋まっていると次の熟成が行われません｡"
+				"2つのアイテムを出力する場合においてはご注意ください｡"
+			]
+			id: "67DC7262966F3A04"
+			rewards: [{
+				count: 5
+				id: "26EC7696737105C6"
+				item: "dcs_climate:main/dust_salt"
+				type: "item"
+			}]
+			subtitle: "怪しくはありません"
+			tasks: [{
+				consume_items: false
+				id: "1AC7EE56019B730D"
+				item: "dcs_climate:machine/fermentation_jar_normal"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"紙4つから16個作れるいわゆる使い捨てでスタックできるバケツ｡"
+				"そのまま加工などできるのでHeatAndClimateの料理には欠かせない。"
+				"もちろん砂糖も沢山使うのでサトウキビは多めに育てよう。"
+			]
+			id: "4E87532D9D8B08C8"
+			rewards: [{
+				count: 4
+				id: "1297F13482F75D94"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			subtitle: "サトウキビは量産しよう"
+			tasks: [{
+				id: "03BB431D0D1D869A"
+				item: "dcs_climate:food/pack_empty"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"HeatAndClimate(とバニラ)の料理には星1～星5の範囲で風味というステータスが付きます。"
+				"風味が高い食べ物は速く食べられます。一方で風味が低い食べ物は食べるのにかなり時間がかかります。"
+				"食べ物を調味料とクラフトすることで風味を上げることもできます。"
+			]
+			icon: "dcs_climate:food/food_herb_salt"
+			id: "45386E6DA6C1F6FB"
+			rewards: [{
+				id: "0FDD505E3C1846F0"
+				item: "dcs_climate:food/food_herb_salt"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52C398B2CB8735D3"
+				title: "風味と食欲"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"一部のHeatAndClimateの料理は食べることで暑さ寒さの耐性を付けることができます。"
+				"あまり長く持つものではないですが、いざというときの保険になるかもしれません。"
+			]
+			icon: "dcs_climate:food/soup_leaves"
+			id: "0977AE980B98AA86"
+			rewards: [{
+				count: 5
+				id: "449DC7349B6193C1"
+				item: "dcs_climate:food/soup_leaves"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AC8231B4315D149"
+				title: "寒暖差を食事で耐える"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+	]
+	title: "料理をしよう!"
+}

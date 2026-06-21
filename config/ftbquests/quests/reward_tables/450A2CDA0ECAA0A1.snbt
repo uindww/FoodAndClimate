@@ -1,0 +1,26 @@
+{
+	id: "450A2CDA0ECAA0A1"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "twilightforest:triple_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "twilightforest:seeker_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "雪の女王"
+}

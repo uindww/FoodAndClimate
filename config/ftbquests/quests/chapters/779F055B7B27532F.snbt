@@ -1,0 +1,97 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "779F055B7B27532F"
+	group: "795DD4BC46CA0E26"
+	icon: "dcs_climate:main/pattern_paper_suits"
+	id: "779F055B7B27532F"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"棒と木材と棒を縦に並べることによって紡錘を作れます｡"
+				"紡錘からはHeatAndClimateの特有の糸を作れます。"
+				"HeatAndClimateの糸は織物や衣服などの材料になるほか、バニラの糸としても使えます。"
+			]
+			id: "5358F07F64FFDB9C"
+			rewards: [{
+				count: 3
+				id: "342A136EC1703F8A"
+				item: "minecraft:white_wool"
+				type: "item"
+			}]
+			subtitle: "糸を紡ぐもの"
+			tasks: [{
+				id: "698F379436BAB8E7"
+				item: "dcs_climate:main/hand_spindle"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"服を作るのには多くの場合型紙が必要です｡"
+				"型紙は紙と木炭から作れます｡"
+				"なお､｢スーツの型紙｣から作った衣服は胴体部分に表示されますが､装備部位としてはレギンス(下半身)になります｡"
+			]
+			id: "0E0E968884EDADC8"
+			rewards: [{
+				count: 7
+				id: "49043ABDC879AFD9"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "614E251E96B4BB83"
+				item: "dcs_climate:main/pattern_paper_suits"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"服を作るのには多くの場合型紙が必要です｡"
+				"型紙は紙と木炭から作れます｡"
+				"なお､｢ズボンの型紙｣から作った衣服は下半身部分に表示されますが､装備部位としては靴になります｡"
+			]
+			id: "3325725C73D8BA22"
+			rewards: [{
+				count: 4
+				id: "78F2236C598C9458"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36A90B07C134CABF"
+				item: "dcs_climate:main/pattern_paper_pants"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"HeatAndClimateの衣服は一般的に暑さや寒さに対する耐性が高めです。"
+				"ただし防御力や耐久力は高くないので注意が必要です。"
+				"ネザーは暑く、エンドは寒いので行くときは対策をちゃんとしておきましょう。"
+			]
+			id: "77D50AA8F86D4323"
+			rewards: [{
+				id: "1DAB40AA07E32877"
+				item: "dcs_climate:food/cloth_wool"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3341A56540F00370"
+				title: "気候に耐える"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+	]
+	title: "衣服"
+}

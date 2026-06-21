@@ -1,0 +1,26 @@
+{
+	id: "12BD2754717A9E88"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "touhou_little_maid:hakurei_gohei"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "touhou_little_maid:sanae_gohei"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "お祓い棒"
+}

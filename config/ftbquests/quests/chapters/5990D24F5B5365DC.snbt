@@ -1,0 +1,108 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5990D24F5B5365DC"
+	group: "795DD4BC46CA0E26"
+	icon: "dcs_climate:magic/extract_mana"
+	id: "5990D24F5B5365DC"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"ある種の作物8個を石英の乳鉢の周りに置いてクラフトすると､｢魔法の雫｣というアイテムができます｡"
+				"魔法の雫と宝石をクラフトすることで色のエキスを作ったり､他にも色々な加工が可能です｡"
+			]
+			id: "47BA7CF61571A98D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01A31667E0BF2D31"
+				table_id: 4979793523343262068L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "322CA429A3AE4E57"
+				item: "dcs_climate:magic/drop_mana"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"赤の魔法エキスから､シルクタッチでブロックを破壊する爆弾を発生できるスペルを作れます｡"
+				"回数に限りはありますが破壊範囲はなかなか広く､マナの雫や赤の雫が作れるなら使いやすい手段になるかもしれません｡"
+			]
+			id: "6E688FA676985D63"
+			rewards: [{
+				count: 3
+				id: "4BB449AD6BA5F7EF"
+				item: "dcs_climate:magic/card_red_common"
+				type: "item"
+			}]
+			subtitle: "使い捨てシルクタッチ爆弾"
+			tasks: [{
+				id: "297920F4304619DE"
+				item: "dcs_climate:magic/card_red_common"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"赤と緑の魔法のエキスから､本来発破のスペルを作れて､"
+				"その効果は｢1チャンクまるまるシルクタッチで破壊する｣というものなのですが､流石に強力すぎる､かつ負荷が高いためにModで禁止とさせていただきます。"
+				"厳密に言えばクラフトは可能なのですが､入手した瞬間に消滅してしまいます｡"
+				"クエストの報酬になっていますが受け取ると消えるはずです｡"
+			]
+			id: "7FC9CA1CA2FABEBF"
+			rewards: [{
+				id: "1D09E9C45AB9117D"
+				item: "dcs_climate:magic/card_red_green"
+				type: "item"
+			}]
+			subtitle: "チャンク掘りは規制します……"
+			tasks: [{
+				id: "17C472312A15E1EA"
+				title: "発破禁止"
+				type: "checkmark"
+			}]
+			title: "発破スペルの禁止"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"水晶の粉と色のエキスとインゴットから魔法のリングを作れます｡"
+				"装備している間効果があります｡"
+				"指輪装備欄に置いておけば効果があるのはもちろん､インベントリの一番上の列に置いておくことでも効果を発揮します｡"
+			]
+			id: "44511129D582747D"
+			rewards: [{
+				id: "3CD3F7F6F5198673"
+				item: "dcs_climate:main/ingot_silver"
+				type: "item"
+			}]
+			subtitle: "永続的な魔法のリング"
+			tasks: [{
+				consume_items: false
+				id: "4F39129B9A8EB079"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:jewels/magic_rings"
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "魔法のリング"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	title: "色のエキスと魔法"
+}

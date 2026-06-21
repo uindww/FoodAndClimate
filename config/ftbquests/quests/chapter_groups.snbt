@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "34C881884558E147", title: "基礎クエスト" }
+		{ id: "795DD4BC46CA0E26", title: "HeatAndClimate" }
+		{ id: "53DD377EFA78FCB6", title: "Modを学ぼう!" }
+		{ id: "46B6CCD5C76E14AC", title: "冒険の時間だ!" }
+	]
+}

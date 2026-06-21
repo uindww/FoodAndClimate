@@ -1,0 +1,154 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "53C56CB1A0148D30"
+	group: "795DD4BC46CA0E26"
+	icon: {
+		Count: 1b
+		id: "dcs_climate:main/fishing_rod_steel"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "53C56CB1A0148D30"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"HeatAndClimateには釣りで釣れる魚が追加されます。"
+				"特にマグロはレアな魚であり、マグロからしか作れない料理もあります。"
+				"マグロは冷たい深海バイオームで、昼の間に釣るとよいらしいです。"
+			]
+			id: "49008B1097916013"
+			rewards: [{
+				id: "16CD57F4B59F4CBB"
+				item: "dcs_climate:main/lure_jig_glitter"
+				type: "item"
+			}]
+			subtitle: "マグロ、ご期待ください"
+			tasks: [{
+				id: "4CD9C536C0B74480"
+				item: "dcs_climate:food/fish_tuna"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"HeatAndClimateには釣り要素も含まれています。"
+				"釣りでしか得られない海産物や、その海産物でしか作れない料理もあります。"
+				"釣り竿も強化されたものを作れるので作ってみるのもいいでしょう。"
+				"「ルアー」も存在していて、金床で組み合わせるとエンチャントが付きます。"
+				"（内部的にはエンチャ本なのかもしれませんね）"
+			]
+			id: "6177876153DC7E25"
+			rewards: [{
+				id: "04AD2F8781BEA7AF"
+				item: "dcs_climate:main/lure_jig_iron"
+				type: "item"
+			}]
+			subtitle: "頑丈な釣り竿"
+			tasks: [{
+				id: "1B689CD18ED61F31"
+				item: {
+					Count: 1b
+					id: "dcs_climate:main/fishing_rod_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"鉄塊と鉄インゴットから釣り針を作れます｡"
+				"これはルアーを作るための中間素材です｡"
+				"「ルアー」と釣り竿を金床で組み合わせるとエンチャントが付きます。"
+				"（内部的にはエンチャ本なのかもしれませんね）"
+			]
+			id: "6B6CD6FF0F3F539E"
+			rewards: [{
+				id: "4C1336F762AA720E"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "ルアーの材料"
+			tasks: [{
+				id: "1A287E199F5F7112"
+				item: "dcs_climate:main/lure_fishing_hook"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"釣りでしか得られないHeatAndClimateの材料です。"
+				"色んな料理に使えます。"
+				"カニクリームコロッケとかいいですよね。"
+			]
+			id: "3D20AB86EC2DFD0E"
+			rewards: [{
+				id: "0E750AD6DF9469C2"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "カニカニどこカニ?"
+			tasks: [{
+				id: "370657EA816F017C"
+				item: "dcs_climate:food/fish_crab"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"釣りでしか得られないHeatAndClimateの食材です。"
+				"海老天とか作れます。"
+				"他にもエビ要求のレシピは多いですね。"
+			]
+			id: "5209049EE6CA2309"
+			rewards: [{
+				id: "710197CD4033D58A"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "うるせえエビフライぶつけんぞ"
+			tasks: [{
+				id: "3A01BDF079C03E4F"
+				item: "dcs_climate:food/fish_prawn"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"釣りでしか得られないHeatAndClimateの食材です。"
+				"ペーストを作るために使ったりします。"
+				"エビに似た外見ですがプランクトンの一種とのこと。"
+			]
+			id: "25963C3185BB21F6"
+			rewards: [{
+				id: "7C9746E44CA08D05"
+				item: "dcs_climate:main/lure_worm_craw"
+				type: "item"
+			}]
+			subtitle: "実はプランクトンの仲間"
+			tasks: [{
+				id: "4B6EA655ECB3106C"
+				item: "dcs_climate:food/fish_krill"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+	]
+	title: "釣りと魚"
+}

@@ -1,0 +1,197 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "13C13458AA1B7EE8"
+	group: "46B6CCD5C76E14AC"
+	icon: "twilightforest:hollow_oak_sapling"
+	id: "13C13458AA1B7EE8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["このModPackは黄昏の森を採用していますが､｢解体作業台｣の存在は経済バランスに大きな影響を与えかねないことを鑑み､Modによって解体作業台を入手不可能にしています｡あらかじめご了承ください｡"]
+			id: "6A0FD799BC98DC00"
+			tasks: [{
+				id: "05F5C37F7F3962E5"
+				title: "解体作業台は解体されました"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"黄昏の森は順番にボスを倒さないと進めません｡"
+				"最初のボスはナーガ神殿のナーガです｡"
+				"実績解除のためには､｢ナーガトロフィーを『拾う』｣必要があります｡"
+				"(チェストから入手するだけではダメ)"
+			]
+			id: "15852C8D0601096F"
+			rewards: [{
+				count: 2
+				id: "47DDB3DC6DE71435"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			subtitle: "黄昏最初のボス"
+			tasks: [{
+				id: "3C023B9F8C65ED91"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"ナーガを倒すと､高くそびえるリッチタワーに入れるようになります｡"
+				"頂上にはトワイライトリッチがいます｡"
+				"ドロップ報酬は4種の杖のうちランダムですが､このクエストの報酬で好きなものを1個だけ選べます｡"
+			]
+			id: "32934BD3E654E167"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "786173DD481815C5"
+				table_id: 4819769438096064388L
+				type: "choice"
+			}]
+			subtitle: "黄昏2番目のボス"
+			tasks: [{
+				id: "2113D787274F7A66"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"トワイライトリッチを倒すと沼地へ入れるようになります｡"
+				"沼地にはラビリンスがあり､壁はとても破壊に時間のかかるブロックになっています｡"
+				"ボスはミノッシュルームです｡"
+				"次に進むためにはボスドロップの｢ミーフストロガノフ｣を食べることが必要です｡"
+			]
+			id: "6F93B4B4D1402473"
+			rewards: [{
+				id: "7675AC3B1AC47343"
+				item: "twilightforest:meef_stroganoff"
+				type: "item"
+			}]
+			subtitle: "ラビリンスのボス"
+			tasks: [{
+				id: "0C1C786AC6AAE717"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"ミーフストロガノフを食べると焼け沼に入れるようになります｡"
+				"焼け沼のボスはヒドラです｡"
+			]
+			id: "06071369313B0466"
+			rewards: [{
+				count: 2
+				id: "6C113B1F2837EE0E"
+				item: "twilightforest:fiery_blood"
+				type: "item"
+			}]
+			subtitle: "焼け沼のボス"
+			tasks: [{
+				id: "724C95220149309A"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"トワイライトリッチを倒すと闇の森に入れるようになります｡"
+				"ゴブリン騎士の拠点には台座があり､そこにボストロフィーを置くことでロックが解除されます｡"
+				"ボスは｢ナイトファントム｣です｡"
+			]
+			id: "491A719003F8BB10"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BBBA3F6F5AEB203"
+				table_id: 3129031445838278182L
+				type: "choice"
+			}]
+			subtitle: "ゴブリン騎士の拠点のボス"
+			tasks: [{
+				id: "28207B09F41E6215"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"ファントム装備を手に入れると､闇の森の奥の物凄く高い塔に入れるようになります｡"
+				"そのダークタワーのボスがウルガストです｡"
+			]
+			id: "1B5952705700083D"
+			rewards: [{
+				count: 2
+				id: "5920E30025430403"
+				item: "twilightforest:fiery_tears"
+				type: "item"
+			}]
+			subtitle: "ダークタワーのボス"
+			tasks: [{
+				id: "655F6BC2F3AB01C3"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"トワイライトリッチを倒すと雪の森に入れるようになります｡"
+				"雪の森の中のイエティの巣のボスが｢アルファイェティ｣です｡"
+			]
+			id: "2B523CC531116289"
+			rewards: [{
+				count: 2
+				id: "17E0A4C29A89B93B"
+				item: "twilightforest:alpha_yeti_fur"
+				type: "item"
+			}]
+			subtitle: "イエティの巣のボス"
+			tasks: [{
+				id: "49BEB371B234C02C"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"アルファイエティを倒すと氷河に入れるようになります｡"
+				"氷河の中のオーロラの宮殿のボスが雪の女王です｡"
+			]
+			id: "11ED67E7049FF798"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44B01BE7CE4ECBBD"
+				table_id: 4974838053446787233L
+				type: "choice"
+			}]
+			subtitle: "オーロラの宮殿のボス"
+			tasks: [{
+				id: "21DA820ACDEBE31F"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "黄昏の森"
+}

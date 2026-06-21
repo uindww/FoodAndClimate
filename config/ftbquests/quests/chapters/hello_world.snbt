@@ -1,0 +1,108 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hello_world"
+	group: "34C881884558E147"
+	icon: "minecraft:apple"
+	id: "37B5E05E907AF2C6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"ワールドへようこそ！"
+				"拠点にする場所を決めたら、この報酬を受け取ってください！"
+				"触れたことのあるウェイストーン同士はワープ移動できます！"
+				"自分の拠点には名前を書いておいてね！"
+			]
+			id: "74D9454CADE028C1"
+			rewards: [
+				{
+					id: "3DF6B73AC0F6E361"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					id: "1E578E0086138602"
+					item: "minecraft:white_bed"
+					type: "item"
+				}
+				{
+					id: "0970175D2A301365"
+					item: "farmersdelight:white_canvas_sign"
+					type: "item"
+				}
+			]
+			subtitle: "いらっしゃい！"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "34F1A1CE8087CA00"
+				title: "Hello World!"
+				type: "dimension"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			description: [
+				"このMod構成では色んな種類の食べ物を食べると、種類数に応じて最大ライフが増加するよ！"
+				"最初は5種類食べればハート2個増加！"
+				"その次は15, 30, 45, 60, 80, 100...とだんだん必要な数が増えていくよ。"
+				"にんじんと本で作れるFoodBookを読めば、今何をどれだけ食べてきたか分かるから読んでみてね。"
+				"このクエストの報酬にもあるよ！"
+			]
+			icon: "solcarrot:food_book"
+			id: "053D04A052976169"
+			rewards: [{
+				id: "583A8A7E4CB19142"
+				item: "solcarrot:food_book"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "61DBD6CC624BF8C7"
+				type: "dimension"
+			}]
+			title: "ごはんを食べて健康になろう!"
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			description: [
+				"ワープストーンを使うと､一定時間後にどれかの触ったことのあるウェイストーンにテレポートできます｡"
+				"ただし､使用には一定時間が必要であり､その間にダメージを受けるとキャンセルされてしまいます｡"
+				"また､使用後一定時間はクールタイムが生じるため連続使用はできません｡"
+				"ウェイストーンの材料でもあります｡"
+			]
+			icon: {
+				Count: 1b
+				id: "waystones:warp_stone"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "040734BF43AFB655"
+			rewards: [{
+				id: "1BC80B50208F0631"
+				item: {
+					Count: 1b
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "おうちかえる!"
+			tasks: [{
+				id: "10CD4DDF1A39282F"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "ワープストーン"
+			x: -5.0d
+			y: -3.5d
+		}
+	]
+	title: "Hello World!"
+}

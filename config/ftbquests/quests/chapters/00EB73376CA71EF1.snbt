@@ -1,0 +1,292 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "00EB73376CA71EF1"
+	group: "53DD377EFA78FCB6"
+	icon: "tofucraft:tofukinu"
+	id: "00EB73376CA71EF1"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"丸石のハーフブロックと棒2本で塩田を作れます｡"
+				"塩田に水をぶちまけることで塩田に水がたまり､"
+				"一定時間経過すると塩が取れます｡"
+				"塩を取ったあとの水色をガラス瓶ですくい取ると豆腐を作るのに必要な｢にがり｣がとれます｡"
+			]
+			id: "5AB2B08D18143F3B"
+			rewards: [
+				{
+					id: "5A7D9AFC366C2FF8"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "381942A310D74D5D"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+			]
+			subtitle: "塩を作るための装置"
+			tasks: [{
+				consume_items: false
+				id: "01AA2EA2BB47F994"
+				item: "tofucraft:blocksaltpan"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"地面に豆乳を流し､豆乳源ににがりをつかうことで｢絹豆腐ブロック｣ができます｡"
+				"｢絹豆腐ブロック｣を破壊すると4つの｢絹豆腐｣が得られます｡"
+				"絹豆腐の上で跳ねると崩れます｡この場合手に入る絹豆腐の数が減ります｡"
+			]
+			id: "1EE3C5674C9C5FB1"
+			rewards: [{
+				count: 3
+				id: "3E8DD41C924E596B"
+				item: "tofucraft:bittern_bottle"
+				type: "item"
+			}]
+			subtitle: "最初のやわらかい豆腐"
+			tasks: [{
+				id: "73F7222E21705A7C"
+				item: "tofucraft:tofukinu"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"絹豆腐を4つクラフトすると｢木綿豆腐ブロック｣になります｡"
+				"破壊すると｢木綿豆腐｣を4つ得られます｡"
+				"ちなみに木綿豆腐を4つクラフトするとそのまま｢木綿豆腐ブロック｣になります｡"
+				"木綿豆腐ブロックの上で跳ねても崩れません｡"
+			]
+			id: "12F0A4ABCA9413C1"
+			rewards: [{
+				count: 4
+				id: "6BF82F5A5ECB7271"
+				item: "tofucraft:tofumomen"
+				type: "item"
+			}]
+			subtitle: "絹より少し硬い豆腐"
+			tasks: [{
+				id: "68D4DC2F6E0E9A69"
+				item: "tofucraft:blocktofumomen"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"木綿豆腐ブロックの上下に丸石などの重たいブロックを置いてしばらくたつと､｢石豆腐ブロック｣に､さらに時間がたつと｢鋼豆腐ブロック｣になります｡"
+				"破壊するとそれぞれの豆腐アイテム4つになります｡"
+				"豆腐\"ブロック\"では剣やつるはしなどの道具や防具を作れます｡"
+				"特に｢鋼豆腐ブロック｣で作った装備は鉄相当の性能があります｡"
+				"なお､｢鋼豆腐のハサミ｣はブロックではなく｢鋼豆腐｣で作ります｡"
+			]
+			icon: "tofucraft:blocktofumetal"
+			id: "47A66007F9F7FE2D"
+			rewards: [{
+				count: 3
+				id: "0B14D458D09A6A73"
+				item: "tofucraft:blocktofumomen"
+				type: "item"
+			}]
+			subtitle: "かなり硬くて食べられない豆腐"
+			tasks: [{
+				id: "7E6B50CFB7BEDE41"
+				item: "tofucraft:tofumetal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"製塩かまどでは燃料で水を沸かすことで効率よく塩とにがりを作れます｡"
+				"ホッパーなどにも対応しています｡"
+				"ただし大量生産には水の供給が必要です｡"
+			]
+			id: "141C31FE1327BBB9"
+			rewards: [{
+				count: 3
+				id: "5C2B661E1255CB86"
+				item: "tofucraft:bittern_bottle"
+				type: "item"
+			}]
+			subtitle: "にがりの大量生産"
+			tasks: [{
+				id: "252191951E9BA3DC"
+				item: "tofucraft:salt_furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"豆腐ワールドには大きなお城があり､その奥には豆腐ガンドルフが待ち構えています｡"
+				"豆腐らしからぬ硬さがあり､倒すのはなかなか大変ですが､"
+				"豆腐クラフトの集大成としてぜひ挑戦してみてください!"
+			]
+			id: "6A5727207CD3F7D9"
+			rewards: [{
+				id: "4448AB670ED07A43"
+				item: "tofucraft:tofugem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A8074ED71A33FC1"
+				item: "tofucraft:tofugem"
+				type: "item"
+			}]
+			title: "大目標:豆腐ガンドレフを倒そう!"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"絹豆腐ブロックは破壊すると絹豆腐になり､4つクラフトすると木綿豆腐になるため､絹豆腐ブロックを直接得るのは難しく見えます｡"
+				"ただし､シルクタッチは必ずしも必要ありません｡豆腐すくいを作って使えば絹豆腐ブロックのまま回収することが可能です｡"
+				"これにより絹豆腐ブロックで装備を作ることも可能です!"
+				"……もちろん性能とか耐久はお察しください｡"
+			]
+			id: "299DA05CF12955B4"
+			rewards: [{
+				id: "055287D003070F3A"
+				item: "tofucraft:blocktofukinu"
+				type: "item"
+			}]
+			subtitle: "絹豆腐ブロックを手に入れる手段"
+			tasks: [{
+				id: "41A934DCAEA58461"
+				item: {
+					Count: 1b
+					id: "tofucraft:tofuscoop"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"｢鋼豆腐のハサミ｣は鋼豆腐\"ブロック\"ではなく\"鋼豆腐\"から作れます｡"
+				"つまり｢鋼豆腐ブロック｣の半分のコストで作れます｡"
+				"大抵の場合ハサミと同じ仕事ができ､草や羊毛を刈れますが､ハニカムなどごく一部の動作ができないことはあります｡"
+				"とはいえ非常にコスパがいいので補助的に使うのもいいでしょう｡"
+			]
+			id: "2F0F406F855B6695"
+			rewards: [{
+				id: "77BE588A3EE808E6"
+				item: "tofucraft:blocktofuishi"
+				type: "item"
+			}]
+			subtitle: "コスパのいいハサミ"
+			tasks: [{
+				id: "6DA434DE279CCD59"
+				item: {
+					Count: 1b
+					id: "tofucraft:tofu_metal_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Createのメカニカルミキサーで大豆を加工すると豆乳ができ､"
+				"同様ににがりと豆乳を混ぜると絹豆腐4つが出来上がります｡"
+				"豆腐の量産が一気に楽になるので大量に必要な際には使ってみてください｡"
+			]
+			icon: "create:mechanical_mixer"
+			id: "35795E3C198ADD46"
+			rewards: [{
+				count: 4
+				id: "581809BD141989A9"
+				item: "tofucraft:tofukinu"
+				type: "item"
+			}]
+			subtitle: "Createの力を借りて"
+			tasks: [{
+				id: "0AD1C379E997A8BF"
+				title: "豆腐の自動化"
+				type: "checkmark"
+			}]
+			title: "豆腐作りの工業化"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"小麦と大豆をクラフトすると麹の種が得られます。"
+				"この麹の種を「所持していると」時間経過で麹になります。"
+				"麹3つと塩3つと味噌樽をクラフトして､上下に丸石など重たいブロックで挟むと発酵が進みます｡"
+				"色が変わった時点でガラス瓶で右クリックすると最大6個醤油が取れます｡"
+				"味噌樽を破壊すると味噌が6つ取れます｡"
+			]
+			id: "7DEC385BEEED99DE"
+			rewards: [{
+				count: 3
+				id: "47BF6138FFB52B7B"
+				item: "tofucraft:koujibase"
+				type: "item"
+			}]
+			subtitle: "一大豆二食品"
+			tasks: [{
+				id: "548810CA19850E45"
+				item: "tofucraft:barrel_miso"
+				type: "item"
+			}]
+			title: "醤油と味噌"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"大豆を精錬すると炒り豆になります｡"
+				"炒り豆6個とボウルをクラフトすると福豆を作れます｡"
+				"福豆は撒いて敵にダメージを与えることができます｡結構攻撃範囲が広いです｡"
+			]
+			id: "2450E7135632D82C"
+			rewards: [{
+				count: 6
+				id: "03332AC8744681D5"
+				item: "tofucraft:seeds_soybeans"
+				type: "item"
+			}]
+			subtitle: "散弾では痛かろうなぁ!"
+			tasks: [{
+				id: "64D5024B0C0490FC"
+				item: {
+					Count: 1b
+					id: "tofucraft:fukumame"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+	]
+	title: "豆腐クラフトを学ぼう!"
+}

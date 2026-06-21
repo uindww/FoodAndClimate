@@ -1,0 +1,287 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "33C6A664BA4D2363"
+	group: "795DD4BC46CA0E26"
+	icon: "dcs_climate:main/gem_chalcedony"
+	id: "33C6A664BA4D2363"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"HeatAndClimateのレシピ追加により、"
+				"砂利から火打石をクラフトできます。"
+				"火打石は案外色んな使い道があるので覚えておきましょう。"
+			]
+			id: "7E1253B167EB348C"
+			rewards: [{
+				id: "6CE2D65405755A73"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "077B45D003736983"
+				item: "minecraft:gravel"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "砂利から火打石への変換"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"火打石をかまどなどで焼くと､｢玉髄｣というHeatAndClimate独自の宝石が手に入ります。"
+				"必須というわけではないのですが使い道が多くコストも安いので活用しましょう。"
+			]
+			id: "6EDB81C78829A23E"
+			rewards: [{
+				count: 5
+				id: "7DB68C56714A1A9F"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			subtitle: "火打石を焼こう!"
+			tasks: [{
+				id: "522E79DF83C5E12F"
+				item: "dcs_climate:main/gem_chalcedony"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"玉髄などの一部の宝石をボート型に配置することで｢石英の乳鉢｣を作れます｡"
+				"HeatAndClimateの色んなアイテムを加工したりすりつぶしたりできます。使ってもなくなりません。"
+				"バニラのアイテムも一部加工ができるので便利です。"
+			]
+			id: "4AEADD7FF10856DF"
+			rewards: [{
+				count: 2
+				id: "32EB3F3E6765A975"
+				item: "dcs_climate:main/oreitem_red_1"
+				type: "item"
+			}]
+			subtitle: "いろいろ加工しよう!"
+			tasks: [{
+				id: "0E0B168680D93031"
+				item: "dcs_climate:main/agate_mortar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"鉄鉱石や赤鉄鉱などの鉄の原料と石英の乳鉢をクラフトすると鉄粉が得られます｡"
+				"石炭と石英の乳鉢をクラフトすると石炭の粉が得られます｡"
+				"鉄粉8個と石炭の粉1個で鋼粉末ブロックが得られます｡"
+				"ただし……?"
+			]
+			id: "253D14721A15FBE5"
+			rewards: [{
+				count: 2
+				id: "6C0A069666F63524"
+				item: "dcs_climate:main/oredust_red_1"
+				type: "item"
+			}]
+			subtitle: "鉱石を砕いて粉にしよう"
+			tasks: [
+				{
+					consume_items: false
+					count: 8L
+					id: "0A63A622310BA7F6"
+					item: "dcs_climate:main/oredust_red_1"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "49418CB7E270B4EA"
+					item: "dcs_climate:main/dust_coal"
+					type: "item"
+				}
+			]
+			title: "鋼を作る準備"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"鋼粉末ブロックをかまどで焼いても鉄ブロックになってしまいます｡"
+				"では鋼ブロックを得るにはどうすればいいか。それは、「金属熱処理」、つまり「気候精錬」が必要になります。"
+				"温度SMELTINGは溶岩でも作れない温度なので、専用のアイテムが必要です。ただしこの加熱チャンバー、通気性を確保してやらないと充分な温度が出ません。そのために確実なのは「ふいご」を作ることです。"
+			]
+			id: "2631F5F5E277A1B1"
+			rewards: [{
+				count: 2
+				id: "47A30ACC89742E22"
+				item: "dcs_climate:main/oredust_red_1"
+				type: "item"
+			}]
+			subtitle: "溶岩よりも高い温度"
+			tasks: [
+				{
+					id: "73565E009722F208"
+					item: "dcs_climate:main/dustblock_steel"
+					type: "item"
+				}
+				{
+					id: "3F7736E760B67670"
+					item: "dcs_climate:machine/chamber_iron"
+					type: "item"
+				}
+				{
+					id: "6ABF3E52EBE3EDDA"
+					item: "dcs_climate:main/bellow"
+					type: "item"
+				}
+			]
+			title: "鋼を作る準備その2"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"鋼粉末ブロックの回り（斜め隣接も含みます！）をブロックで埋めてやることで、通気性TIGHTを得られます。"
+				"鋼ブロックの周りをブロックで覆い、加熱チャンバーを設置したうえで、加熱チャンバーに燃料を入れて、スニークしながらふいごを右クリックし続けましょう。"
+				"十分な時間、十分な温度で、十分な気密性をキープすると、鋼ブロックが手に入ります。"
+				"鋼ブロックは9個の鋼になります｡"
+			]
+			id: "61EEB2871C2952EA"
+			rewards: [{
+				count: 2
+				id: "49116EE9E0EF2F9C"
+				item: "dcs_climate:main/oredust_red_1"
+				type: "item"
+			}]
+			subtitle: "凄く熱くて狭い空間"
+			tasks: [{
+				id: "4EA17195E6DEAD3E"
+				item: "dcs_climate:main/metalblock_steel"
+				type: "item"
+			}]
+			title: "鋼を作ろう!"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"HeatAndClimateには色々な色の鉱脈があります。"
+				"単純に壊すとその色に応じた結晶をドロップするのですが、"
+				"シルクタッチで破壊し、色々な方法で加工すると入手できるものが変わります。"
+			]
+			id: "2A75DA9803DBF60C"
+			rewards: [{
+				id: "31F521E8BC7B1C8F"
+				item: "dcs_climate:main/sieve"
+				type: "item"
+			}]
+			subtitle: "求:シルクタッチ"
+			tasks: [{
+				id: "1CE6316750BB45AB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:color_ores"
+					}
+				}
+				title: "色付きの鉱脈"
+				type: "item"
+			}]
+			title: "色の鉱脈"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"電動石臼があると､色の鉱脈から取れる結晶の数が増えます｡"
+				"さらに､一定の確率でレアな結晶が取れる可能性も生まれます｡"
+				"このレアな結晶がないと作れない金属もあります｡"
+				""
+				"ただし､｢電動｣なのでなんらかの形で電気を送ってやらねばなりません｡"
+			]
+			id: "110447AD92FE34E3"
+			rewards: [{
+				count: 2
+				id: "3DCF1C6F2B87C882"
+				item: "dcs_climate:main/oreitem_green_2"
+				type: "item"
+			}]
+			subtitle: "さらなる工業化のために"
+			tasks: [{
+				id: "68468C49E0D238B4"
+				item: "dcs_climate:machine/stone_mill"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"機械を動かすには電力が必要です｡そのための発電機も当然あります｡"
+				"そのためにはニッケルの粉が必要になります｡"
+				""
+				"ただ､発電機単体では電力を生み出せません｡発電機に動力を供給する｢動力源｣が必要になります｡"
+			]
+			id: "3665456861BF6113"
+			subtitle: "機械を動かすために"
+			tasks: [{
+				id: "250EC40851B6B787"
+				item: "dcs_climate:machine/generator_small"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"発電機を動かすためには動力が必要です｡"
+				"最初の動力としては｢バイオマスボイラ｣がお勧めです｡"
+				"水と燃料から動力を生み出します｡"
+				"ふいごなどで風を送ると通気性が増します｡"
+			]
+			id: "4D7FF0E94E318D08"
+			rewards: [{
+				count: 8
+				id: "68C40FD057586844"
+				item: "dcs_climate:food/bio_briquet_raw"
+				type: "item"
+			}]
+			subtitle: "発電機を動かすために"
+			tasks: [{
+				id: "328C056821735A62"
+				item: "dcs_climate:machine/boiler_biomass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"HeatAndClimateでは割と楽に真鍮を作れます｡"
+				"Createの物とも互換性があるので活用するのも良いでしょう｡"
+			]
+			id: "144DE150BD08857B"
+			rewards: [{
+				id: "24EA473AAAF518F5"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			subtitle: "Createのショートカット"
+			tasks: [{
+				id: "2245700832A6E16B"
+				item: "dcs_climate:main/metalblock_brass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+	]
+	title: "道具や工業"
+}

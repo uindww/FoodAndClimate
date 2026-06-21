@@ -1,0 +1,842 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7F162A4C930214E2"
+	group: "34C881884558E147"
+	icon: "lightmanscurrency:coin_iron"
+	id: "7F162A4C930214E2"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"このModPackのほとんどのクエストはアイテムを消費しませんが､"
+				"このチャプターだけはCoinを消費して買い物を行います｡"
+				"また､仕様上財布からコインを出しておく必要があります｡"
+				"ご注意ください。"
+			]
+			id: "62C5ECC1525F1CB2"
+			rewards: [{
+				id: "64BADCBC830BD3B2"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "このページはコインを支払います"
+			tasks: [{
+				id: "63F1F409880F72F9"
+				title: "ショッピングページの取り扱い"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: ["パン5個セットで1コインです｡"]
+			icon: "minecraft:bread"
+			id: "1DB30731456B6AEE"
+			rewards: [{
+				count: 5
+				id: "5324A5E78D9D6B71"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "3C9559412C5239BB"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "パン5個セット"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: ["鉄鉱石1個2コインです｡"]
+			icon: "minecraft:iron_ore"
+			id: "63E7823FA01E9F81"
+			rewards: [{
+				id: "7A21EC2B0D04B160"
+				item: "minecraft:iron_ore"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "7E20A3D667CA4CAD"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "鉄鉱石"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: ["Gold Coinの両替です｡"]
+			id: "15E37FD12C184C37"
+			rewards: [{
+				count: 10
+				id: "64E19BAF8F6AB918"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "0DCC8A58C5437929"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Gold Coinの両替"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["金鉱石1個8コインです｡"]
+			icon: "minecraft:gold_ore"
+			id: "156C9D3ED2EB8B6C"
+			rewards: [{
+				id: "4A62E6EB60E86827"
+				item: "minecraft:gold_ore"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "31032245C4C85AED"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "金鉱石"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: ["ダイヤモンド鉱石1個20コインです｡"]
+			icon: "minecraft:diamond_ore"
+			id: "74110462AE4EFE19"
+			rewards: [{
+				id: "4021F1394B51E2DA"
+				item: "minecraft:diamond_ore"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "487134BCED793508"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ダイヤモンド鉱石"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: ["エンダーパール1個8コインです｡"]
+			icon: "minecraft:ender_pearl"
+			id: "64914AE53773DF85"
+			rewards: [{
+				id: "0733D0B5691DD3A1"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "45929A569293137E"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "エンダーパール"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["アンコモンインク1個10コインです｡"]
+			icon: "irons_spellbooks:uncommon_ink"
+			id: "1BDE567EC88D4227"
+			rewards: [{
+				id: "7B54080D0B476192"
+				item: "irons_spellbooks:uncommon_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "6650E44DB0FFE791"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "アンコモンインク"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"ニワトリのスポーンエッグ1個5コインです｡"
+				"スポナーブロックの中身の変更はできません。"
+			]
+			icon: "minecraft:chicken_spawn_egg"
+			id: "17220F5D33887F97"
+			rewards: [{
+				id: "49BABA1B832F725C"
+				item: "minecraft:chicken_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "02BB954ED9BC46DD"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ニワトリのスポーンエッグ"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: ["ガストの涙1個32コインです｡"]
+			icon: "minecraft:ghast_tear"
+			id: "7E1E729B39190F0D"
+			rewards: [{
+				id: "11D38106D21811A9"
+				item: "minecraft:ghast_tear"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "41DB86B95C58A3A9"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ガストの涙"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["炭酸水のバケツ1個32コインです｡"]
+			icon: "dcs_climate:fluid/bucket_sparkling"
+			id: "013E15DCFCAF1A7D"
+			rewards: [{
+				id: "62CB353E864FD1AE"
+				item: "dcs_climate:fluid/bucket_sparkling"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "5B23740775817F8B"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "炭酸水のバケツ"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"大特価!自動販売機1個1コインです｡"
+				"みんなで経済を回しましょう!"
+			]
+			icon: "lightmanscurrency:vending_machine"
+			id: "511B6D5A7C169AF9"
+			rewards: [{
+				id: "2192F3275E6FDCF7"
+				item: "lightmanscurrency:vending_machine"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "6856D282E69797E1"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "【大特価】自動販売機1コイン!"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"ブタのスポーンエッグ1個5コインです｡"
+				"スポナーブロックの中身の変更はできません。"
+			]
+			icon: "minecraft:pig_spawn_egg"
+			id: "1336F120C6C5A494"
+			rewards: [{
+				id: "3F95C861C28CA503"
+				item: "minecraft:pig_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "1F18A461B1079BD6"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ブタのスポーンエッグ"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"ヒツジのスポーンエッグ1個10コインです｡"
+				"スポナーブロックの中身の変更はできません。"
+			]
+			icon: "minecraft:sheep_spawn_egg"
+			id: "1E34B08BBDCFF8F0"
+			rewards: [{
+				id: "255B4F1B344C8C57"
+				item: "minecraft:sheep_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "4062CC086581DA82"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ヒツジのスポーンエッグ"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"ウシのスポーンエッグ1個10コインです｡"
+				"スポナーブロックの中身の変更はできません。"
+			]
+			icon: "minecraft:cow_spawn_egg"
+			id: "5745746996F74FAD"
+			rewards: [{
+				id: "37954FD8A2AF4B2C"
+				item: "minecraft:cow_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "0435AE724C6C0615"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ウシのスポーンエッグ"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: ["Emerald Coinの両替です｡"]
+			id: "13D230708B75A4B9"
+			rewards: [{
+				count: 10
+				id: "33A55C9A85511535"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "79F25ED6AF0C1C35"
+				item: "lightmanscurrency:coin_emerald"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Emerald Coinの両替"
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"ミツバチのスポーンエッグ10コインです｡"
+				"スポナーブロックの中身の変更はできません。"
+			]
+			icon: "minecraft:bee_spawn_egg"
+			id: "12950D194FF69E7D"
+			rewards: [{
+				id: "70F6EAF23173DD84"
+				item: "minecraft:bee_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "001A3C36DF568F9E"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ミツバチのスポーンエッグ"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"ウサギのスポーンエッグ16コインです｡"
+				"スポナーブロックの中身の変更はできません。"
+			]
+			icon: "minecraft:rabbit_spawn_egg"
+			id: "4C14B25CDC0D1EEC"
+			rewards: [{
+				id: "32A5FD1876C39C9E"
+				item: "minecraft:rabbit_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "7A0CF74E6C720595"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "ウサギのスポーンエッグ"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"トーフステッキ48コインです｡"
+				"……売ってはいますが正直高いのでまずは探すことを検討してみてください｡"
+				"このアイテムは1回しか買えません｡"
+			]
+			icon: {
+				Count: 1b
+				id: "tofucraft:tofustick"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2FBF0B99CBAAB139"
+			optional: true
+			rewards: [{
+				id: "202B17F6F4CCBE8A"
+				item: {
+					Count: 1b
+					id: "tofucraft:tofustick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "購入非推奨品"
+			tasks: [{
+				consume_items: true
+				count: 48L
+				id: "2DA9411F24875C9F"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "トーフステッキ"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: ["闇鉱石1個20コインです｡"]
+			icon: "evilcraft:dark_ore"
+			id: "1F04259694D5321C"
+			rewards: [{
+				id: "25599F43BCDD643C"
+				item: "evilcraft:dark_ore"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "15B5C0FA965C073C"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "闇鉱石"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: ["秘術のサルベージ1個32コインです｡"]
+			icon: "irons_spellbooks:arcane_salvage"
+			id: "317DBE6D32B8B109"
+			rewards: [{
+				id: "3EC817FE220FAC3C"
+				item: "irons_spellbooks:arcane_salvage"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "5E7C15A4AD259EFD"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "秘術のサルベージ"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: ["緑の深層鉱石1個20コインです｡"]
+			icon: "dcs_climate:main/ore_green_deep"
+			id: "6ABC2822AA7A82FA"
+			rewards: [{
+				id: "2CB5A3155CF189F5"
+				item: "dcs_climate:main/ore_green_deep"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "1A7FC84F3E0EBAFF"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "緑の深層鉱石"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: ["アメジストの欠片1個4コインです｡"]
+			icon: "minecraft:amethyst_shard"
+			id: "5CCF18E5FC94B5A7"
+			rewards: [{
+				id: "452255D728369F1E"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "604911A2D6A62ACF"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "アメジストの欠片"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["不死のトーテム1個32コインです｡"]
+			icon: "minecraft:totem_of_undying"
+			id: "13E7CCE28396AE25"
+			rewards: [{
+				id: "3494030CD5FC8F78"
+				item: "minecraft:totem_of_undying"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "77A9FB5985D5149A"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "不死のトーテム"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: ["錬金術師の大釜1個20コインです｡"]
+			icon: "irons_spellbooks:alchemist_cauldron"
+			id: "32960FCD09DB6D21"
+			rewards: [{
+				id: "3FCF8CB4C6BA85C4"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "1A63FAE23B2D888E"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "錬金術師の大釜"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: ["オークの苗木と土5個セットで1コインです｡"]
+			icon: "minecraft:oak_sapling"
+			id: "44F1CBDABEB9B8B2"
+			rewards: [
+				{
+					count: 5
+					id: "54FF56B2DED6A9CF"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "268993EA34300854"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				id: "2F496ADF4D7BC143"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "オークの苗木5個セット"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			description: ["コモンインク1個5コインです｡"]
+			icon: "irons_spellbooks:common_ink"
+			id: "39782E9DC0587A64"
+			rewards: [{
+				id: "7A266331E7D8FAE1"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "401B51E78BFB18F0"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "コモンインク"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: ["レアインク1個20コインです｡"]
+			icon: "irons_spellbooks:rare_ink"
+			id: "1489135964C813E8"
+			rewards: [{
+				id: "3733F60DC1DEB179"
+				item: "irons_spellbooks:rare_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 20L
+				id: "6A28F271EB274C9F"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "レアインク"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: ["エピックインク1個40コインです｡"]
+			icon: "irons_spellbooks:epic_ink"
+			id: "5517992E32F76353"
+			rewards: [{
+				id: "1775110CF5DA9192"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 40L
+				id: "71A74745A50B8696"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "エピックインク"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: ["竹8個セットで1コインです｡"]
+			icon: "minecraft:bamboo"
+			id: "0DA61EF023FB04FE"
+			rewards: [{
+				count: 8
+				id: "6529D9DFDCAAD85F"
+				item: "minecraft:bamboo"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7ABBFC4A0EC1C954"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "竹8個セット"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"空っぽの魂の宿紙1個8コインです｡"
+				"メイドさんは付属していません｡メイドさんの収納にだけ使えます｡"
+				"メイドさんの管理には「射命丸 文のカメラ」というアイテムもあるので好きな方をお使いください。"
+			]
+			icon: "touhou_little_maid:smart_slab_empty"
+			id: "113B6EBC86A7E23E"
+			rewards: [{
+				id: "670748FB6C2A43C5"
+				item: "touhou_little_maid:smart_slab_empty"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "2C1F421F017A4712"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "空っぽの魂の宿紙"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: ["Diamond Coinの両替です｡"]
+			id: "6412E7DFB4A1972C"
+			rewards: [{
+				count: 10
+				id: "4F3FF9C00EFCF23B"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "44457FB1E7AF6A5F"
+				item: "lightmanscurrency:coin_diamond"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Diamond Coinの両替"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: ["Netherite Coinの両替です｡"]
+			id: "1C8ACADA0B7BA194"
+			rewards: [{
+				count: 10
+				id: "1C14795E8E4BDA95"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "586F273766EA046D"
+				item: "lightmanscurrency:coin_netherite"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "Netherite Coinの両替"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"巨大松明1個10コインです｡"
+				"広範囲の湧きつぶしができます｡まあ松明をちゃんと置いたほうが安上がりではあります｡"
+			]
+			icon: "torchmaster:megatorch"
+			id: "45EF391CED7CEB7E"
+			rewards: [{
+				id: "25C4ED1B8111A67B"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "59AE67249E6A41AA"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "巨大松明"
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+	title: "ショッピング!"
+}
