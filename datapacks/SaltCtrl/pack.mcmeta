@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": 10,
+    "description": "HaC and TofuCraftReloaded Compatibility Datapack  - Licensed under GPLv3"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "dcs_climate",
+        "path": "recipe/magic/card_red_green"
+      }
+    ]
+  }
+}
