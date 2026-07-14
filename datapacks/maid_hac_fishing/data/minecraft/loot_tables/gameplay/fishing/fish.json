@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 13
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:player"
+            }
+          }
+        }
+      ],
+      "entries": [
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_mullet", "weight": 30 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_smelt", "weight": 30 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_sardine", "weight": 30 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_flathead", "weight": 20 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_trout", "weight": 20 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_carp", "weight": 20 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_mackerel", "weight": 20 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_rockfish", "weight": 15 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_seabream", "weight": 15 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_gurnard", "weight": 15 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_hongkong_grouper", "weight": 10 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_skipjack", "weight": 10 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_red_seabream", "weight": 10 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_flounder", "weight": 10 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_grouper", "weight": 5 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_tuna", "weight": 2 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_krill", "weight": 25 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_prawn", "weight": 20 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_crab", "weight": 15 },
+        { "type": "minecraft:item", "name": "dcs_climate:food/fish_squid", "weight": 15 }
+      ]
+    }
+  ]
+}
