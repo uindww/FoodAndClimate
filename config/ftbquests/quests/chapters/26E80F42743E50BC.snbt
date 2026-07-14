@@ -10,15 +10,15 @@
 	quests: [
 		{
 			description: [
-				"リアル時間で毎日ログインするたびにLightmanCurrencyの鉄コインが10個もらえます｡"
-				"ログイン後､1分経過した時点で /DailyRewards claim とコマンドを入力するか､ワールドに入り直した時点で鉄コイン10個を受け取ることができます｡"
+				"リアル時間で毎日ログインするたびにLightmanCurrencyの金コインが10個もらえます｡"
+				"ログイン後､1分経過した時点で /DailyRewards claim とコマンドを入力するか､ワールドに入り直した時点で金コイン10個を受け取ることができます｡"
 				"コインの入手方法はそれ以外は無効にしているので､コインの入手方法は一部のクエストとログインボーナスだけになっているはずです｡"
 			]
-			icon: "lightmanscurrency:coin_iron"
+			icon: "lightmanscurrency:coin_gold"
 			id: "21694AC09FAB99AF"
 			rewards: [{
 				id: "5C793C89272AE622"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "ログインだけでももらいに来てね!"
@@ -27,7 +27,7 @@
 				title: "ログインボーナス"
 				type: "checkmark"
 			}]
-			x: -1.0d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
@@ -41,7 +41,7 @@
 			id: "4EE32AD511FA1A0E"
 			rewards: [{
 				id: "3E748A6F7926530B"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "LootRのお宝チェストは壊さないで!"
@@ -50,7 +50,7 @@
 				title: "お宝チェストについて"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: -2.0d
 		}
 		{
@@ -65,7 +65,7 @@
 			id: "485A3A55F953C9F8"
 			rewards: [{
 				id: "100C69CBB962D842"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "テラリアベースのアイテム整理"
@@ -94,7 +94,7 @@
 			id: "3E3CC00103C25A94"
 			rewards: [{
 				id: "0479B214C0B43507"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "楽しく農業しよう"
@@ -122,7 +122,7 @@
 			id: "0CAC5586A070A8AE"
 			rewards: [{
 				id: "2EAC21CD51EC2D3F"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "見た目だけの装備"
@@ -146,7 +146,7 @@
 			id: "00DF7515E55F7C0C"
 			rewards: [{
 				id: "3BC030627CEA0F1E"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "リードなくても大丈夫"
@@ -167,7 +167,7 @@
 			id: "06983553B47CEDBF"
 			rewards: [{
 				id: "437301A50CCC4B5D"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "綺麗な花火か汚ねぇ花火か"
@@ -176,8 +176,8 @@
 				type: "checkmark"
 			}]
 			title: "地形破壊禁止"
-			x: -2.0d
-			y: 1.0d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -188,7 +188,7 @@
 			id: "647F3C2EA046B2AA"
 			rewards: [{
 				id: "25DC08CB5986DA1B"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			tasks: [{
@@ -209,7 +209,7 @@
 			id: "3F4A6D63589624A5"
 			rewards: [{
 				id: "40FF2A0C0BB8323F"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "レシピMod"
@@ -218,7 +218,7 @@
 				title: "JustEnoughItem"
 				type: "checkmark"
 			}]
-			x: -2.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -231,7 +231,7 @@
 			id: "0CE95664601B7F0A"
 			rewards: [{
 				id: "3D355B24B74477D2"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "全ロス防止"
@@ -240,7 +240,7 @@
 				title: "お墓Mod"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
@@ -253,7 +253,7 @@
 			id: "4C10644F5ABC08E2"
 			rewards: [{
 				id: "3041C2DFCC9CCE86"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "チェストの中身も一括整頓"
@@ -275,7 +275,7 @@
 			id: "520A03211960E0B8"
 			rewards: [{
 				id: "477F78AB125541BA"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "満腹は食事をやめる理由にはならない"
@@ -284,97 +284,8 @@
 				title: "AlwaysEat"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -1.0d
-		}
-		{
-			dependency_requirement: "one_completed"
-			description: [
-				"マルチプレイで全員が寝るのは大変なため､半数以上が寝れば夜が明けるようになっています｡"
-				"全員が寝るとすぐに夜が明けます｡"
-			]
-			icon: "minecraft:red_bed"
-			id: "38145539C082CB4B"
-			rewards: [{
-				id: "392BA3EE9D71490C"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "半数が寝れば夜が明けます"
-			tasks: [{
-				id: "72D2F5F188DF9FF7"
-				title: "睡眠導入"
-				type: "checkmark"
-			}]
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			description: [
-				"Re:DecoというModで多くの家具が追加されています｡"
-				"また､HeatAndClimateにも多くの家具が追加されており､"
-				"さらに漆Modにも家具があります｡"
-				"建築の際はいろいろ探してみてください｡"
-			]
-			icon: "redeco:acacia_chair"
-			id: "31419614CF1D5616"
-			rewards: [{
-				id: "5024C249FAF6E377"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "絶対に壊れない椅子です"
-			tasks: [{
-				id: "15A08007F74342C4"
-				title: "家具追加しました"
-				type: "checkmark"
-			}]
-			x: -1.0d
-			y: 1.0d
-		}
-		{
-			description: [
-				"Farmer'sDelightで牛乳入り瓶がよく要求されますが､"
-				"ガラス瓶をウシに使うことで牛乳入り瓶を得られるModを入れました｡"
-				"別のModでスタック可能にもなっているので､状態異常対策にも是非どうぞ｡"
-			]
-			icon: "farmersdelight:milk_bottle"
-			id: "6414B794C07EA089"
-			rewards: [{
-				id: "37DD170B25C2CBF1"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "料理のおともに"
-			tasks: [{
-				id: "122794CD0CEE8A3E"
-				title: "ガラス瓶でも牛乳が汲めます"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 1.0d
-		}
-		{
-			description: [
-				"このModpackでは、独自のデータパックにより、豆腐クラフトReloadedの塩とHeatAndClimateの塩を単体クラフトで相互に変換できます。"
-				"また､醤油と味噌についても同様の変換を実装しました｡"
-				"どちらかのものが指定される場合にご活用ください。"
-			]
-			icon: "dcs_climate:main/dust_salt"
-			id: "54A2897F96EE7E15"
-			rewards: [{
-				id: "25CB19B2C7F3007D"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "ど･ち･ら･の･塩?"
-			tasks: [{
-				id: "429B3EE94883057E"
-				type: "checkmark"
-			}]
-			title: "塩味噌醤油の互換性"
-			x: 2.0d
-			y: 0.0d
 		}
 		{
 			description: [
@@ -386,7 +297,7 @@
 			id: "18F1F17B7543BAEE"
 			rewards: [{
 				id: "0BC5917D51EDF57E"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "不要アイテムの処理"
@@ -400,27 +311,6 @@
 		}
 		{
 			description: [
-				"日本語(もしくは設定している言語)と英語の両方のアイテム名を表示するModを導入しました｡"
-				"JEIでも英語名での検索も可能です｡"
-			]
-			icon: "minecraft:writable_book"
-			id: "20F5C89498689911"
-			rewards: [{
-				id: "1F7271EDF412DCCF"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "JapaneseAndEnglish"
-			tasks: [{
-				id: "17CB611167207112"
-				title: "日本語英語併記"
-				type: "checkmark"
-			}]
-			x: 2.0d
-			y: -1.0d
-		}
-		{
-			description: [
 				"バニラの仕様で､スポナーブロックに対してスポーンエッグを使用するとスポナーの中身を変更できる仕様があります｡"
 				"このModPackではスポーンエッグが入手可能なため､スポーンエッグをスポナーブロックに対して使用不可能にする処置を行いました｡"
 				"予めご了承ください。"
@@ -429,7 +319,7 @@
 			id: "1D07FA7BAAAF777E"
 			rewards: [{
 				id: "0DCFA5818A5D5F04"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "スポナーエッグがあるための仕様"
@@ -439,24 +329,57 @@
 				type: "checkmark"
 			}]
 			x: 2.0d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
-			description: ["自分の攻撃が草に当たっても貫通するModを導入しました｡"]
-			icon: "minecraft:grass"
-			id: "71E5865960CE0487"
+			description: [
+				"このチャプターには読んでチェックマークをつけるだけで1コイン貰えるクエストが並んでいます｡"
+				"このModPackに入っている色んな小さな要素の説明がしてありますので、是非読んでみてください。"
+				""
+				"……コインもらうだけじゃなくちゃんと読んでね!"
+			]
+			id: "0118D805885FD11A"
 			rewards: [{
-				id: "04A928E5BA26CDF8"
-				item: "lightmanscurrency:coin_iron"
+				id: "2871385323B6F5F5"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "草薙の剣"
+			subtitle: "初回限定1コイン!"
 			tasks: [{
-				id: "6821BF703D7E5531"
-				title: "草むらに邪魔されない"
+				id: "171239AFD76C7C67"
+				title: "読むだけで報酬Get!"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"釣りに関して2種類の調整を行いました｡"
+				"まず､プレイヤーが釣りを行う際に､魚がかかったら自動で引き上げてくれ､さらに再度釣り竿を振ってくれます｡"
+				"また､メイドさんが釣りを行う際に､HeatAndClimateの魚も確率で釣りあげてくれるようになりました。"
+				"釣りをしないと作れない料理が多少楽になると思います。"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "39A93B2F2290C5D0"
+			rewards: [{
+				id: "11425370A38ACB33"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "釣りの2種類の自動化"
+			tasks: [{
+				id: "4663FCE4A727783A"
+				title: "釣りを便利に"
+				type: "checkmark"
+			}]
+			x: -2.0d
 			y: 1.0d
 		}
 	]

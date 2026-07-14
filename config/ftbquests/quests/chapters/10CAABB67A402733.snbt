@@ -16,6 +16,7 @@
 				""
 				"一部の服装は暑さ寒さに耐性があるので使ってみるのもいいでしょう｡"
 			]
+			icon: "dcs_climate:main/icon_burning"
 			id: "58ECE708128A02D6"
 			rewards: [
 				{
@@ -39,34 +40,11 @@
 			tasks: [{
 				advancement: "dcs_climate:main/damage"
 				criterion: ""
-				icon: "minecraft:campfire"
 				id: "02EA912120876ACA"
 				type: "advancement"
 			}]
 			title: "やけど注意!"
 			x: -1.0d
-			y: -0.5d
-		}
-		{
-			description: [
-				"HeatAndClimateの料理の結構多くは「気候精錬」による調理が必要になります。"
-				"任意の魚と棒を組み合わせて｢生の魚串｣を作り､スニーククリックで暑い場所に置いてみましょう｡"
-				"しばらくすると美味しく焼けます!"
-			]
-			id: "601A57B1E94EB8AA"
-			rewards: [{
-				count: 3
-				id: "00B0BAFBAC0B3F62"
-				item: "minecraft:salmon"
-				type: "item"
-			}]
-			subtitle: "気候で料理しよう!"
-			tasks: [{
-				id: "489985869FE88EEA"
-				item: "dcs_climate:food/stick_fish_cooked"
-				type: "item"
-			}]
-			x: 1.0d
 			y: -0.5d
 		}
 		{
@@ -92,25 +70,227 @@
 		}
 		{
 			description: [
-				"ある種のブロックは温度･湿度パラメータを持ち､辺りの環境に影響を与えます｡"
-				"調理器具や作物などは適切な温度･湿度でないと稼働しないことがあるので､上手く調整していきましょう｡"
-				"ちなみに松明もわずかに熱源です｡"
+				"ランタンはWARMの温度を持ちます｡"
+				"料理には不十分な温度ですが､壺による発酵にはギリギリ使えます｡"
 			]
-			id: "774FEF6768D41A16"
+			id: "17718AE1B7CC50E0"
 			rewards: [{
-				id: "7434072947757DDC"
-				item: "dcs_climate:food/drink_pomelo"
+				id: "0AB4AF3A47F33FA5"
+				item: "minecraft:bread"
 				type: "item"
 			}]
-			subtitle: "色んなブロックで温度調節"
 			tasks: [{
-				id: "02D24A5DCD429B8E"
+				id: "6B55613406ACFB67"
+				item: "minecraft:lantern"
+				type: "item"
+			}]
+			title: "WARMの温度"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"松明はHOTの温度を持ちます｡"
+				"料理には不十分な温度ですが､壺による発酵には使えます｡"
+			]
+			id: "385CD005044C396E"
+			rewards: [{
+				id: "12FBF1F437A0719D"
+				item: "minecraft:cod"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FC57F043F04DF58"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "HOTの温度"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"焚き火はBOILの温度を持ちます｡"
+				"料理には十分な温度です｡"
+				"ただし､デフォルトではこの段階から何も装備していない状態ではダメージが発生するようになります｡"
+			]
+			id: "7EC691F53D44AA9C"
+			rewards: [{
+				id: "424C2CA8612CEA12"
+				item: "dcs_climate:food/bread_round_raw"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "3CDC8F513DDB1237"
+				item: "minecraft:campfire"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "BOILの温度"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"マグマブロックはOVENの温度を持ちます｡"
+				"料理には十分な温度です｡"
+				"稼働中のかまどもOVENの温度を持ちます｡"
+			]
+			id: "0089B01826056AB5"
+			rewards: [{
+				id: "48D799AEA39141C5"
+				item: "dcs_climate:food/stick_corn_raw"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "59A6F5244BA99C92"
+				item: "minecraft:magma_block"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "OVENの温度"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"溶岩はKILNの温度を持ちます｡"
+				"料理に使える上限の温度です｡"
+				"普通にワールドに存在する温度としては最も高いです｡"
+			]
+			id: "3881F12FEA98A2FB"
+			rewards: [{
+				id: "221074B37DDD0DEA"
+				item: "dcs_climate:food/stick_vegi_raw"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "495F65090DA4E3DC"
+				item: "minecraft:lava_bucket"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "KILNの温度"
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"加熱チャンバーに燃料を入れて､風を送り込めばSMELTINGの温度を作りだせます｡"
+				"もはや料理には使えませんが､一部の金属の精錬にはSMELTING以上の温度が必要になります。"
+				"SMELTING以上の温度はバニラ環境で自然生成されることはありません。"
+			]
+			id: "0181239683AC893C"
+			rewards: [{
+				count: 2
+				id: "0B21893F09404517"
+				item: "dcs_climate:main/oredust_red_1"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "72B4005983EE292A"
+				item: "dcs_climate:machine/chamber_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "SMELTINGの温度"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"液体燃料バーナーに液体燃料を入れ､風を送ってやるとUHTの温度を得られます。"
+				"SMELTINGでは加熱が足りない上位金属の精錬に必要になります｡"
+			]
+			id: "34ECAAE72E7C6267"
+			rewards: [{
+				id: "7975AC3F45F27D9B"
+				item: "dcs_climate:fluid/bucket_plant_oil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61EF684BEA92368B"
+				item: "dcs_climate:machine/fuel_burner"
+				type: "item"
+			}]
+			title: "UHTの温度"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"雪ブロックはCOOLの温度を持ちます｡"
+				"冷却を必要とする料理に使えます｡"
+				"また､熱ブロックの効果を1段階引き下げます｡"
+			]
+			id: "77094621AC687AE3"
+			rewards: [{
+				id: "0CA0BADD726A6847"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3EE16A677A22D85E"
 				item: "minecraft:snow_block"
 				type: "item"
 			}]
-			title: "ブロックが与える気温への影響"
+			title: "COOLの温度"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"氷ブロックはCOLDの温度を持ちます｡"
+				"冷却を必要とする料理に使えます｡"
+				"また､熱ブロックの効果を2段階引き下げます｡"
+				"氷塊、青氷も同じCOLDの温度です。"
+			]
+			id: "47EFF5A75991BB64"
+			rewards: [{
+				id: "5D51E6BFAD4AC739"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "129A56B46EE13F6C"
+				item: "minecraft:ice"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "COLDの温度"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"エンドはCOLDよりもさらにさらに寒いABSOLUTEの温度です｡"
+				"対策をしていかない場合あっという間に体力を削られてしまいます｡"
+				"寒さ対策にはいくつか手段があり､衣服の他に一部の食事でも一時的に寒さ耐性を得ることができます｡"
+			]
+			icon: "minecraft:ender_eye"
+			id: "15F12AC8CC566042"
+			rewards: [{
+				id: "326103B4F259849B"
+				item: "dcs_climate:food/soup_leek"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B67C80C31071095"
+				title: "ABSOLUTEの温度"
+				type: "checkmark"
+			}]
 			x: 2.0d
-			y: -0.5d
+			y: 1.5d
 		}
 	]
 	title: "気候と気候精錬"

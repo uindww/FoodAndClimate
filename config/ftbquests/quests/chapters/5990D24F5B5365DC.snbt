@@ -30,27 +30,6 @@
 		}
 		{
 			description: [
-				"赤の魔法エキスから､シルクタッチでブロックを破壊する爆弾を発生できるスペルを作れます｡"
-				"回数に限りはありますが破壊範囲はなかなか広く､マナの雫や赤の雫が作れるなら使いやすい手段になるかもしれません｡"
-			]
-			id: "6E688FA676985D63"
-			rewards: [{
-				count: 3
-				id: "4BB449AD6BA5F7EF"
-				item: "dcs_climate:magic/card_red_common"
-				type: "item"
-			}]
-			subtitle: "使い捨てシルクタッチ爆弾"
-			tasks: [{
-				id: "297920F4304619DE"
-				item: "dcs_climate:magic/card_red_common"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -0.5d
-		}
-		{
-			description: [
 				"赤と緑の魔法のエキスから､本来発破のスペルを作れて､"
 				"その効果は｢1チャンクまるまるシルクタッチで破壊する｣というものなのですが､流石に強力すぎる､かつ負荷が高いためにModで禁止とさせていただきます。"
 				"厳密に言えばクラフトは可能なのですが､入手した瞬間に消滅してしまいます｡"
@@ -101,6 +80,35 @@
 				type: "item"
 			}]
 			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"マナの雫と宝石を組み合わせるか､色の雫を8個組み合わせるかで色のエキスが作れます｡"
+				"HeatAndClimateの魔法のアイテムに欠かせない材料です。"
+			]
+			id: "4D75AB229096DFDB"
+			rewards: [{
+				count: 3
+				id: "672A132DEDC44CA5"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			subtitle: "魔法アイテムの材料"
+			tasks: [{
+				id: "3553437B70007B13"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:color_extracts"
+					}
+				}
+				title: "いずれかの色のエキス"
+				type: "item"
+			}]
+			title: "色のエキス"
+			x: -1.5d
 			y: -0.5d
 		}
 	]

@@ -5,13 +5,13 @@
 	group: "795DD4BC46CA0E26"
 	icon: "dcs_climate:machine/cooking_pot_normal"
 	id: "4EAFAE4F21BF6A65"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
 				"高度な料理には料理鍋が欠かせません｡"
-				"料理鍋は鋼で作れます｡料理鍋には加熱が必要です｡"
+				"料理鍋は鋼で作れます｡料理鍋には加熱または冷却が必要です｡料理によって切り替えましょう｡"
 				"また､料理鍋は｢液体が何も入ってない時｣｢水が入っている時｣｢油が入っている時｣で作れるレシピが変わるので気を付けましょう｡"
 			]
 			id: "7AB3E540FC77B21F"
@@ -31,7 +31,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -54,7 +54,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -77,8 +77,8 @@
 				only_from_crafting: false
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			description: [
@@ -104,7 +104,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			description: [
@@ -125,8 +125,8 @@
 				item: "dcs_climate:food/pack_empty"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			description: [
@@ -146,20 +146,20 @@
 				title: "風味と食欲"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 2.5d
+			x: -3.5d
+			y: -2.5d
 		}
 		{
 			description: [
 				"一部のHeatAndClimateの料理は食べることで暑さ寒さの耐性を付けることができます。"
 				"あまり長く持つものではないですが、いざというときの保険になるかもしれません。"
 			]
-			icon: "dcs_climate:food/soup_leaves"
+			icon: "dcs_climate:food/stew_consomme_vegetable"
 			id: "0977AE980B98AA86"
 			rewards: [{
 				count: 5
 				id: "449DC7349B6193C1"
-				item: "dcs_climate:food/soup_leaves"
+				item: "dcs_climate:food/stew_consomme_vegetable"
 				type: "item"
 			}]
 			tasks: [{
@@ -167,8 +167,884 @@
 				title: "寒暖差を食事で耐える"
 				type: "checkmark"
 			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"スープそれ自体は食べ物ではありませんが､いろんな料理に必要になります｡"
+				"多くの料理はどのスープでも受け付けていますが､ある種の料理は特定の種類のスープを指定します｡レシピを確認してみましょう｡"
+				"牛骨､豚骨､鶏ガラは対応する動物を倒したときにたまにドロップします｡"
+			]
+			id: "5EFEAF781CABFF41"
+			rewards: [
+				{
+					id: "2D5B1B229CB5C9F2"
+					item: "dcs_climate:food/bone_cow"
+					type: "item"
+				}
+				{
+					id: "1FBCEF2BE2A4193C"
+					item: "dcs_climate:food/bone_pig"
+					type: "item"
+				}
+				{
+					id: "3C8D3CAFCB252791"
+					item: "dcs_climate:food/bone_chicken"
+					type: "item"
+				}
+			]
+			subtitle: "やっぱり出汁が決め手"
+			tasks: [{
+				id: "502DCD8811CF5554"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingredients/basesoup"
+					}
+				}
+				title: "いずれかのベーススープ"
+				type: "item"
+			}]
+			title: "スープを作ろう!"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"ティーポットをCOOLやCOLDの環境に置くことで冷たいドリンクを作ることができます。"
+				"雪ブロックや氷ブロックを使うとよいでしょう。"
+				"冷たいドリンクには火炎耐性の効果があります。暑い所に行く前に準備しておくと快適です。"
+			]
+			id: "4E860C883430F628"
+			rewards: [{
+				count: 2
+				id: "4CB94BABDA3D7D54"
+				item: "minecraft:ice"
+				type: "item"
+			}]
+			subtitle: "熱射病には気を付けて"
+			tasks: [{
+				id: "4719BD0D177F4FC9"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:meals/drinks/cold"
+					}
+				}
+				title: "いずれかの冷たい飲み物"
+				type: "item"
+			}]
+			title: "冷たい飲み物"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"料理鍋を｢冷却する｣ことで作れる料理が実装されました｡アイスクリームです｡"
+				"アイスクリームには即時回復効果もあります｡美味しいアイスクリームはいざというときの助けになるかもしれません｡"
+			]
+			id: "2CD187005AD0AAB7"
+			rewards: [{
+				count: 8
+				id: "02DD5161BB48FB93"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			subtitle: "むかし話の王子でも"
+			tasks: [{
+				id: "2DD26489E4E8DDF1"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:meals/ice_creams"
+					}
+				}
+				type: "item"
+			}]
+			title: "アイスクリーム!"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"紙パックをウシに向かって右クリックすることで牛乳パックを得られます｡"
+				"(牛乳バケツとのクラフトでも作れますがめんどくさいです)"
+				"牛乳パックを単体クラフトすると生クリームが得られます｡"
+				"これらは多くの料理の材料になります｡"
+			]
+			id: "2BAC0931ADE19CEA"
+			rewards: [{
+				count: 6
+				id: "3D8F1472AD98B42A"
+				item: "dcs_climate:food/pack_cream"
+				type: "item"
+			}]
+			subtitle: "ミルクは健康にいいぞ"
+			tasks: [{
+				id: "3ABAFCC49ED11FFB"
+				item: "dcs_climate:food/pack_milk"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"水に向かって紙パックで右クリックすると水パックを得られます｡"
+				"また､水パックをかまどで焼くと塩が得られます｡"
+				"水も塩も多くの料理で使います｡"
+			]
+			id: "5503168ACFF1E843"
+			rewards: [{
+				count: 16
+				id: "61045BA4A807F801"
+				item: "dcs_climate:food/pack_empty"
+				type: "item"
+			}]
+			subtitle: "バケツよりずっと楽"
+			tasks: [{
+				id: "46294C7476E72137"
+				item: "dcs_climate:food/pack_water"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"HeatAndClimateの料理の結構多くは「気候精錬」による調理が必要になります。"
+				"任意の魚やお肉や一部の野菜と棒を組み合わせて｢生の串｣を作り､スニーククリックでBOIL、OVEN、KILNの暑い場所に置いてみましょう｡"
+				"しばらくすると美味しく焼けます!"
+			]
+			id: "00D5AC55A714F037"
+			rewards: [{
+				count: 3
+				id: "6DA865599345FE21"
+				item: "minecraft:salmon"
+				type: "item"
+			}]
+			subtitle: "気候で料理しよう!"
+			tasks: [{
+				id: "2DA17BC78BE46B89"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:meals/skewered"
+					}
+				}
+				title: "任意の串焼き"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"｢任意の魚やお肉｣と｢野菜｣と｢いも｣を組み合わせると｢生のプレート｣を作れます｡"
+				"串焼き同様にスニーククリックでBOIL、OVEN、KILNの暑い場所に置いてみましょう｡"
+				"しばらくすると美味しく焼けます!"
+				"複数の材料が組み合わさっている分､回復量も食味も高くなります!"
+			]
+			id: "226C67584C3366E4"
+			rewards: [{
+				count: 3
+				id: "536D26CB6B0A3341"
+				item: "minecraft:beef"
+				type: "item"
+			}]
+			subtitle: "豪華なプレート料理"
+			tasks: [{
+				id: "4075CD4C34B9E3BE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/plate_beef_cooked"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/plate_meat_cooked"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/plate_legs_cooked"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/plate_fish_cooked"
+							}
+						]
+					}
+				}
+				title: "プレート料理"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"バニラの普通のパンでもひと手間加えるとサンドイッチになります｡"
+				"肉や卵や魚と野菜をサンドしてみると3個のサンドイッチができます｡"
+				"回復量も増えるし､数も多くできるのでオススメです!"
+				"(サンドイッチは加熱は必要ありません)"
+			]
+			id: "311498B48DE3DD23"
+			rewards: [{
+				count: 5
+				id: "380898BFA53ACF97"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "パンにひと手間加えて"
+			tasks: [{
+				consume_items: false
+				id: "0381A493A9208B9E"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:meals/bread/sandwich"
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のサンドイッチ"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"葉物野菜に分類される食べ物と特定の組み合わせでサラダを作れます｡"
+				"多くのサラダには悪性ポーション効果を1個解消する効果があります｡"
+				"葉物野菜2個からもサラダを作れるので､いざという時用に持っておくと安心かもしれません｡"
+				"(このバージョンでは旗持ちピリジャーを倒すと即座に不吉な予感が付きます)"
+			]
+			id: "189541087C6F2E95"
+			rewards: [{
+				count: 5
+				id: "41BC0943D0DEFE72"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			subtitle: "みずみずしい健康を"
+			tasks: [{
+				consume_items: false
+				id: "331A4320D539561D"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_simple"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_green"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_potato"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_nuts"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_citrus"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_melon"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_salmon"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/salad_tofu"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のサラダ"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"卵をかまどなどで焼くと目玉焼きになります｡"
+				"HeatAndClimateの中では実は珍しい、気候精錬でも鍋でもない料理です｡"
+				"意外に回復量が高いので役に立つかもしれません。"
+			]
+			id: "63C7244E8771B99E"
+			rewards: [{
+				count: 3
+				id: "31F80B8EFF86F828"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			subtitle: "シンプルイズベスト"
+			tasks: [{
+				id: "3F02176416CC455C"
+				item: "dcs_climate:food/fried_egg"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"水パックをかまどで焼くなどの方法で塩を得られます｡"
+				"塩は多くの料理で使用されます｡"
+				"中間素材での要求も多いので水パックのための紙のためのサトウキビも大事になります｡"
+			]
+			id: "3DF035CADBC1BD58"
+			rewards: [{
+				count: 10
+				id: "65E9AF3E6B5D95F8"
+				item: "dcs_climate:main/dust_salt"
+				type: "item"
+			}]
+			subtitle: "基礎の調味料"
+			tasks: [{
+				id: "076111A37FC8F4B5"
+				item: "dcs_climate:main/dust_salt"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"牛乳パックを単体クラフトすると生クリームが作れます｡"
+				"中間素材ですが､様々な用途に使われます｡"
+				"また､植物油と砂糖を鍋で冷却することでも植物性ホイップクリームが作れます｡"
+				"植物性ホイップクリームは生クリームの代用になります｡"
+			]
+			id: "1D6AB978CA7263D3"
+			rewards: [{
+				count: 8
+				id: "7A985FBD1B2D1788"
+				item: "dcs_climate:food/pack_milk"
+				type: "item"
+			}]
+			subtitle: "牛乳にひと手間加えて"
+			tasks: [{
+				consume_items: false
+				id: "08BFCB175D823FCD"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/pack_whip"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/pack_cream"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のクリーム"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"生クリームと塩をクラフトすることでバターを作れます｡"
+				"中間素材ですが､多くの料理で使用されます｡"
+				"ちなみに､植物油と塩をクラフトすることでマーガリンを作れます｡"
+				"マーガリンはバターの代用になります｡"
+			]
+			id: "1ADE0E3DF55DDDF9"
+			rewards: [{
+				count: 5
+				id: "5BF0FF2D926E9097"
+				item: "dcs_climate:food/food_butter"
+				type: "item"
+			}]
+			subtitle: "料理にコクを加える"
+			tasks: [{
+				id: "7CE8C76DD3F22F3E"
+				item: "dcs_climate:food/food_butter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"魚と薬味の組み合わせで刺身が作れます｡"
+				"多くの場合2個できます｡"
+				"マグロは刺身が3個できます｡マグロは寒い深海で夜に釣ると釣れやすいそうです｡"
+			]
+			id: "54199104F4D1CFDE"
+			rewards: [{
+				count: 3
+				id: "1489DE1A5C3A9D0B"
+				item: "dcs_climate:food/fish_squid"
+				type: "item"
+			}]
+			subtitle: "鮮度が命"
+			tasks: [{
+				consume_items: false
+				id: "16FD6066F758AB4C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/sashimi_white"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/sashimi_salmon"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/sashimi_blue"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/sashimi_tuna"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/sashimi_squid"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意の刺身"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"パン生地には､小麦粉､塩､水､植物油が必要です｡それなりに大変です｡"
+				"加熱料理に適した温度にスニーククリックで置いてやるとしばらくすると焼けます｡"
+				"また､派生系も多いのでパンを作ると種類が結構稼げます｡"
+			]
+			id: "462DC1889BBC21D4"
+			rewards: [{
+				count: 3
+				id: "67988DB2ED1EA633"
+				item: "dcs_climate:food/bread_round_raw"
+				type: "item"
+			}]
+			subtitle: "美味しいパンはなかなか大変"
+			tasks: [{
+				id: "5E38BED974DA95E5"
+				item: "dcs_climate:food/bread_round_raw"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"チーズを作るのには｢もつ｣から作れる｢レンネット｣か､柑橘類の果物が必要です｡"
+				"調理鍋の液体タンクに牛乳1バケツを入れて調理する方が1個の材料から4つのチーズを取れるためお得です｡"
+				"チーズはもちろん色んな料理の材料になります｡"
+			]
+			id: "6499F7B12ECC7D66"
+			rewards: [
+				{
+					count: 2
+					id: "146CA6FD966872C7"
+					item: "dcs_climate:food/food_cheese"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3C193CF0C8901A97"
+					item: "dcs_climate:food/food_fresh_cheese"
+					type: "item"
+				}
+			]
+			subtitle: "とろけるおいしさ"
+			tasks: [{
+				id: "1F3895082EF2E48D"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/food_cheese"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/food_fresh_cheese"
+							}
+						]
+					}
+				}
+				title: "任意のチーズ"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"稲を乳鉢などで加工して米にしてから料理鍋で炊くと米ができます｡"
+				"もちろんそのまま食べられますし､色んな料理の材料にもなります｡"
+				"特に麹の材料にもなるために､発酵食品の原料としてお米は大事です｡"
+			]
+			id: "696DC365AB6CE1C4"
+			rewards: [{
+				count: 3
+				id: "3368F1A90F09860D"
+				item: "dcs_climate:food/rice_boiled"
+				type: "item"
+			}]
+			subtitle: "日本人なら米を食え"
+			tasks: [{
+				id: "5A14BC0C4D363119"
+				item: "dcs_climate:food/rice_boiled"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"ご飯を壺にいれ､適度な温度､適度な湿度､適度な通気を確保すると､しばらくすると麹になります｡"
+				"麹は中間素材ですが､色々な料理･調味料の材料になる大事な存在です｡"
+			]
+			id: "72FB571033983EF7"
+			rewards: [{
+				count: 4
+				id: "57E865E1CD18837D"
+				item: "dcs_climate:food/food_koji"
+				type: "item"
+			}]
+			subtitle: "発酵食品の第一歩"
+			tasks: [{
+				id: "53F5B576A104F123"
+				item: "dcs_climate:food/food_koji"
+				type: "item"
+			}]
 			x: -0.5d
 			y: 2.5d
+		}
+		{
+			description: [
+				"大豆と塩と麹を壺で発酵させると､味噌と醤油ができます｡"
+				"大豆がレア作物のため少々大変ですが､これがあると料理の幅がかなり広がります｡"
+				"種類数をかなり稼げるようになるので是非狙ってみてください｡"
+			]
+			id: "0F8B7462C9C59FA0"
+			rewards: [
+				{
+					count: 5
+					id: "2D1FDD0181D13D36"
+					item: "dcs_climate:food/food_soysauce"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "69FC3B1DED3B7490"
+					item: "dcs_climate:food/food_miso"
+					type: "item"
+				}
+			]
+			subtitle: "一大豆二食品"
+			tasks: [
+				{
+					id: "5E7F414D62BC7FDB"
+					item: "dcs_climate:food/food_miso"
+					type: "item"
+				}
+				{
+					id: "43738ADC4BD379DC"
+					item: "dcs_climate:food/food_soysauce"
+					type: "item"
+				}
+			]
+			title: "味噌と醤油"
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"小麦粉と水と卵でバッター液､いわゆる衣が作れます｡"
+				"調理鍋の液体タンクに植物油を入れて､材料を入れて加熱すれば揚げ物が完成します｡"
+				"一部のフライ系を作る際には｢パン粉｣としてパンが要求されます｡(バニラのものでもかまいません)"
+				"調理鍋の液体タンクに少しでも油が残っていると､揚げ物以外が作れなくなるのには注意してください｡"
+				"逆に言えば少しでも油が残っていれば揚げ物を作れます｡"
+				"揚げ物に使った後の廃油は液体燃料バーナーの燃料に使えます｡"
+			]
+			id: "5802A5BFC108CF2B"
+			rewards: [
+				{
+					count: 5
+					id: "32D3AC9F19FE2E5F"
+					item: "dcs_climate:food/pack_plant_oil"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "483A954A8CFDADF0"
+					item: "dcs_climate:food/food_batter"
+					type: "item"
+				}
+			]
+			subtitle: "美味しいものは油と糖でできている"
+			tasks: [{
+				id: "76F87E19B2C6E7F9"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/tempura_prawn"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/tempura_ikaten"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/tempura_fish"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/tempura_vegi"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/deepfry_tonkatsu"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/deepfry_karaage"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/deepfry_croquette_potato"
+							}
+						]
+					}
+				}
+				title: "揚げ物"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"特定の原料を発酵させることでお酒が作れます｡"
+				"この時水が必要です｡"
+				"お酒はそれぞれに特殊な効果があり､いざという時に助けになるかもしれません｡"
+				"また､お酒は酢の原料にもなります｡酢がないと作れない調味料や料理も多いです｡"
+			]
+			id: "3F8D2FDF5643B403"
+			rewards: [{
+				count: 5
+				id: "71532CD0200C88C1"
+				item: "dcs_climate:food/food_vinegar"
+				type: "item"
+			}]
+			subtitle: "酒が飲める飲めるぞ､酒が飲めるぞ"
+			tasks: [{
+				id: "17CABDF9DC7B88C5"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:meals/liquor"
+					}
+				}
+				title: "任意のお酒"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"ラーメンを作るにはいろんな材料が必要です｡"
+				"麺､スープ､具材。正直常に食べる料理としては大変なところがあります｡"
+				"ただ､見た目がとても美味しそうなので是非一度作って飾ってみてください｡"
+			]
+			id: "799D653EF66746F0"
+			rewards: [{
+				count: 2
+				id: "4B19BAA0E899B245"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "ラーメン､それは文化"
+			tasks: [{
+				consume_items: false
+				id: "61D0BF8E7085137C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "dcs_climate:food/ramen_shoyu"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/ramen_miso"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/ramen_tonkotsu"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/ramen_okinawa"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/ramen_lanzhou_beef"
+							}
+							{
+								Count: 1b
+								id: "dcs_climate:food/ramen_naeng_myeon"
+							}
+						]
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				title: "任意のラーメン"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"もちろんHeatAndClimateにもカレーライスはあります。"
+				"ただし、作るのは結構大変です。"
+				"多くのスパイスを集める必要があるからです。"
+				"季節限定だったり、希少度が高い作物だったり、あるいはその両方だったりとなかなかに高いハードルになります。"
+				""
+				"なお、「グリーンカレー」はカレーの中では比較的作りやすくなっております。あくまで比較的に。"
+			]
+			id: "73ADD33EA2CCDB98"
+			rewards: [{
+				count: 3
+				id: "3B261D87C79E92A0"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "いくつもの文化を渡り歩いた料理"
+			tasks: [{
+				id: "5E9ABDA6AA9E0D82"
+				item: "dcs_climate:food/curry_rice"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"HeatAndClimateに追加されたデザートのうち、かなり最近追加された見た目が豪華なデザートです。"
+				"必要とする素材の種類も多いですが、是非一度挑戦してみてください。"
+			]
+			id: "75CB05E7666D5277"
+			rewards: [{
+				id: "116BD5215CAD06AD"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "あ･ら･もーど!"
+			tasks: [{
+				id: "26BCA75739F9031B"
+				item: "dcs_climate:food/icecream_pudding"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"割と最近HeatAndClimateに追加されたご飯料理です。"
+				"結構山盛りで迫力があります。"
+				"どちらかと言えば作りやすいほうです。是非作ってみてください。"
+			]
+			id: "37128091D43598BC"
+			rewards: [{
+				id: "2B248CD386092E1D"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "ちゃーはん作るよ!"
+			tasks: [{
+				id: "1734334366B26BB5"
+				item: "dcs_climate:food/rice_chaofan"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"マキネッタはエスプレッソを淹れる､ただそのためだけの機械です｡"
+				"今のところJEIにレシピはありませんが、マキネッタに水とコーヒーの粉と加熱を与えると、時間をかけてエスプレッソを抽出してくれます。"
+				"マキネッタを作るにはSUSインゴットが必要であり、SUSインゴットを作るのにはUHTの温度が必要になります。"
+				"さらにコーヒーも電動石臼で粉にしないといけない(乳鉢では不可)ため、ハードルはかなり高いです。"
+				"それでも至高の一杯を求める方はぜひ挑戦してみてください。"
+			]
+			id: "6C3BC6CDFB0A935C"
+			rewards: [{
+				count: 5
+				id: "25C43C37493F9142"
+				item: "dcs_climate:food/food_powder_coffee"
+				type: "item"
+			}]
+			subtitle: "特別なコーヒーを淹れるため､ただそれだけ"
+			tasks: [{
+				id: "66E9CEF6B165DFDC"
+				item: "dcs_climate:machine/coffee_macchinetta"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
 		}
 	]
 	title: "料理をしよう!"

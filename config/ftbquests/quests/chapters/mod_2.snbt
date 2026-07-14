@@ -17,7 +17,7 @@
 			id: "2300E647BEB23F10"
 			rewards: [{
 				id: "7FC8AEABF04D7FE2"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "持ち運べる作業台"
@@ -39,7 +39,7 @@
 			id: "1CDBC950FFF66395"
 			rewards: [{
 				id: "7C5837288A152739"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "バイオームを探そう"
@@ -64,7 +64,7 @@
 			id: "6DB07A46489E0ACF"
 			rewards: [{
 				id: "4EF790B5B602E98A"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "リスポーン変更しないベッド"
@@ -78,76 +78,13 @@
 		}
 		{
 			description: [
-				"革4つ､糸4つ､チェストからリュックサックを作ることができます｡"
-				"持ち運べるチェストであり､さらにCuriosインベントリに装備もできます｡ショートカットキーで開けます｡"
-				"バックパックをさらに大きくしたい場合はインゴットで囲めば容量を増やせます｡"
-				"追加機能もつけられるのでご活用ください｡"
-			]
-			id: "7E9C00D04C89C585"
-			rewards: [{
-				id: "3FF322125E5143F8"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "荷物の持ち運び"
-			tasks: [{
-				id: "66646EB22AE5F21D"
-				item: "sophisticatedbackpacks:backpack"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"巨大な範囲で湧きつぶしをする松明です｡"
-				"コストも相応以上に重たいですが｡"
-			]
-			id: "32E09A9EEC73ED66"
-			rewards: [{
-				id: "2C8E204833BE4E87"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "ハイパー湧きつぶし"
-			tasks: [{
-				id: "4E7459AFD948C042"
-				item: "torchmaster:megatorch"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 2.0d
-		}
-		{
-			description: [
-				"DisplayDelightというModの効果で､一部のFarmer'sDelightの料理をスニークしながらクリックすることでワールドにブロックとして配置できます｡"
-				"また､さらに一部の料理はFoodPlateに盛り付けることが可能になっています｡"
-				"料理を沢山飾りましょう!"
-			]
-			id: "26D96ABDC2DC650D"
-			rewards: [{
-				id: "1F31C6EC670759EC"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "食べ物を飾ろう!"
-			tasks: [{
-				id: "11C9256B8118FBDA"
-				item: "displaydelight:food_plate"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			description: [
 				"StructureCompassは構造物を探すコンパスです。"
 				"指定した構造物がどの方向、どの距離にあるかを表示してくれます。"
 			]
 			id: "5E0E834A90AFE6D3"
 			rewards: [{
 				id: "283EE96DDB81E767"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "構造物を探そう"
@@ -169,17 +106,12 @@
 			id: "1FF5D8D855803700"
 			rewards: [{
 				id: "2FD729C90658715C"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "Curiosスロットに装備できる"
 			tasks: [{
 				consume_items: false
-				icon: {
-					Count: 1b
-					id: "lightmanscurrency:wallet_copper"
-					tag: { }
-				}
 				id: "3A249F7E2142F43F"
 				item: {
 					Count: 1b
@@ -245,7 +177,7 @@
 			id: "1181F2574AB0254F"
 			rewards: [{
 				id: "1078BF73E71FC42D"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "アイテムの簡単輸送"
@@ -273,7 +205,7 @@
 			id: "16C91DA544C5A5BF"
 			rewards: [{
 				id: "0747D239B5A30382"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "料理を飾れるお皿"
@@ -283,49 +215,181 @@
 				type: "item"
 			}]
 			title: "フルーツバスケット"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"倉庫整理に便利なFunctional Storageを導入しました｡"
+				"荷物整理が大変な方はお使いください｡"
+			]
+			id: "320DD76D708E18A3"
+			rewards: [{
+				id: "1AE509156FE9A56C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "倉庫整理のために"
+			tasks: [{
+				id: "1BBBF78E6604BF8D"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
 			x: -1.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"小麦5個でニワトリの巣を作れます｡"
-				"ニワトリはここに優先的に卵を産むようになります｡"
+				"PrettyPipezというModを追加しました。"
+				"中身が見える分サーバーに負荷はかかるのですが、何が流れているかは認識しやすいです。"
+				"お好きなものを選んでください。"
 			]
-			id: "35105A5654273501"
+			icon: "prettypipes:pipe"
+			id: "24E3BECA93BCAC31"
 			rewards: [{
-				id: "46FF75242AD09DFC"
-				item: "lightmanscurrency:coin_iron"
+				id: "484DE5EE312F967D"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "卵の指定席"
-			tasks: [{
-				id: "09041A6146284AF5"
-				item: "incubation:hay_nest"
-				type: "item"
-			}]
+			subtitle: "アイテム輸送の可視化"
+			tasks: [
+				{
+					id: "2A5AD320963FF970"
+					item: "prettypipes:pipe"
+					type: "item"
+				}
+				{
+					id: "3EBBD12F05A54A92"
+					item: "prettypipes:wrench"
+					type: "item"
+				}
+			]
+			title: "PreettyPipez"
 			x: 1.0d
 			y: 0.0d
 		}
 		{
 			description: [
-				"宝の地図を使った際､その地点までの距離が表示されるようになりました｡"
-				"あとこのクエストで1コインもらえます｡"
+				"バケツとハサミとホッパーを木製で作れるModを採用してみました。"
+				"なお、バケツは「原木」で作ります。そして耐久度があります。"
+				"ホッパーも内部インベントリが1つなので性能は控えめですが､序盤に使う分には楽でしょう｡"
 			]
-			id: "2C48E66E0AD0EB15"
+			id: "754D5943ACA80653"
 			rewards: [{
-				id: "5042C4B96059A84C"
-				item: "lightmanscurrency:coin_iron"
+				id: "7A4E24E7CAE00F14"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "距離がわかります"
+			subtitle: "序盤用安価ツール"
+			tasks: [
+				{
+					consume_items: false
+					id: "2D668FB2779F2258"
+					item: {
+						Count: 1b
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "249D8F0B144EB870"
+					item: {
+						Count: 1b
+						id: "woodenshears:wooden_shears"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0AA296B6E2FB2828"
+					item: "woodenhopper:wooden_hopper"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "木製アイテム"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"この環境には4冊のガイド本がありますが、それをまとめた本をご用意いたしました。"
+				"この本を持って空中に向けて右クリックすることで4冊の中から選択できます｡"
+				"変身した後の本を持って空中に向けて左クリックすることで元のまとめた状態の本に戻ります｡"
+				"このクエストは何度でも受けられますので無くした時は活用ください｡"
+			]
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "226D0CCDE459193A"
+			rewards: [{
+				id: "65B3400B0D608E09"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": {
+							ars_nouveau: {
+								0: {
+									Count: 1b
+									id: "ars_nouveau:worn_notebook"
+								}
+							}
+							botania: {
+								0: {
+									Count: 1b
+									id: "botania:lexicon"
+								}
+							}
+							irons_spellbooks: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "irons_spellbooks:iss_guide_book"
+									}
+								}
+							}
+							touhou_little_maid: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+									}
+								}
+							}
+						}
+						"eccentrictome:version": 1
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "複数のガイド本をこれ1冊に!"
 			tasks: [{
-				id: "22051B494600BC6E"
-				item: "minecraft:filled_map"
-				type: "item"
+				id: "30A6835B80AA1F3B"
+				type: "checkmark"
 			}]
-			title: "宝の地図"
+			title: "おまとめガイドブック"
 			x: -3.0d
-			y: 1.0d
+			y: -2.5d
 		}
 	]
 	title: "小さな便利系Mod"

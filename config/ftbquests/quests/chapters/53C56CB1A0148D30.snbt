@@ -11,7 +11,7 @@
 		}
 	}
 	id: "53C56CB1A0148D30"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -41,7 +41,6 @@
 				"釣りでしか得られない海産物や、その海産物でしか作れない料理もあります。"
 				"釣り竿も強化されたものを作れるので作ってみるのもいいでしょう。"
 				"「ルアー」も存在していて、金床で組み合わせるとエンチャントが付きます。"
-				"（内部的にはエンチャ本なのかもしれませんね）"
 			]
 			id: "6177876153DC7E25"
 			rewards: [{
@@ -61,7 +60,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.5d
 			y: -0.5d
 		}
 		{
@@ -69,7 +68,6 @@
 				"鉄塊と鉄インゴットから釣り針を作れます｡"
 				"これはルアーを作るための中間素材です｡"
 				"「ルアー」と釣り竿を金床で組み合わせるとエンチャントが付きます。"
-				"（内部的にはエンチャ本なのかもしれませんね）"
 			]
 			id: "6B6CD6FF0F3F539E"
 			rewards: [{
@@ -83,7 +81,7 @@
 				item: "dcs_climate:main/lure_fishing_hook"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.5d
 			y: -0.5d
 		}
 		{
@@ -94,9 +92,9 @@
 			]
 			id: "3D20AB86EC2DFD0E"
 			rewards: [{
-				id: "0E750AD6DF9469C2"
-				type: "xp"
-				xp: 100
+				id: "5F00E300832773C8"
+				item: "dcs_climate:main/lure_worm_craw"
+				type: "item"
 			}]
 			subtitle: "カニカニどこカニ?"
 			tasks: [{
@@ -104,8 +102,8 @@
 				item: "dcs_climate:food/fish_crab"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.5d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			description: [
@@ -115,9 +113,9 @@
 			]
 			id: "5209049EE6CA2309"
 			rewards: [{
-				id: "710197CD4033D58A"
-				type: "xp"
-				xp: 100
+				id: "267AD7A353FD110E"
+				item: "dcs_climate:main/lure_worm_craw"
+				type: "item"
 			}]
 			subtitle: "うるせえエビフライぶつけんぞ"
 			tasks: [{
@@ -125,8 +123,8 @@
 				item: "dcs_climate:food/fish_prawn"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: -2.5d
+			y: 1.5d
 		}
 		{
 			description: [
@@ -146,7 +144,49 @@
 				item: "dcs_climate:food/fish_krill"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"HeatAndClimateには釣りで釣れる魚が追加されます。"
+				"コイはそこまでレアな魚ではありませんが､コイがないと作れない料理もあります｡"
+			]
+			id: "7F77FCC98ECC769E"
+			rewards: [{
+				id: "0E4A8C3647742BEA"
+				item: "dcs_climate:main/lure_jig_glitter"
+				type: "item"
+			}]
+			subtitle: "カープ、カープ。"
+			tasks: [{
+				id: "018AAA0A344583F5"
+				item: "dcs_climate:food/fish_carp"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			description: [
+				"HeatAndClimateには釣りで釣れる魚が追加されます。"
+				"イワシがないと作れない料理もあります｡"
+				"また､イワシだけではないですが｢青身魚｣という分類があり､青身魚でしか作れない料理があります｡"
+				"(ちなみに鱈は白身魚です｡青身魚はHeatAndClimate独自の分類です)"
+			]
+			id: "440DB9A099223F76"
+			rewards: [{
+				id: "726890872F8A058E"
+				item: "dcs_climate:main/lure_jig_iron"
+				type: "item"
+			}]
+			subtitle: "魚偏に弱いと書くのは腐りやすいから"
+			tasks: [{
+				id: "498EEF73163AA818"
+				item: "dcs_climate:food/fish_sardine"
+				type: "item"
+			}]
+			x: -1.5d
 			y: 0.5d
 		}
 	]

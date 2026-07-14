@@ -122,8 +122,8 @@
 				type: "kill"
 				value: 20L
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			description: [
@@ -151,8 +151,8 @@
 				type: "kill"
 				value: 50L
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			description: [

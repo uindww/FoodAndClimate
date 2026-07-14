@@ -17,6 +17,7 @@
 				"レア度が高い作物が必ずしも優れているわけではなく、WILD種にしかできないこともあります。"
 				"特に「変異を行える」というのはWILD種の大きな強みなので、種全部を変異させるのはおすすめしません。"
 			]
+			icon: "minecraft:bone_meal"
 			id: "4C3A61EDC93209C3"
 			rewards: [{
 				count: 5
@@ -27,14 +28,12 @@
 			tasks: [{
 				advancement: "dcs_climate:main/fertilizer"
 				criterion: ""
-				icon: "dcs_climate:food/fertile"
 				id: "62BFA88692FF3282"
-				title: "耕地に肥料をやる"
 				type: "advancement"
 			}]
 			title: "耕地に肥料をやる"
 			x: -2.0d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -55,7 +54,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -64,28 +63,21 @@
 			]
 			id: "4311145BF30A613E"
 			rewards: [{
+				count: 8
 				id: "5111ACB80413FCC7"
-				item: "dcs_climate:food/drink_soda_peach"
+				item: "minecraft:glow_berries"
 				type: "item"
 			}]
 			subtitle: "果物には旬がある"
 			tasks: [{
 				advancement: "dcs_climate:main/tree_crops"
 				criterion: ""
-				icon: {
-					Count: 1b
-					id: "dcs_climate:food/crop_citrus_wild"
-					tag: {
-						dcs.taste: -1
-					}
-				}
 				id: "2D0C021D8712E434"
-				title: "旬の果物を収穫する"
 				type: "advancement"
 			}]
 			title: "旬の果物"
 			x: -1.0d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -106,7 +98,7 @@
 				title: "種袋"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -127,7 +119,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -151,7 +143,477 @@
 				type: "item"
 			}]
 			x: 1.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"ある種の作物は石英の乳鉢で加工すると色の雫になります｡"
+				"色の雫を8個集めてクラフトすると色のエキスになります｡"
+				"魔法のアイテムを作るのに大事な材料です｡"
+			]
+			id: "06F9DEA88FDF1770"
+			rewards: [{
+				id: "193DACCAD4ABF2B6"
+				item: "dcs_climate:main/ingot_silver"
+				type: "item"
+			}]
+			subtitle: "希少な作物から取れる色のエキスの元"
+			tasks: [{
+				id: "55B1FAEB67C9E08F"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "dcs_climate:color_drops"
+					}
+				}
+				title: "いずれかの色の雫"
+				type: "item"
+			}]
+			title: "色の雫"
+			x: -2.0d
 			y: -1.5d
+		}
+		{
+			description: [
+				"ナスはWILD種のナイトシェードから確率で変異します。"
+				"そのまま串に刺して焼いてもいいですし、色んな料理の材料になります。"
+			]
+			id: "21A940F19E6A2E99"
+			rewards: [{
+				id: "39D6B8DC6EBBD3F0"
+				item: "dcs_climate:food/cropblock_solanum_common"
+				type: "item"
+			}]
+			subtitle: "ナイトシェードからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "2E38A7507D52545E"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_solanum_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"レタスはWILD種のヨモギから確率で変異します。"
+				"肉を巻いて串に刺して焼いてもいいですし、色んな料理の材料になります。"
+			]
+			id: "4990D34F3513A598"
+			rewards: [{
+				id: "0704C8DDE6FC852D"
+				item: "dcs_climate:food/cropblock_aster_common"
+				type: "item"
+			}]
+			subtitle: "ヨモギからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "6869B3A5130B651E"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_aster_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"ピーマンはWILD種のトウガラシから確率で変異します。"
+				"肉詰めにして焼いてもいいですし、色んな料理の材料になります。"
+			]
+			id: "044AB69B18D27CC8"
+			rewards: [{
+				id: "30413793D3920C3A"
+				item: "dcs_climate:food/cropblock_capsicum_common"
+				type: "item"
+			}]
+			subtitle: "トウガラシからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "6289C8B928FCF302"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_capsicum_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"ソバはWILD種のタデから確率で変異します。"
+				"もちろんお蕎麦の材料になります!"
+			]
+			id: "4E90509F2A6F6367"
+			rewards: [{
+				id: "6C65ED94EC3B8650"
+				item: "dcs_climate:food/cropblock_knotweed_common"
+				type: "item"
+			}]
+			subtitle: "タデからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "0E1982FA5CE7EFA1"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_knotweed_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"ゴマはWILD種のロジェリアから確率で変異します。"
+				"色んな料理の材料になりますし､食物油の材料にもなります!"
+			]
+			id: "4A0F9F351D6608F7"
+			rewards: [{
+				id: "6913529B719898DB"
+				item: "dcs_climate:food/cropblock_pedalia_common"
+				type: "item"
+			}]
+			subtitle: "ロジェリアからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "1597273C36AB91AF"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_pedalia_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"コーヒーはWILD種のクチナシから確率で変異します。"
+				"炒って粉にすればコーヒーの材料になります｡"
+			]
+			id: "0354F49801FDF90D"
+			rewards: [{
+				id: "5169B5082C9441AE"
+				item: "dcs_climate:food/sapling_rubia_common"
+				type: "item"
+			}]
+			subtitle: "クチナシからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "3E69F9EB4649F903"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_rubia_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"マンゴーはWILD種のウルシから確率で変異します。"
+				"ドリンクやデザートなど、色んな料理の材料になります。"
+			]
+			id: "39828905662ECA2F"
+			rewards: [{
+				id: "631FE0C1E72B513C"
+				item: "dcs_climate:food/sapling_sumac_common"
+				type: "item"
+			}]
+			subtitle: "ウルシからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "4A5A6E6F1596CEE3"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_sumac_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"タマネギはWILD種のノビルから確率で変異します。"
+				"分かりやすく色んな料理の材料になります。"
+			]
+			id: "535C722DC5CA8953"
+			rewards: [{
+				id: "2B76BD06E3029A5A"
+				item: "dcs_climate:food/cropblock_allium_common"
+				type: "item"
+			}]
+			subtitle: "ノビルからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "12E3DA850826CAEB"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_allium_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"キュウリはWILD種のヒョウタンから確率で変異します。"
+				"漬物など、色んな料理の材料になります。"
+			]
+			id: "35DD910B605C1D2E"
+			rewards: [{
+				id: "6A08224059F103BE"
+				item: "dcs_climate:food/cropblock_gourd_common"
+				type: "item"
+			}]
+			subtitle: "ヒョウタンからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "53928387CA3AD60A"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_gourd_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"木綿はWILD種のツナソから確率で変異します。"
+				"糸や布や洋服の材料になるほか､すりつぶせば植物油も取れます｡"
+			]
+			id: "3749189CF2FD9DF6"
+			rewards: [{
+				id: "53E12EC7F49A11E0"
+				item: "dcs_climate:food/cropblock_mallow_common"
+				type: "item"
+			}]
+			subtitle: "ツナソからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "6A79AE8826AE2FA4"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_mallow_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"グアバはWILD種のユーカリから確率で変異します。"
+				"ドリンクやデザートなど、色んな料理の材料になります。"
+			]
+			id: "4ABC511D9A44BB8B"
+			rewards: [{
+				id: "6503EF31E17D8A28"
+				item: "dcs_climate:food/sapling_myrtle_common"
+				type: "item"
+			}]
+			subtitle: "ユーカリからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "6829089C7F30E820"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_myrtle_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"サフランはWILD種のクロッカスから確率で変異します。"
+				"ハーブとして色んな料理の材料になります。ハーブの中でも特にサフランでないと作れない料理も複数あります｡"
+			]
+			id: "490A289E41E68DC2"
+			rewards: [{
+				id: "7FF09E9293C80D9C"
+				item: "dcs_climate:food/cropblock_iris_common"
+				type: "item"
+			}]
+			subtitle: "クロッカスからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "1D59B81DB213106D"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_iris_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"栽培プランターは施肥して作物の成長を促進させられますが､WILD種の変異を引き起こしません｡"
+				"WILD種を効率よく増やしたい時に便利です｡"
+			]
+			id: "23FEB80187CB5572"
+			rewards: [{
+				count: 3
+				id: "5361FB1561C7BAAC"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			subtitle: "WILD種の効率の良い栽培"
+			tasks: [{
+				id: "67C08173D7FB10C6"
+				item: "dcs_climate:food/fertile_planter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"オリーブはWILD種のトネリコから確率で変異します。"
+				"植物油の材料になるほか､一部の料理でオリーブ指定で使われます｡"
+			]
+			id: "14E24C9B209FC3CC"
+			rewards: [{
+				id: "02DE6CF9AFD8199A"
+				item: "dcs_climate:food/sapling_olive_common"
+				type: "item"
+			}]
+			subtitle: "トネリコからの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "7259CC4EE507A8B9"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_olive_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"米はWILD種の真菰(まこも)から確率で変異します。"
+				"もちろんご飯になります｡また麹の原料にもなり､色んな料理を作るのに欠かせません｡"
+			]
+			id: "7EA953C7042B49FB"
+			rewards: [{
+				id: "6947EA12D3E1C037"
+				item: "dcs_climate:food/cropblock_rice_common"
+				type: "item"
+			}]
+			subtitle: "真菰からの変異"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "2AFA85A1C26B5EB2"
+				item: {
+					Count: 1b
+					id: "dcs_climate:food/crop_rice_common"
+					tag: {
+						dcs.taste: 0
+					}
+				}
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
 		}
 	]
 	title: "農業と作物"

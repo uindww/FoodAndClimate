@@ -29,7 +29,7 @@
 				}
 				{
 					id: "0970175D2A301365"
-					item: "farmersdelight:white_canvas_sign"
+					item: "waystones:sharestone"
 					type: "item"
 				}
 			]
@@ -58,6 +58,7 @@
 				item: "solcarrot:food_book"
 				type: "item"
 			}]
+			subtitle: "医食同源"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				id: "61DBD6CC624BF8C7"
@@ -95,13 +96,197 @@
 			}]
 			subtitle: "おうちかえる!"
 			tasks: [{
-				id: "10CD4DDF1A39282F"
-				item: "waystones:waystone"
-				type: "item"
+				dimension: "minecraft:overworld"
+				id: "22418EFF13B72594"
+				type: "dimension"
 			}]
 			title: "ワープストーン"
 			x: -5.0d
 			y: -3.5d
+		}
+		{
+			description: [
+				"このModpackには約150のModが入っており､キー割り当てだけでも大変な数になっています｡"
+				"そのため､最優先でキーコンフィグの割り当てを行ってください｡"
+				"使わない機能についてはEscキーに割り当てることで｢未割り当て｣になります｡"
+				"｢何かキーを押したら変になった!｣という相談には対応が出来かねますのでよろしくお願いいたします｡"
+			]
+			icon: "dcs_climate:machine/monitor_andon_panel_1"
+			id: "1800534775361910"
+			rewards: [
+				{
+					id: "39C64483B02FB233"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "74ADE3817F61F0E6"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "競合を回避しよう"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "0EDDBE70190CB38D"
+				type: "dimension"
+			}]
+			title: "キー割り当て"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"ゲーム内において、インベントリ画面左上の本のアイコンがあります。赤の！マークがある場合、何らかのアイテムを受け取れることを指しています。"
+				"クエストにはこのModPackに実装されているModの情報が書かれており、達成することで報酬を得ることができます。（報酬は結構豪華です）"
+				"情報を得る意味でも報酬を得る意味でもぜひ確認してみてください。"
+				"なお､このクエストの報酬アイテムを使うことでもクエスト確認できますが､無くてもインベントリの左上からクエストを開けます｡"
+			]
+			icon: "ftbquests:book"
+			id: "69EF9F9D71C70BE1"
+			rewards: [{
+				id: "2E48D57FC59BC273"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			subtitle: "報酬も豪華です"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "49A71D6D74C0914B"
+				type: "dimension"
+			}]
+			title: "クエストを確認しよう!"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"革4つ､糸4つ､チェストからリュックサックを作ることができます｡"
+				"持ち運べるチェストであり､さらにCuriosインベントリに装備もできます｡ショートカットキーで開けます｡"
+				"バックパックをさらに大きくしたい場合はインゴットで囲めば容量を増やせます｡"
+				"追加機能もつけられるのでご活用ください｡"
+			]
+			icon: {
+				Count: 1b
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					contentsUuid: [I;
+						789572893
+						2139571670
+						-1092970873
+						1795808463
+					]
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
+			id: "68AFC232881C642E"
+			rewards: [{
+				id: "082C8D74BFBC7E8B"
+				item: {
+					Count: 1b
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							789572893
+							2139571670
+							-1092970873
+							1795808463
+						]
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "荷物の持ち運び"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "36C66AA1E4876AEB"
+				type: "dimension"
+			}]
+			title: "リュックサックMod"
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"この環境には4冊のガイド本がありますが、それをまとめた本をご用意いたしました。"
+				"この本を持って空中に向けて右クリックすることで4冊の中から選択できます｡"
+				"変身した後の本を持って空中に向けて左クリックすることで元のまとめた状態の本に戻ります｡"
+			]
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "0B3BE144ED13898A"
+			rewards: [{
+				id: "51A543F94E266C35"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": {
+							ars_nouveau: {
+								0: {
+									Count: 1b
+									id: "ars_nouveau:worn_notebook"
+								}
+							}
+							botania: {
+								0: {
+									Count: 1b
+									id: "botania:lexicon"
+								}
+							}
+							irons_spellbooks: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "irons_spellbooks:iss_guide_book"
+									}
+								}
+							}
+							touhou_little_maid: {
+								0: {
+									Count: 1b
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+									}
+								}
+							}
+						}
+						"eccentrictome:version": 1
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "複数のガイド本をこれ1冊に!"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "311035A2E55599CE"
+				type: "dimension"
+			}]
+			title: "おまとめガイドブック"
+			x: -4.0d
+			y: -2.5d
 		}
 	]
 	title: "Hello World!"

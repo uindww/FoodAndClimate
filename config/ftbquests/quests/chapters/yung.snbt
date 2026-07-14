@@ -7,20 +7,79 @@
 	id: "6B86F4B750525272"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"YUNGダンジョンModの影響で､各地にいろんなダンジョンが出現するようになっています｡"
-			"また､ネザー要塞､海底神殿､ピラミッド､エンド要塞なども豪華になっています｡"
-			"もちろんお宝も一杯あるので､バックパックに空きを作って出かけましょう!"
-		]
-		id: "06FCE32EC598DF01"
-		tasks: [{
-			id: "0FB270BB9B48DB33"
-			title: "YUNGダンジョン"
-			type: "checkmark"
-		}]
-		x: -1.0d
-		y: 0.0d
-	}]
-	title: "YUNGダンジョン"
+	quests: [
+		{
+			description: [
+				"YUNGダンジョンModの影響で､各地にいろんなダンジョンが出現するようになっています｡"
+				"また､ネザー要塞､海底神殿､ピラミッド､エンド要塞なども豪華になっています｡"
+				"もちろんお宝も一杯あるので､バックパックに空きを作って出かけましょう!"
+			]
+			icon: "minecraft:ender_eye"
+			id: "06FCE32EC598DF01"
+			subtitle: "エンド要塞･ネザー要塞などの豪華化"
+			tasks: [{
+				id: "0FB270BB9B48DB33"
+				title: "YUNGダンジョン"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"今回のアップデートで様々な構造物を追加するModが複数入りました｡"
+				"ある程度歩き回ると何かを見つけることが増えると思います｡LootRチェストもあったりなかったりします｡"
+				"探索の楽しみになれば幸いです｡"
+				"以下が追加されたModのリストです。"
+				"Valhelsia Structures"
+				"Structory"
+				"Explorify"
+				"MVS - Moog's Voyager Structures"
+			]
+			icon: "minecraft:spruce_stairs"
+			id: "1EFDAA77E1C763DB"
+			subtitle: "オーバーワールドの構造物"
+			tasks: [{
+				id: "537A3C7DBC6484CD"
+				title: "その他構造物Mod"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"MES - Moog's End StructuresというModにより、エンドにダンジョンができます。"
+				"LootRチェストもあるので、冒険してみてもいいかもしれません。"
+			]
+			icon: "minecraft:purpur_stairs"
+			id: "6F4B5012D9EE667D"
+			subtitle: "エンドのコンテンツ(エンドコンテンツではないかもしれない)"
+			tasks: [{
+				id: "359932AFEF7557C9"
+				title: "エンドにもダンジョン"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"MNS - Moog's Nether StructuresというModにより、ネザーにダンジョンができます。"
+				"LootRチェストもあるようなので、冒険してみてもいいかもしれません。"
+			]
+			icon: "minecraft:red_nether_brick_stairs"
+			id: "1F477FC85B554289"
+			subtitle: "ネザーの追加ダンジョン"
+			tasks: [{
+				id: "306973479E15DFD6"
+				title: "ネザーにもダンジョン"
+				type: "checkmark"
+			}]
+			title: "ネザーにもダンジョン"
+			x: 1.0d
+			y: 0.0d
+		}
+	]
+	title: "構造物とダンジョン"
 }

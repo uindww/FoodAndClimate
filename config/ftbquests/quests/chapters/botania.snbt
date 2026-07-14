@@ -211,6 +211,11 @@
 			y: 0.5d
 		}
 		{
+			description: [
+				"骨粉と染料4つをクラフトすることで､花の肥料を作れます｡"
+				"花の肥料を使うと､魔法の花がランダムに咲きます｡"
+				"どうしてもお目当ての花が見つからない時に試してみてください｡"
+			]
 			id: "4864BD93FBD8ACB3"
 			rewards: [{
 				count: 3
@@ -218,6 +223,7 @@
 				item: "minecraft:bone_meal"
 				type: "item"
 			}]
+			subtitle: "お目当ての花が見つからない時に"
 			tasks: [{
 				id: "2E82AA621A98168B"
 				item: "botania:fertilizer"
@@ -225,6 +231,20 @@
 			}]
 			x: -0.5d
 			y: -0.5d
+		}
+		{
+			description: [
+				"ホッパーホックはサーバーに与える負荷が大きいため､禁止とさせていただきます｡"
+				"必要な場合はSophiscated Storageのアップグレード機能をご利用ください。"
+			]
+			id: "5CDEBDFD078B7193"
+			tasks: [{
+				id: "20B8E9040BDB0C7F"
+				title: "ホッパーホックの禁止"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -2.5d
 		}
 	]
 	title: "Botaniaを学ぼう!"

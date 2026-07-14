@@ -1,7 +1,7 @@
 {
 	id: "5C64544B558C7B91"
 	loot_size: 1
-	order_index: 3
+	order_index: 0
 	rewards: [
 		{ item: "dcs_climate:magic/seedbag_white" }
 		{ item: "dcs_climate:magic/seedbag_blue" }

@@ -18,7 +18,7 @@
 			id: "62C5ECC1525F1CB2"
 			rewards: [{
 				id: "64BADCBC830BD3B2"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "このページはコインを支払います"
@@ -44,18 +44,18 @@
 			tasks: [{
 				consume_items: true
 				id: "3C9559412C5239BB"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "パン5個セット"
 			x: -1.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
-			description: ["鉄鉱石1個2コインです｡"]
+			description: ["鉄鉱石1個1コインです｡"]
 			icon: "minecraft:iron_ore"
 			id: "63E7823FA01E9F81"
 			rewards: [{
@@ -65,9 +65,8 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 2L
 				id: "7E20A3D667CA4CAD"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -78,29 +77,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["Gold Coinの両替です｡"]
-			id: "15E37FD12C184C37"
-			rewards: [{
-				count: 10
-				id: "64E19BAF8F6AB918"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "0DCC8A58C5437929"
-				item: "lightmanscurrency:coin_gold"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			title: "Gold Coinの両替"
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			description: ["金鉱石1個8コインです｡"]
+			description: ["金鉱石1個3コインです｡"]
 			icon: "minecraft:gold_ore"
 			id: "156C9D3ED2EB8B6C"
 			rewards: [{
@@ -110,9 +87,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 8L
+				count: 3L
 				id: "31032245C4C85AED"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -123,7 +100,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["ダイヤモンド鉱石1個20コインです｡"]
+			description: ["ダイヤモンド鉱石1個10コインです｡"]
 			icon: "minecraft:diamond_ore"
 			id: "74110462AE4EFE19"
 			rewards: [{
@@ -133,9 +110,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 20L
+				count: 10L
 				id: "487134BCED793508"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -146,7 +123,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["エンダーパール1個8コインです｡"]
+			description: ["エンダーパール1個4コインです｡"]
 			icon: "minecraft:ender_pearl"
 			id: "64914AE53773DF85"
 			rewards: [{
@@ -156,9 +133,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 8L
+				count: 4L
 				id: "45929A569293137E"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -169,7 +146,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["アンコモンインク1個10コインです｡"]
+			description: ["アンコモンインク1個6コインです｡"]
 			icon: "irons_spellbooks:uncommon_ink"
 			id: "1BDE567EC88D4227"
 			rewards: [{
@@ -179,9 +156,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 10L
+				count: 6L
 				id: "6650E44DB0FFE791"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -193,7 +170,7 @@
 		{
 			can_repeat: true
 			description: [
-				"ニワトリのスポーンエッグ1個5コインです｡"
+				"ニワトリのスポーンエッグ1個3コインです｡"
 				"スポナーブロックの中身の変更はできません。"
 			]
 			icon: "minecraft:chicken_spawn_egg"
@@ -205,9 +182,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 5L
+				count: 3L
 				id: "02BB954ED9BC46DD"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -218,48 +195,29 @@
 		}
 		{
 			can_repeat: true
-			description: ["ガストの涙1個32コインです｡"]
-			icon: "minecraft:ghast_tear"
-			id: "7E1E729B39190F0D"
-			rewards: [{
-				id: "11D38106D21811A9"
-				item: "minecraft:ghast_tear"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 32L
-				id: "41DB86B95C58A3A9"
-				item: "lightmanscurrency:coin_iron"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			title: "ガストの涙"
-			x: 1.0d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			description: ["炭酸水のバケツ1個32コインです｡"]
-			icon: "dcs_climate:fluid/bucket_sparkling"
+			description: [
+				"ティーポット1個5コインです｡"
+				"飲み物を作る際には加熱か冷却が必要です｡"
+				"大体の場合水が入っていることが必要になりますが､例外もあります｡"
+			]
+			icon: "dcs_climate:machine/tea_pot_normal"
 			id: "013E15DCFCAF1A7D"
 			rewards: [{
 				id: "62CB353E864FD1AE"
-				item: "dcs_climate:fluid/bucket_sparkling"
+				item: "dcs_climate:machine/tea_pot_normal"
 				type: "item"
 			}]
 			tasks: [{
 				consume_items: true
-				count: 32L
+				count: 5L
 				id: "5B23740775817F8B"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
-			title: "炭酸水のバケツ"
-			x: 2.0d
+			title: "ティーポット"
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -278,19 +236,19 @@
 			tasks: [{
 				consume_items: true
 				id: "6856D282E69797E1"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "【大特価】自動販売機1コイン!"
 			x: -1.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
 			description: [
-				"ブタのスポーンエッグ1個5コインです｡"
+				"ブタのスポーンエッグ1個3コインです｡"
 				"スポナーブロックの中身の変更はできません。"
 			]
 			icon: "minecraft:pig_spawn_egg"
@@ -302,9 +260,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 5L
+				count: 3L
 				id: "1F18A461B1079BD6"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -316,7 +274,7 @@
 		{
 			can_repeat: true
 			description: [
-				"ヒツジのスポーンエッグ1個10コインです｡"
+				"ヒツジのスポーンエッグ1個5コインです｡"
 				"スポナーブロックの中身の変更はできません。"
 			]
 			icon: "minecraft:sheep_spawn_egg"
@@ -328,9 +286,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 10L
+				count: 5L
 				id: "4062CC086581DA82"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -342,7 +300,7 @@
 		{
 			can_repeat: true
 			description: [
-				"ウシのスポーンエッグ1個10コインです｡"
+				"ウシのスポーンエッグ1個5コインです｡"
 				"スポナーブロックの中身の変更はできません。"
 			]
 			icon: "minecraft:cow_spawn_egg"
@@ -354,9 +312,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 10L
+				count: 5L
 				id: "0435AE724C6C0615"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -390,7 +348,7 @@
 		{
 			can_repeat: true
 			description: [
-				"ミツバチのスポーンエッグ10コインです｡"
+				"ミツバチのスポーンエッグ5コインです｡"
 				"スポナーブロックの中身の変更はできません。"
 			]
 			icon: "minecraft:bee_spawn_egg"
@@ -402,9 +360,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 10L
+				count: 5L
 				id: "001A3C36DF568F9E"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -416,7 +374,7 @@
 		{
 			can_repeat: true
 			description: [
-				"ウサギのスポーンエッグ16コインです｡"
+				"ウサギのスポーンエッグ8コインです｡"
 				"スポナーブロックの中身の変更はできません。"
 			]
 			icon: "minecraft:rabbit_spawn_egg"
@@ -428,9 +386,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 16L
+				count: 8L
 				id: "7A0CF74E6C720595"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -440,94 +398,8 @@
 			y: 1.0d
 		}
 		{
-			description: [
-				"トーフステッキ48コインです｡"
-				"……売ってはいますが正直高いのでまずは探すことを検討してみてください｡"
-				"このアイテムは1回しか買えません｡"
-			]
-			icon: {
-				Count: 1b
-				id: "tofucraft:tofustick"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2FBF0B99CBAAB139"
-			optional: true
-			rewards: [{
-				id: "202B17F6F4CCBE8A"
-				item: {
-					Count: 1b
-					id: "tofucraft:tofustick"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "購入非推奨品"
-			tasks: [{
-				consume_items: true
-				count: 48L
-				id: "2DA9411F24875C9F"
-				item: "lightmanscurrency:coin_iron"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			title: "トーフステッキ"
-			x: -1.0d
-			y: 4.0d
-		}
-		{
 			can_repeat: true
-			description: ["闇鉱石1個20コインです｡"]
-			icon: "evilcraft:dark_ore"
-			id: "1F04259694D5321C"
-			rewards: [{
-				id: "25599F43BCDD643C"
-				item: "evilcraft:dark_ore"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 20L
-				id: "15B5C0FA965C073C"
-				item: "lightmanscurrency:coin_iron"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			title: "闇鉱石"
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			can_repeat: true
-			description: ["秘術のサルベージ1個32コインです｡"]
-			icon: "irons_spellbooks:arcane_salvage"
-			id: "317DBE6D32B8B109"
-			rewards: [{
-				id: "3EC817FE220FAC3C"
-				item: "irons_spellbooks:arcane_salvage"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 32L
-				id: "5E7C15A4AD259EFD"
-				item: "lightmanscurrency:coin_iron"
-				match_nbt: false
-				only_from_crafting: false
-				type: "item"
-			}]
-			title: "秘術のサルベージ"
-			x: 1.0d
-			y: 2.0d
-		}
-		{
-			can_repeat: true
-			description: ["緑の深層鉱石1個20コインです｡"]
+			description: ["緑の深層鉱石1個8コインです｡"]
 			icon: "dcs_climate:main/ore_green_deep"
 			id: "6ABC2822AA7A82FA"
 			rewards: [{
@@ -537,43 +409,43 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 20L
+				count: 8L
 				id: "1A7FC84F3E0EBAFF"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "緑の深層鉱石"
-			x: -1.0d
-			y: 2.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			can_repeat: true
-			description: ["アメジストの欠片1個4コインです｡"]
-			icon: "minecraft:amethyst_shard"
+			description: ["アメジストの塊1個4コインです｡"]
+			icon: "minecraft:amethyst_cluster"
 			id: "5CCF18E5FC94B5A7"
 			rewards: [{
 				id: "452255D728369F1E"
-				item: "minecraft:amethyst_shard"
+				item: "minecraft:amethyst_cluster"
 				type: "item"
 			}]
 			tasks: [{
 				consume_items: true
 				count: 4L
 				id: "604911A2D6A62ACF"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
-			title: "アメジストの欠片"
+			title: "アメジストの塊"
 			x: -1.0d
 			y: 0.0d
 		}
 		{
 			can_repeat: true
-			description: ["不死のトーテム1個32コインです｡"]
+			description: ["不死のトーテム1個10コインです｡"]
 			icon: "minecraft:totem_of_undying"
 			id: "13E7CCE28396AE25"
 			rewards: [{
@@ -583,20 +455,20 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 32L
+				count: 10L
 				id: "77A9FB5985D5149A"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "不死のトーテム"
-			x: 2.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
 			can_repeat: true
-			description: ["錬金術師の大釜1個20コインです｡"]
+			description: ["錬金術師の大釜1個8コインです｡"]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "32960FCD09DB6D21"
 			rewards: [{
@@ -606,9 +478,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 20L
+				count: 8L
 				id: "1A63FAE23B2D888E"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -639,18 +511,18 @@
 			tasks: [{
 				consume_items: true
 				id: "2F496ADF4D7BC143"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "オークの苗木5個セット"
-			x: 0.0d
+			x: 1.0d
 			y: -2.0d
 		}
 		{
 			can_repeat: true
-			description: ["コモンインク1個5コインです｡"]
+			description: ["コモンインク1個3コインです｡"]
 			icon: "irons_spellbooks:common_ink"
 			id: "39782E9DC0587A64"
 			rewards: [{
@@ -660,9 +532,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 5L
+				count: 3L
 				id: "401B51E78BFB18F0"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -673,7 +545,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["レアインク1個20コインです｡"]
+			description: ["レアインク1個12コインです｡"]
 			icon: "irons_spellbooks:rare_ink"
 			id: "1489135964C813E8"
 			rewards: [{
@@ -683,9 +555,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 20L
+				count: 12L
 				id: "6A28F271EB274C9F"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -696,7 +568,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["エピックインク1個40コインです｡"]
+			description: ["エピックインク1個24コインです｡"]
 			icon: "irons_spellbooks:epic_ink"
 			id: "5517992E32F76353"
 			rewards: [{
@@ -706,9 +578,9 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 40L
+				count: 24L
 				id: "71A74745A50B8696"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
@@ -731,19 +603,19 @@
 			tasks: [{
 				consume_items: true
 				id: "7ABBFC4A0EC1C954"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "竹8個セット"
-			x: 1.0d
+			x: 0.0d
 			y: -2.0d
 		}
 		{
 			can_repeat: true
 			description: [
-				"空っぽの魂の宿紙1個8コインです｡"
+				"空っぽの魂の宿紙1個4コインです｡"
 				"メイドさんは付属していません｡メイドさんの収納にだけ使えます｡"
 				"メイドさんの管理には「射命丸 文のカメラ」というアイテムもあるので好きな方をお使いください。"
 			]
@@ -756,16 +628,16 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 8L
+				count: 4L
 				id: "2C1F421F017A4712"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "空っぽの魂の宿紙"
-			x: 3.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -814,7 +686,7 @@
 		{
 			can_repeat: true
 			description: [
-				"巨大松明1個10コインです｡"
+				"巨大松明1個8コインです｡"
 				"広範囲の湧きつぶしができます｡まあ松明をちゃんと置いたほうが安上がりではあります｡"
 			]
 			icon: "torchmaster:megatorch"
@@ -826,15 +698,324 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 10L
+				count: 8L
 				id: "59AE67249E6A41AA"
-				item: "lightmanscurrency:coin_iron"
+				item: "lightmanscurrency:coin_gold"
 				match_nbt: false
 				only_from_crafting: false
 				type: "item"
 			}]
 			title: "巨大松明"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"大特価!スロットマシーン1個1コインです｡"
+				"経済の回る音!"
+			]
+			icon: "lightmanscurrency:slot_machine"
+			id: "58E43C8EABA9CAE9"
+			rewards: [{
+				id: "77AE71C7576CA2A7"
+				item: "lightmanscurrency:slot_machine"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "732C56408DA59BF9"
+				item: "lightmanscurrency:coin_iron"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "【大特価】スロットマシーン1コイン!"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			description: ["銅鉱石1個1コインです｡"]
+			icon: "minecraft:copper_ore"
+			id: "25272A6BCA4DB826"
+			rewards: [{
+				id: "65F81E0A858C5E26"
+				item: "minecraft:copper_ore"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "1744134DD1620CDF"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "銅鉱石"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"白の種袋1個2コインです｡"
+				"種袋からはHeatAndClimateの作物の種がランダムに入手できます｡"
+			]
+			icon: "dcs_climate:magic/seedbag_white"
+			id: "3E19B292E47FC2EC"
+			rewards: [{
+				id: "00D690D6DE113740"
+				item: "dcs_climate:magic/seedbag_white"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "47B4623C0FA19B5D"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "白の種袋"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"青の種袋1個2コインです｡"
+				"種袋からはHeatAndClimateの作物の種がランダムに入手できます｡"
+			]
+			icon: "dcs_climate:magic/seedbag_blue"
+			id: "1BAE9ACC47A03138"
+			rewards: [{
+				id: "00DC84F9E0F4A9ED"
+				item: "dcs_climate:magic/seedbag_blue"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "6C1D61318352AB03"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "青の種袋"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"黒の種袋1個2コインです｡"
+				"種袋からはHeatAndClimateの作物の種がランダムに入手できます｡"
+			]
+			icon: "dcs_climate:magic/seedbag_black"
+			id: "3A00C0FF519D34AF"
+			rewards: [{
+				id: "37B14C7A232B67E5"
+				item: "dcs_climate:magic/seedbag_black"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "42D579B2380F4C8E"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "黒の種袋"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"赤の種袋1個2コインです｡"
+				"種袋からはHeatAndClimateの作物の種がランダムに入手できます｡"
+			]
+			icon: "dcs_climate:magic/seedbag_red"
+			id: "49852D75BC133194"
+			rewards: [{
+				id: "68518A0592700BBF"
+				item: "dcs_climate:magic/seedbag_red"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "2419C3234D18377E"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "赤の種袋"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"緑の種袋1個2コインです｡"
+				"種袋からはHeatAndClimateの作物の種がランダムに入手できます｡"
+			]
+			icon: "dcs_climate:magic/seedbag_green"
+			id: "456EA972CC1035AC"
+			rewards: [{
+				id: "51F544D890BCA865"
+				item: "dcs_climate:magic/seedbag_green"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "1C6B624DF18ABFF2"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "緑の種袋"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"炭酸水のバケツ1個10コインです｡"
+				"森の中に炭酸水の泉が湧いていることもあるので探してみるのもいいでしょう｡"
+				"無限炭酸水源も作れます｡"
+			]
+			icon: "dcs_climate:fluid/bucket_sparkling"
+			id: "6D63FEA7B4F2AA09"
+			rewards: [{
+				id: "13EC9CE3D10D5E1D"
+				item: "dcs_climate:fluid/bucket_sparkling"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "770CA79FF04C5BDC"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "炭酸水のバケツ"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"調理鍋1個5コインです｡"
+				"料理を作る際には加熱か冷却が必要です｡"
+				"｢液体が入っていない｣｢水が入っている｣｢油が入っている｣それぞれで作れるレシピが変わるので注意してください｡"
+			]
+			icon: "dcs_climate:machine/cooking_pot_normal"
+			id: "675CD0B78CAD6596"
+			rewards: [{
+				id: "3EED746418FDB622"
+				item: "dcs_climate:machine/cooking_pot_normal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 5L
+				id: "7A40CC6CC161513A"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "調理鍋"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"雪ブロック1個1コインです｡"
+				"料理や飲み物の作成で冷却がどうしても必要なときにどうぞ｡"
+			]
+			icon: "minecraft:snow_block"
+			id: "0F7B55C84BFDBECA"
+			rewards: [{
+				id: "011FF64FA433B6D4"
+				item: "minecraft:snow_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "484A2D56E1C387BA"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "雪ブロック"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"マグマブロック1個1コインです｡"
+				"料理や飲み物の作成で加熱がどうしても必要なときにどうぞ｡"
+			]
+			icon: "minecraft:magma_block"
+			id: "3F7D38A33BF6A65A"
+			rewards: [{
+				id: "1F04B64320374F96"
+				item: "minecraft:magma_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "64FDA987058E86D8"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "マグマブロック"
 			x: 4.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"壺1個2コインです｡"
+				"材料を発酵させる際には適度な熱と湿度が必要です｡"
+				"松明など丁度いい熱源を選びましょう｡"
+				"レシピによっては水が入っていることも必要になります｡"
+			]
+			icon: "dcs_climate:machine/fermentation_jar_normal"
+			id: "37ADB600B2695682"
+			rewards: [{
+				id: "17E9EE55DCDFA398"
+				item: "dcs_climate:machine/fermentation_jar_normal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "5268CE9C1DDFB3B5"
+				item: "lightmanscurrency:coin_gold"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "壺"
+			x: 1.0d
 			y: 2.0d
 		}
 	]

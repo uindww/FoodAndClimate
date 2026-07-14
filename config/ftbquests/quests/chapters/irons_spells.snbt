@@ -5,7 +5,7 @@
 	group: "53DD377EFA78FCB6"
 	icon: "irons_spellbooks:common_ink"
 	id: "555BA615E962DCBA"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

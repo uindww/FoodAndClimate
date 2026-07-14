@@ -265,6 +265,7 @@
 		{
 			description: [
 				"HeatAndClimateでは割と楽に真鍮を作れます｡"
+				"真鍮はかまどでもKILNの熱でも焼くことができます｡"
 				"Createの物とも互換性があるので活用するのも良いでしょう｡"
 			]
 			id: "144DE150BD08857B"
@@ -281,6 +282,154 @@
 			}]
 			x: 0.0d
 			y: -0.5d
+		}
+		{
+			description: [
+				"アイテムの組み合わせで液体燃料バーナーを作成することができます｡"
+				"加熱チャンバーでは加熱が足りない上位金属の精錬に必要になります｡"
+				"燃料には液体を使います｡"
+				"加熱チャンバー同様､ふいごをつかって風を送ってやるのが必要です｡"
+				"このクエストでは報酬が植物油になっていますが､使用済みの廃油も燃料に出来ます｡"
+				"なお､レッドストーン信号を送ってやると停止するので､燃料の無駄遣いを防げます｡"
+			]
+			id: "6ACDE49DB2FC2F30"
+			rewards: [{
+				id: "2AB2195ADB6F4412"
+				item: "dcs_climate:fluid/bucket_plant_oil"
+				type: "item"
+			}]
+			subtitle: "さらなる火力の源"
+			tasks: [{
+				id: "1BB72C92577C14A1"
+				item: "dcs_climate:machine/fuel_burner"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"コバルト合金ブロックの精錬にはUHTというSMELTINGよりさらに高い温度と、レアな鉱石粉末が必要です。"
+				"ただし、コバルト合金製の武器はかなり攻撃力が高く、クワであったとしてもとても高い攻撃力を持っています。"
+			]
+			id: "45147236065252C0"
+			subtitle: "最も硬い金属の1つ"
+			tasks: [{
+				id: "70F5B49F8E1285B5"
+				item: "dcs_climate:main/metalblock_cobalt"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"チタン合金ブロックの精錬にはUHTというSMELTINGよりさらに高い温度と、レアな鉱石粉末が必要です。"
+				"コバルト合金製の武器を作るのに､コバルト合金と一緒に使われます｡"
+			]
+			id: "381C674FB183CEF3"
+			subtitle: "最も硬い金属の1つ"
+			tasks: [{
+				id: "3CFD6EC59E1CD984"
+				item: "dcs_climate:main/metalblock_titanium"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"SUSも精錬するのにUHTの温度を要求されます。"
+				"こちらは主に機械の材料になります。"
+			]
+			id: "1E0002274A4DCA85"
+			subtitle: "工業化をさらに進めるために"
+			tasks: [{
+				id: "43637F4BDF0322A1"
+				item: "dcs_climate:main/metalblock_sus"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"ポータブル蓄電器は持ち運びができる上に､さらに多くの電力を保管できます｡"
+				"発電機や電動石臼は余り電気を保持できないので､やはりあると便利です｡"
+			]
+			id: "465631750682DEEC"
+			subtitle: "電気を蓄えよう"
+			tasks: [{
+				id: "1CC0BCCB26049C87"
+				item: "dcs_climate:machine/battery_small"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"バケツの周りを鉄などのインゴット4つで囲うとポリタンクができます｡"
+				"ポリタンクはそれなりの量の液体を保持できるブロックで､破壊しても中身を保持します｡"
+			]
+			id: "11FBEC28862321F5"
+			rewards: [{
+				id: "641F6ACAAFEF0751"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			subtitle: "液体の保存に"
+			tasks: [{
+				id: "61C05D893C840887"
+				item: "dcs_climate:machine/portable_can"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"バケツといくつかのアイテムをクラフトすると樹液タンクを作れます｡"
+				"樹液タンクを特定の原木にセットすると､時間経過で樹液を得ることができます｡"
+				"ゴムを得るためにはこの樹液タンクが必要になります｡"
+			]
+			id: "722C6CE2DCA82DF4"
+			rewards: [{
+				id: "649D24C16F21F59A"
+				item: "dcs_climate:main/dust_sulfur"
+				type: "item"
+			}]
+			subtitle: "原木から資源を得よう"
+			tasks: [{
+				id: "644CD7379C972FAE"
+				item: "dcs_climate:machine/spilecup"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"ゴムの木から取れるラテックス8個と硫黄の粉をクラフトすることで､生のゴムブロックができます｡"
+				"このゴムブロックをOVENまたはKILNの温度に置くと加硫ゴムブロックになります。"
+				"加硫ゴムブロックからは9個のゴムが取れます。"
+			]
+			id: "0BC49C79669B16BF"
+			rewards: [{
+				id: "6C8741974FBAE4FB"
+				item: "dcs_climate:main/cloth_rubber"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1E79545E20296E5D"
+				item: "dcs_climate:main/dustblock_rubber"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
 		}
 	]
 	title: "道具や工業"

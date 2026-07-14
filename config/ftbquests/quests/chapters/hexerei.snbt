@@ -9,34 +9,9 @@
 		tag: { }
 	}
 	id: "6A682C4F0C16229F"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
-		{
-			description: [
-				"本と革をクラフトすることでHexereiの解説書が作れます｡"
-				"このクエストの報酬でもあります｡"
-			]
-			id: "42FE272A3BA9610D"
-			rewards: [{
-				id: "6CBAE2EC8B005EDD"
-				item: {
-					Count: 1b
-					id: "hexerei:book_of_shadows"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "解説書をどうぞ"
-			tasks: [{
-				id: "5ED0C2371C70A10A"
-				title: "準備中"
-				type: "checkmark"
-			}]
-			title: "Hexereiを始めよう!"
-			x: 1.0d
-			y: 0.0d
-		}
 		{
 			description: [
 				"糸と棒と木材のハーフブロックで乾燥ラックが作れます｡"
@@ -166,6 +141,54 @@
 			}]
 			x: 3.0d
 			y: 1.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"Hexereiのガイド本は特殊で、専用のAlterに置かないと読むことができません。"
+				"ガイド本とAlterをセットで報酬にしたので読んでみてください。"
+				"……英語ですが。"
+			]
+			icon: {
+				Count: 1b
+				id: "hexerei:book_of_shadows"
+				tag: {
+					bookmarks: { }
+					chapter: 0
+					opened: 0b
+					page: 0
+				}
+			}
+			id: "3AE289644D89983D"
+			rewards: [
+				{
+					id: "6D98289AB5747549"
+					item: {
+						Count: 1b
+						id: "hexerei:book_of_shadows"
+						tag: {
+							bookmarks: { }
+							chapter: 0
+							opened: 0b
+							page: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3731BFFDF9A7EF6E"
+					item: "hexerei:willow_altar"
+					type: "item"
+				}
+			]
+			subtitle: "Hexereiのガイド本"
+			tasks: [{
+				id: "10D39FA7005EF81B"
+				title: "Hexereiやってみよう!"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 0.0d
 		}
 	]
 	title: "Hexereiを学ぼう!"

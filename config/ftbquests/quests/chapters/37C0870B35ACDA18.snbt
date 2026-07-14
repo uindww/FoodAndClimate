@@ -5,7 +5,7 @@
 	group: "53DD377EFA78FCB6"
 	icon: "touhou_little_maid:maid_spawn_egg"
 	id: "37C0870B35ACDA18"
-	order_index: 9
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{

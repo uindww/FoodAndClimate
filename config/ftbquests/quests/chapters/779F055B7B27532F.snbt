@@ -12,7 +12,7 @@
 			description: [
 				"棒と木材と棒を縦に並べることによって紡錘を作れます｡"
 				"紡錘からはHeatAndClimateの特有の糸を作れます。"
-				"HeatAndClimateの糸は織物や衣服などの材料になるほか、バニラの糸としても使えます。"
+				"HeatAndClimateの糸は織物や衣服などの材料になるほか、バニラの糸としても使えますし､バニラの糸に単体クラフトすることもできます｡"
 			]
 			id: "5358F07F64FFDB9C"
 			rewards: [{
@@ -28,7 +28,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			description: [
@@ -69,7 +69,7 @@
 				item: "dcs_climate:main/pattern_paper_pants"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -0.5d
 		}
 		{
@@ -89,7 +89,88 @@
 				title: "気候に耐える"
 				type: "checkmark"
 			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"服を作るのには多くの場合型紙が必要です｡"
+				"型紙は紙と木炭から作れます｡"
+			]
+			id: "787F5E60A7261EF8"
+			rewards: [{
+				count: 5
+				id: "42F51010CC078188"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3024B41C2C5B49C0"
+				item: "dcs_climate:main/pattern_paper_wear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"服を作るのには多くの場合型紙が必要です｡"
+				"型紙は紙と木炭から作れます｡"
+			]
+			id: "0413B24933E315A2"
+			rewards: [{
+				count: 8
+				id: "479B2038349BFBE1"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4814B868D83E7597"
+				item: "dcs_climate:main/pattern_paper_jacket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"服を作るのには多くの場合型紙が必要です｡"
+				"型紙は紙と木炭から作れます｡"
+			]
+			id: "3EF8316E0E5C5606"
+			rewards: [{
+				count: 8
+				id: "6AC0CD46395682ED"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31A79FA02AA94D32"
+				item: "dcs_climate:main/pattern_paper_tunic"
+				type: "item"
+			}]
 			x: 2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"服を作るのには多くの場合型紙が必要です｡"
+				"型紙は紙と木炭から作れます｡"
+				"なお､｢シャツの型紙｣から作った衣服は胴体部分に表示されますが､装備部位としてはレギンス(下半身)になります｡"
+			]
+			id: "5291E573D312E5D4"
+			rewards: [{
+				count: 7
+				id: "0486290DCE8825C3"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "529D2567A55207DF"
+				item: "dcs_climate:main/pattern_paper_shirt"
+				type: "item"
+			}]
+			x: 1.0d
 			y: -0.5d
 		}
 	]

@@ -5,7 +5,7 @@
 	group: "53DD377EFA78FCB6"
 	icon: "ars_nouveau:novice_spell_book"
 	id: "6A409E1E73098D9D"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -293,6 +293,20 @@
 			}]
 			x: 0.0d
 			y: -1.5d
+		}
+		{
+			description: [
+				"ドライグミーを活用すると､ボスを含むボスからのドロップをほぼ無限に自動回収できてしまい､ゲームバランスに大きな影響を与えるとともに､"
+				"ソースを大量に生産消費する理由付けにもなってしまったため､ドライグミーそのものを禁止とさせていただきます｡"
+			]
+			id: "3037E9A74D1D0A96"
+			tasks: [{
+				id: "0CE1F78F6FF2696E"
+				title: "ドライグミーの禁止"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -3.5d
 		}
 	]
 	title: "ArsNouveauを学ぼう!"
